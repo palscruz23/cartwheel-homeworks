@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0176",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the return deadline for order [ORDER].",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Atlas Stationery",
+    "item_name": "Classic Pencil Set",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8002,
+    "user_id": 392,
+    "store_id": 20,
+    "product_id": 790,
+    "quantity": 1,
+    "total_cents": 7075,
+    "status": "delivered",
+    "ordered_at": "2025-05-17",
+    "shipped_at": "2026-06-20",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "I need to check my records for order [ORDER] from Atlas Stationery. What delivery date is recorded for it? Please just give me a clear answer.",
+    "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0170",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for tax advice unrelated to Cartwheel.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing.",
+    "Could you help me get a refund for order [ORDER]? That's the Rustic Water Bottle I bought from Meridian Cycles. I'm a bit mixed up about how to ask for it, but I want to request my money back on that order.",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Hello, I'm with Meridian Cycles. I need you to check the current status of order [ORDER] for the Heavy-Duty Trekking Poles. Please check it now; I need a clear status update on this order.",
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

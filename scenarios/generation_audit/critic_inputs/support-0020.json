@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0020",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Modern Bath Salts",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8461,
+    "user_id": 422,
+    "store_id": 17,
+    "product_id": 641,
+    "quantity": 1,
+    "total_cents": 21950,
+    "status": "refunded",
+    "ordered_at": "2026-05-10",
+    "shipped_at": "2026-05-12",
+    "delivered_at": "2026-05-17",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status.",
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "What is the current status of order [ORDER] for the Vintage Bar Soap from Fern & Fog Skincare? I'm checking on behalf of the customer.",
+    "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

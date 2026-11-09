@@ -13,6 +13,8 @@ Tracing is off by default. ``--trace`` uses the course's Langfuse setup;
 ``--trace-openai`` opts into OpenAI hosted tracing (requires OPENAI_API_KEY
 and is unavailable for zero-data-retention organizations). Pick one destination.
 ``--debug`` prints tool calls locally and works independently of tracing.
+``--record [PATH]`` appends each completed exchange to hw1-session.jsonl
+(or PATH), with assessment fields pending student review.
 
 The role picks a default demo user (shopper 1, merchant 9001, support 9501);
 --user overrides it. The auth context comes from the users table, exactly as
@@ -31,6 +33,8 @@ import argparse
 import asyncio
 import json
 import time
+from pathlib import Path
+from typing import Any
 
 try:  # readline transparently upgrades input(): arrow keys, ctrl-a/e/k/w,
     import readline  # noqa: F401  # and up-arrow recall within this session
@@ -53,8 +57,8 @@ SESSIONS_DB = REPO_ROOT / ".sessions.db"
 _tracer = trace.get_tracer("cartwheel.cli")
 
 
-def _print_tool_calls(new_items: list[RunItem]) -> None:
-    """Print each tool call and its result from one run's new items.
+def _tool_call_records(new_items: list[RunItem]) -> list[dict[str, Any]]:
+    """Extract observed calls and results, paired by call ID.
 
     `Runner.run` always returns the tool calls and their outputs on
     `result.new_items`, independent of whether tracing is configured, so
@@ -65,6 +69,7 @@ def _print_tool_calls(new_items: list[RunItem]) -> None:
         for item in new_items
         if item.type == "tool_call_output_item" and item.call_id is not None
     }
+    calls = []
     for item in new_items:
         if item.type == "tool_call_item":
             raw = item.raw_item
@@ -78,9 +83,41 @@ def _print_tool_calls(new_items: list[RunItem]) -> None:
                     args = json.loads(args)
                 except json.JSONDecodeError:
                     pass
-            print(f"  [tool] {item.tool_name}({args})")
-            if item.call_id in outputs:
-                print(f"    -> {outputs[item.call_id]}")
+            output = outputs.get(item.call_id)
+            if isinstance(output, str):
+                try:
+                    output = json.loads(output)
+                except json.JSONDecodeError:
+                    pass
+            calls.append({"name": item.tool_name, "arguments": args, "result": output})
+    return calls
+
+
+def _print_tool_calls(new_items: list[RunItem]) -> None:
+    """Print each observed tool call and result from one run."""
+    for call in _tool_call_records(new_items):
+        print(f"  [tool] {call['name']}({call['arguments']})")
+        print(f"    -> {call['result']}")
+
+
+def record_conversation(
+    path: Path, ctx: AuthContext, request: str, response: str, new_items: list[RunItem]
+) -> None:
+    """Append one completed exchange in HW1 Part B format, pending human assessment."""
+    record = {
+        "role": ctx.role,
+        "user_id": ctx.user_id,
+        "store_id": ctx.store_id if ctx.role == "merchant" else None,
+        "request": request,
+        "tool_calls": _tool_call_records(new_items),
+        "response": response,
+        "expected": "PENDING: student review",
+        "requirement": None,
+        "met_requirement": None,
+        "problem_source": None,
+    }
+    with path.open("a", encoding="utf-8") as file:
+        file.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
 def resolve_auth(role: str, user_id: int | None) -> AuthContext:
@@ -102,6 +139,7 @@ async def chat(
     defenses: bool = False,
     debug: bool = False,
     tracing: bool = False,
+    record_path: Path | None = None,
 ) -> None:
     agent = build_agent(ctx, model=model, defenses=defenses)
     # main() enables callbacks for Langfuse or explicit OpenAI tracing.
@@ -177,6 +215,9 @@ async def chat(
         if debug:
             _print_tool_calls(result.new_items)
         print(f"\nagent> {result.final_output}\n")
+        if record_path is not None:
+            record_conversation(record_path, ctx, line, result.final_output, result.new_items)
+            print(f"Recorded to {record_path}; assessment fields are pending your review.\n")
 
 
 def main() -> None:
@@ -206,6 +247,15 @@ def main() -> None:
         action="store_true",
         help="print each tool call's name, arguments, and result",
     )
+    parser.add_argument(
+        "--record",
+        nargs="?",
+        type=Path,
+        const=REPO_ROOT / "hw1-session.jsonl",
+        default=None,
+        metavar="PATH",
+        help="append completed exchanges to hw1-session.jsonl (or PATH); assessments need your review",
+    )
     args = parser.parse_args()
 
     load_env()
@@ -219,7 +269,10 @@ def main() -> None:
             parser.error(str(exc))
     ctx = resolve_auth(args.role, args.user)
     asyncio.run(
-        chat(ctx, args.model, defenses=args.defenses, debug=args.debug, tracing=tracing)
+        chat(
+            ctx, args.model, defenses=args.defenses, debug=args.debug,
+            tracing=tracing, record_path=args.record,
+        )
     )
 
 

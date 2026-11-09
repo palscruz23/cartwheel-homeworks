@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask whether a store can set its own return window.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "conversation_variation": "use a conversational opening"
+}

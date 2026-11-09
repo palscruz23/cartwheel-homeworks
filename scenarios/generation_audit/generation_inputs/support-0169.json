@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask for help with a purchase from another company.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "conversation_variation": "use a conversational opening"
+}

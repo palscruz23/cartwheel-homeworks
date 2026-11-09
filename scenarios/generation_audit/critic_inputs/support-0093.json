@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0093",
+  "task": {
+    "role": "support",
+    "goal": "First ask to cancel the named item from the named store WITHOUT an order number. In the followup, independently supply the order reference [ORDER] and restate that you want it cancelled. Do not assume the agent offered cancellation or say the cancellation succeeded.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Trailhead Supply",
+    "item_name": "Heavy-Duty Camp Stove",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "followups": [
+      "The order reference is [ORDER]. Please cancel that order for the customer; I'm requesting cancellation of this order."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 7096,
+    "user_id": 499,
+    "store_id": 9,
+    "product_id": 360,
+    "quantity": 2,
+    "total_cents": 3800,
+    "status": "delivered",
+    "ordered_at": "2025-11-01",
+    "shipped_at": "2025-11-02",
+    "delivered_at": "2025-11-07",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "Merchant payout timing: when do we receive funds from sales? Need the standard schedule.",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain.",
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "Hi, quick order check: current status for [ORDER]?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

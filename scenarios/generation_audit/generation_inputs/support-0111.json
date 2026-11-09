@@ -1,0 +1,7 @@
+{
+  "role": "support",
+  "goal": "Ask how the standard return window is counted.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "conversation_variation": "start directly with the request"
+}

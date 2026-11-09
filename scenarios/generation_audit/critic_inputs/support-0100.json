@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0100",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "operational_shorthand",
+    "turn_count": 2,
+    "store_name": "Bright Socket Electronics",
+    "item_name": "Midnight Desk Lamp",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "followups": [
+      "Reason for request: no longer need the Midnight Desk Lamp."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 3454,
+    "user_id": 167,
+    "store_id": 6,
+    "product_id": 213,
+    "quantity": 1,
+    "total_cents": 23725,
+    "status": "shipped",
+    "ordered_at": "2026-06-28",
+    "shipped_at": "2026-06-29",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "If an issue with my store is escalated to a human, how long should I expect to wait for a response?",
+    "How is the standard return window counted? Need to explain it to a customer.",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "Could you help me find the Handmade Cookbook for a customer?",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0164",
+  "task": {
+    "role": "merchant",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Modern Rain Shell",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 5357,
+    "user_id": 364,
+    "store_id": 16,
+    "product_id": 610,
+    "quantity": 1,
+    "total_cents": 6725,
+    "status": "delivered",
+    "ordered_at": "2025-04-03",
+    "shipped_at": "2025-04-04",
+    "delivered_at": "2025-04-09",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain.",
+    "Merchant account here. Can you change my payment card?",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "Can you help me check on a customer's Handmade Daypack from Meridian Cycles? I need information about that purchase. Please help me look into it.",
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

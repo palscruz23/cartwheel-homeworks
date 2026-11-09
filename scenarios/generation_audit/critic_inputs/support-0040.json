@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0040",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "item_name": "Sturdy Trekking Poles",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7925,
+    "user_id": 343,
+    "store_id": 10,
+    "product_id": 391,
+    "quantity": 1,
+    "total_cents": 4200,
+    "status": "delivered",
+    "ordered_at": "2025-07-06",
+    "shipped_at": "2025-07-07",
+    "delivered_at": "2025-07-10",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics.",
+    "Helping a customer with a refund. Order [ORDER], Slim Desk Organizer from Atlas Stationery. Please refund the order.",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?",
+    "Hello, I need to locate the Vintage Water Bottle in my catalog. Please find it for me. I need that item located.",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

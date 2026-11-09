@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0054",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Trailhead Supply",
+    "item_name": "Walnut Water Bottle",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8323,
+    "user_id": 297,
+    "store_id": 9,
+    "product_id": 339,
+    "quantity": 1,
+    "total_cents": 13975,
+    "status": "delivered",
+    "ordered_at": "2026-06-02",
+    "shipped_at": "2026-06-03",
+    "delivered_at": "2026-06-08",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order.",
+    "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order.",
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "I need to see what Blue Heron Ceramics currently lists for a tray so I can decide what to do next. The listing title isn't visible to me. Please check the current listing details for the tray; I need those details."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

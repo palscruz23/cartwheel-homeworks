@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask the assistant to change your payment card; do not include any actual card details.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 2,
+  "conversation_variation": "ask a practical question"
+}

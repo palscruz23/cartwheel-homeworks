@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0158",
+  "task": {
+    "role": "merchant",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Walnut Pitcher",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I run Juniper Home Goods and need help with a charge dispute for order [ORDER]. What help is available? Please keep it short and simple.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 1540,
+    "user_id": 396,
+    "store_id": 2,
+    "product_id": 44,
+    "quantity": 1,
+    "total_cents": 4450,
+    "status": "delivered",
+    "ordered_at": "2025-10-03",
+    "shipped_at": "2025-10-04",
+    "delivered_at": "2025-10-08",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?",
+    "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "I need to see what Blue Heron Ceramics currently lists for a tray so I can decide what to do next. The listing title isn't visible to me. Please check the current listing details for the tray; I need those details.",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "Can you check where order [ORDER] stands right now? It's the Vintage Jam Trio from my shop, Saltbox Pantry. I'm trying to sort out my orders and I've rather lost track of this one.",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

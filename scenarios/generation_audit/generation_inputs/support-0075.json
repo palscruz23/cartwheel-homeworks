@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "neutral_conversational",
+  "turn_count": 1,
+  "store_name": "Fern & Fog Skincare",
+  "item_name": "Compact Lip Balm",
+  "conversation_variation": "focus on next steps"
+}

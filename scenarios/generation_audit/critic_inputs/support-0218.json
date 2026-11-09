@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0218",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 2,
+    "store_name": "Copperline Tools",
+    "item_name": "Everyday Socket Set",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "My Copperline Tools customer wants their money back for order [ORDER]. Please start a refund request so I can get this issue handled promptly.",
+    "followups": [
+      "Please include a short explanation of how the customer can follow up on this refund request. I need something clear to pass along."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 161,
+    "user_id": 212,
+    "store_id": 4,
+    "product_id": 152,
+    "quantity": 1,
+    "total_cents": 6975,
+    "status": "delivered",
+    "ordered_at": "2026-05-27",
+    "shipped_at": "2026-05-28",
+    "delivered_at": "2026-06-01",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "Refund needed for my order [ORDER], Harbor Knits. Please open the request and list next steps for me.",
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "Hi. I run a store here. Can I set my own return window?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

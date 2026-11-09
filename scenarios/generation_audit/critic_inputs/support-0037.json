@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0037",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Trailhead Supply",
+    "item_name": "Everyday Dry Bag",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you refund order [ORDER] for my Everyday Dry Bag from Trailhead Supply? I want my money back, please. Please get the refund started.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6926,
+    "user_id": 443,
+    "store_id": 9,
+    "product_id": 353,
+    "quantity": 1,
+    "total_cents": 6300,
+    "status": "delivered",
+    "ordered_at": "2026-06-11",
+    "shipped_at": "2026-06-12",
+    "delivered_at": "2026-06-19",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund.",
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer.",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version.",
+    "Find the Heavy-Duty Poetry Collection for me. I'm a merchant trying to check a listing and need to get this done quickly.",
+    "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

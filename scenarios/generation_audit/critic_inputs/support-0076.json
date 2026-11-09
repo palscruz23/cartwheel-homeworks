@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0076",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "operational_shorthand",
+    "turn_count": 2,
+    "store_name": "Golden Hour Coffee",
+    "item_name": "Rustic Granola",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "followups": [
+      "No longer need the granola. Please take that as the reason for my cancellation request."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 2554,
+    "user_id": 63,
+    "store_id": 14,
+    "product_id": 538,
+    "quantity": 2,
+    "total_cents": 10650,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "Hello, I need to locate the Vintage Water Bottle in my catalog. Please find it for me. I need that item located.",
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,6 @@
+{
+  "opening_message": "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+  "followups": [
+    "I also need the recorded shipment and delivery details for this order. Please check those details too; I need the actual shipment and delivery record before I take the next step."
+  ]
+}

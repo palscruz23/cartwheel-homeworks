@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0074",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Slim Bath Salts",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9118,
+    "user_id": 447,
+    "store_id": 17,
+    "product_id": 661,
+    "quantity": 1,
+    "total_cents": 16650,
+    "status": "delivered",
+    "ordered_at": "2026-06-06",
+    "shipped_at": "2026-06-07",
+    "delivered_at": "2026-06-09",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel.",
+    "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving.",
+    "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request.",
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "Could you help me find the Handmade Cookbook for a customer?",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "confused_rambling",
+  "turn_count": 2,
+  "store_name": "Harbor Knits",
+  "item_name": "Everyday Scarf",
+  "conversation_variation": "start directly with the request"
+}

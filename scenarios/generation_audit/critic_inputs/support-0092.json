@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0092",
+  "task": {
+    "role": "merchant",
+    "goal": "First ask to cancel the named item from the named store WITHOUT an order number. In the followup, independently supply the order reference [ORDER] and restate that you want it cancelled. Do not assume the agent offered cancellation or say the cancellation succeeded.",
+    "user_style": "operational_shorthand",
+    "turn_count": 2,
+    "store_name": "Petal & Stem",
+    "item_name": "Sturdy Watering Can",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?",
+    "followups": [
+      "Order ref: [ORDER]. Request is to cancel this order."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 7476,
+    "user_id": 143,
+    "store_id": 3,
+    "product_id": 115,
+    "quantity": 1,
+    "total_cents": 17625,
+    "status": "shipped",
+    "ordered_at": "2026-06-27",
+    "shipped_at": "2026-06-30",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "I'm considering disputing a charge and want to understand the timing before I take the next step. How long after delivery can I dispute it?",
+    "Hi, I'm looking for the Everyday Desk Lamp at Bright Socket Electronics. Could you show me the available listings and how much they cost?",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "Could you find the tray at Blue Heron Ceramics and explain the matching listings? I'm helping a customer, but the listing title isn't visible to me, so I'm a bit stuck trying to identify it. All I can really go on is that it's a tray.",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

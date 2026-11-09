@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0021",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Walnut Bar Soap",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status.",
+    "followups": [
+      "I also need the recorded shipment and delivery details for this customer. Please retrieve both; I need the shipment details and the delivery details from the order record."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 4385,
+    "user_id": 102,
+    "store_id": 17,
+    "product_id": 665,
+    "quantity": 1,
+    "total_cents": 1250,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "Need an update for planning: current status of my order [ORDER], Handmade Cookbook from Paper Lantern Press?",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "Find the Portable Trowel Set at Petal & Stem and show me the available listings and prices. I want to choose one and get on with my purchase.",
+    "Account update: can you change the email on my shopper account? Need to replace the current one."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

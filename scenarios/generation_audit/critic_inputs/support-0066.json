@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0066",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 2,
+    "store_name": "Trailhead Supply",
+    "item_name": "Portable Daypack",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "followups": [
+      "Please give me a concise note I can pass to the customer explaining how to follow up on the refund request."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 6343,
+    "user_id": 314,
+    "store_id": 9,
+    "product_id": 344,
+    "quantity": 1,
+    "total_cents": 11375,
+    "status": "delivered",
+    "ordered_at": "2026-05-28",
+    "shipped_at": "2026-05-30",
+    "delivered_at": "2026-06-04",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting.",
+    "I bought the Sturdy Teapot from Juniper Home Goods, but I've changed my mind about needing it. I'm not sure how to go about this, so could you help me request a refund for order [ORDER]? Sorry, I'm probably overexplaining; I'd like a refund.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "Hello, I'm with Bright Socket Electronics and I'm trying to sort something out with one of our orders. Could you cancel order [ORDER] for the Slim USB-C Hub? I'm getting myself confused with the admin, but canceling that order is what I need help with.",
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?",
+    "Hi, I'm looking for the Everyday Desk Lamp at Bright Socket Electronics. Could you show me the available listings and how much they cost?",
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "Could you help me get a refund for order [ORDER]? That's the Rustic Water Bottle I bought from Meridian Cycles. I'm a bit mixed up about how to ask for it, but I want to request my money back on that order."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

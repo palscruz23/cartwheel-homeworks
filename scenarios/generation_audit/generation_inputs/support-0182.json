@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask for a delivery timeline for order [ORDER].",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 1,
+  "store_name": "Harbor Knits",
+  "item_name": "Woven Wool Socks",
+  "conversation_variation": "ask a practical question"
+}

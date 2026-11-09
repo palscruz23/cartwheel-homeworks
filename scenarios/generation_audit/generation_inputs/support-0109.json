@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask whether a store can set its own return window.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "conversation_variation": "use a conversational opening"
+}

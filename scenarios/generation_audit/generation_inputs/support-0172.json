@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask the assistant to change your account email; do not include a real email address.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "conversation_variation": "ask a practical question"
+}

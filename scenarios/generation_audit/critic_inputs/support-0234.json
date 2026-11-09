@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0234",
+  "task": {
+    "role": "support",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 2,
+    "store_name": "Cascade Audio",
+    "item_name": "Handmade USB-C Hub",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "followups": [
+      "The customer no longer needs the Handmade USB-C Hub. Please use that as the reason for the cancellation request."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 1058,
+    "user_id": 106,
+    "store_id": 5,
+    "product_id": 184,
+    "quantity": 1,
+    "total_cents": 2350,
+    "status": "shipped",
+    "ordered_at": "2026-06-30",
+    "shipped_at": "2026-07-01",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "Can you help me check on a customer's Handmade Daypack from Meridian Cycles? I need information about that purchase. Please help me look into it.",
+    "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?",
+    "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order.",
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "Need options for a customer before they choose. Find Portable Hammer at Copperline Tools. Show available listings and prices."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

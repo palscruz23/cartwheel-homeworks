@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "store_name": "Cascade Audio",
+  "item_description": "Heavy-Duty Headphones",
+  "conversation_variation": "start directly with the request"
+}

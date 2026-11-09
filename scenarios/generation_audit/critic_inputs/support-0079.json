@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0079",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_name": "Modern Mug",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6213,
+    "user_id": 368,
+    "store_id": 1,
+    "product_id": 30,
+    "quantity": 1,
+    "total_cents": 16375,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "I'm handling a customer's cancellation request for order [ORDER] from Clover Field Naturals. Please get this moving and tell me exactly what needs to happen next.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer.",
+    "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?",
+    "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

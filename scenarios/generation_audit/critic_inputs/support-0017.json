@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0017",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "store_name": "Saltbox Pantry",
+    "item_name": "Vintage Jam Trio",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you check where order [ORDER] stands right now? It's the Vintage Jam Trio from my shop, Saltbox Pantry. I'm trying to sort out my orders and I've rather lost track of this one.",
+    "followups": [
+      "Could you also look up the recorded shipment and delivery details? I get those two stages muddled, so I'd like to see what the record says for this order."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 2748,
+    "user_id": 25,
+    "store_id": 13,
+    "product_id": 487,
+    "quantity": 1,
+    "total_cents": 29350,
+    "status": "shipped",
+    "ordered_at": "2026-06-27",
+    "shipped_at": "2026-06-28",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "Need an update for planning: current status of my order [ORDER], Handmade Cookbook from Paper Lantern Press?",
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "I'm handling a customer's cancellation request for order [ORDER] from Clover Field Naturals. Please get this moving and tell me exactly what needs to happen next.",
+    "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer.",
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

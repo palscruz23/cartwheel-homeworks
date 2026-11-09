@@ -58,6 +58,21 @@ user 1) always come out the same. The seed also inserts six documented data
 quality defects for challenge scenarios. Their identifiers and expected
 handling are stored in the `data_quality_cases` table.
 
+To record Homework 1 Part B exchanges automatically, add `--record`:
+
+```bash
+uv run python -m agent.cli --role shopper --user 1 --record
+```
+
+Each completed user message and agent reply is appended as one JSONL record
+to `hw1-session.jsonl`, including authenticated identity and observed tool
+arguments and results. Existing records are preserved. Recording works without
+`--debug` or tracing; use `--record path/to/file.jsonl` for a different file.
+The assessment fields are drafts: fill in `expected`, `requirement`,
+`met_requirement` (initially `null`), and `problem_source` yourself before
+submission. For an independent homework conversation, restart the CLI to
+begin with fresh chat history.
+
 ## Homework 2 and tracing
 
 [Homework 2](homework/module-1/hw2.md) asks you to implement the authenticated endpoints and add application attributes to traces. The tracing setup is provided through OpenLLMetry and self-hosted Langfuse. The four HW2 functions listed below are intentionally unfinished; starting the server alone does not complete them.

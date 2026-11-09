@@ -1,0 +1,41 @@
+{
+  "scenario_id": "support-0242",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 409,
+    "user_id": 171,
+    "store_id": 16,
+    "product_id": 638,
+    "quantity": 1,
+    "total_cents": 11675,
+    "status": "delivered",
+    "ordered_at": "2025-11-06",
+    "shipped_at": "2025-11-07",
+    "delivered_at": "2025-11-12",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Hi, quick order check: current status for [ORDER]?",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund.",
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "Checking my store catalog. Northwind Books, Modern Novel. Find available listings and prices, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

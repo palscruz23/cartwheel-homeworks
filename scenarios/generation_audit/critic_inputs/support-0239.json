@@ -1,0 +1,45 @@
+{
+  "scenario_id": "support-0239",
+  "task": {
+    "role": "merchant",
+    "goal": "Start by asking about the named item from the named store WITHOUT an order number. In the last followup independently add: the order reference is [ORDER]. Middle followups may restate the item or store without assuming an agent response.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 3,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Speckled Shampoo Bar",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "followups": [
+      "Item: Speckled Shampoo Bar. Store: Clover Field Naturals.",
+      "The order reference is [ORDER]. Please check that order."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 1269,
+    "user_id": 77,
+    "store_id": 18,
+    "product_id": 712,
+    "quantity": 1,
+    "total_cents": 26825,
+    "status": "delivered",
+    "ordered_at": "2025-02-22",
+    "shipped_at": "2025-02-23",
+    "delivered_at": "2025-03-02",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly.",
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request.",
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language.",
+    "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue.",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

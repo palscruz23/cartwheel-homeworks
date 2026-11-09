@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0118",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask whether a restocking fee can apply to an opened return.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm considering returning something I've opened. Can a restocking fee apply? Please explain briefly in plain language.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Hi. I run a store here. Can I set my own return window?",
+    "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?",
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "I need to work out the next step for a payment issue at my store. How long after delivery can a charge be disputed? Please be clear about the deadline. I need the actual dispute timeframe.",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

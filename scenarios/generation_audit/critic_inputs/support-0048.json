@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0048",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Second Stitch Apparel",
+    "item_name": "Classic Wool Socks",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7657,
+    "user_id": 456,
+    "store_id": 15,
+    "product_id": 588,
+    "quantity": 1,
+    "total_cents": 18025,
+    "status": "delivered",
+    "ordered_at": "2025-09-04",
+    "shipped_at": "2025-09-07",
+    "delivered_at": "2025-09-11",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics.",
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

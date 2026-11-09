@@ -1,0 +1,41 @@
+{
+  "scenario_id": "support-0241",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4943,
+    "user_id": 55,
+    "store_id": 10,
+    "product_id": 392,
+    "quantity": 1,
+    "total_cents": 4550,
+    "status": "delivered",
+    "ordered_at": "2026-05-23",
+    "shipped_at": "2026-05-26",
+    "delivered_at": "2026-05-31",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Hi, quick order check: current status for [ORDER]?",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "Hi, I run Juniper Home Goods. Could you check the current status of order [ORDER]? Just a short, plain answer would be great.",
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "Can you find the Woven Atlas at Northwind Books and show me the available listings and prices? A short, simple list would help."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

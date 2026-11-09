@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0099",
+  "task": {
+    "role": "support",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Petal & Stem",
+    "item_name": "Handmade Garden Gloves",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9537,
+    "user_id": 88,
+    "store_id": 3,
+    "product_id": 118,
+    "quantity": 1,
+    "total_cents": 18850,
+    "status": "refunded",
+    "ordered_at": "2025-04-24",
+    "shipped_at": "2025-04-27",
+    "delivered_at": "2025-05-03",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer.",
+    "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version.",
+    "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them.",
+    "Find the Heavy-Duty Poetry Collection for me. I'm a merchant trying to check a listing and need to get this done quickly.",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

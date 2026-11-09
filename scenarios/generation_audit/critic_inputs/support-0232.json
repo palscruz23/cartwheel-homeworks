@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0232",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "typo_heavy",
+    "turn_count": 2,
+    "store_name": "Golden Hour Coffee",
+    "item_name": "Matte Granola",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "followups": [
+      "i dont need the Matte Granola anymore, thats why im askng to cancel it."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 5375,
+    "user_id": 219,
+    "store_id": 14,
+    "product_id": 557,
+    "quantity": 1,
+    "total_cents": 14300,
+    "status": "placed",
+    "ordered_at": "2026-06-29",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "Hello, I'm with Meridian Cycles. I need you to check the current status of order [ORDER] for the Heavy-Duty Trekking Poles. Please check it now; I need a clear status update on this order.",
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please.",
+    "I'm trying to decide what to buy and need to find the Woven Socket Set at Copperline Tools. Please show me the available listings and their prices. I need the listings with prices, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

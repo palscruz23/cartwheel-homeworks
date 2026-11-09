@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0057",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Little Fox Toys",
+    "item_name": "Portable Card Game",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2472,
+    "user_id": 189,
+    "store_id": 11,
+    "product_id": 428,
+    "quantity": 1,
+    "total_cents": 9975,
+    "status": "delivered",
+    "ordered_at": "2026-06-21",
+    "shipped_at": "2026-06-23",
+    "delivered_at": "2026-06-28",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer.",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "Find the Portable Trowel Set at Petal & Stem and show me the available listings and prices. I want to choose one and get on with my purchase.",
+    "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain.",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

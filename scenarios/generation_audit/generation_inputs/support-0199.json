@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask for help locating this product in the named store.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "Rustic Pitcher",
+  "conversation_variation": "use a conversational opening"
+}

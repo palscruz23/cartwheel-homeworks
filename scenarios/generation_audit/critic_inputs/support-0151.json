@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0151",
+  "task": {
+    "role": "shopper",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 2,
+    "store_name": "Saltbox Pantry",
+    "item_name": "Everyday Granola",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "followups": [
+      "Need guidance on disputing this charge. What steps can you help me with?"
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 5094,
+    "user_id": 368,
+    "store_id": 13,
+    "product_id": 511,
+    "quantity": 1,
+    "total_cents": 26600,
+    "status": "delivered",
+    "ordered_at": "2025-09-29",
+    "shipped_at": "2025-09-30",
+    "delivered_at": "2025-10-04",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?",
+    "I'm helping a customer who wants to dispute the charge for order [ORDER], the Walnut Bath Salts from Clover Field Naturals. I'm a bit unsure where to begin with a charge dispute, and I don't want to muddle the process. What help is available for this?",
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "I run Juniper Home Goods and need help with a charge dispute for order [ORDER]. What help is available? Please keep it short and simple.",
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?",
+    "What's the current status of my order [ORDER] from Wooden Whale Workshop, and what do I need to do next? I just want a clear answer so I can get on with my day.",
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

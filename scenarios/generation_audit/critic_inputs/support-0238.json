@@ -1,0 +1,45 @@
+{
+  "scenario_id": "support-0238",
+  "task": {
+    "role": "shopper",
+    "goal": "Start by asking about the named item from the named store WITHOUT an order number. In the last followup independently add: the order reference is [ORDER]. Middle followups may restate the item or store without assuming an agent response.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 3,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Walnut Dinner Plate Set",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "followups": [
+      "The item I'm asking about is the Walnut Dinner Plate Set at Juniper Home Goods.",
+      "The order reference is [ORDER]. Please check that order for me."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 7948,
+    "user_id": 239,
+    "store_id": 2,
+    "product_id": 45,
+    "quantity": 1,
+    "total_cents": 13800,
+    "status": "delivered",
+    "ordered_at": "2025-03-24",
+    "shipped_at": "2025-03-26",
+    "delivered_at": "2025-03-28",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "Could you check the current status of order [ORDER] for the Woven Poetry Collection from my store, Northwind Books?",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order.",
+    "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request.",
+    "Hi, I'm looking for the Everyday Desk Lamp at Bright Socket Electronics. Could you show me the available listings and how much they cost?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "typo_heavy",
+  "turn_count": 2,
+  "store_name": "Cascade Audio",
+  "item_name": "Midnight Webcam",
+  "conversation_variation": "start directly with the request"
+}

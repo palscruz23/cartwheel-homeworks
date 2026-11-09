@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0059",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Modern Hand Cream",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 1979,
+    "user_id": 184,
+    "store_id": 18,
+    "product_id": 709,
+    "quantity": 2,
+    "total_cents": 12350,
+    "status": "delivered",
+    "ordered_at": "2026-06-11",
+    "shipped_at": "2026-06-12",
+    "delivered_at": "2026-06-15",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer.",
+    "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order.",
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language.",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer.",
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply.",
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

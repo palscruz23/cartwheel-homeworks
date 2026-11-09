@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0023",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Atlas Stationery",
+    "item_name": "Speckled Sticky Notes",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9654,
+    "user_id": 382,
+    "store_id": 20,
+    "product_id": 799,
+    "quantity": 1,
+    "total_cents": 21225,
+    "status": "delivered",
+    "ordered_at": "2025-04-21",
+    "shipped_at": "2025-04-22",
+    "delivered_at": "2025-04-27",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Check the current status of order [ORDER] for my Paper Lantern Press store. I need a straight answer so I can get this off my plate.",
+    "I'm assisting a customer with order [ORDER] from Bright Socket Electronics. Please give me its current status and any next step in a few plain words.",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply.",
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

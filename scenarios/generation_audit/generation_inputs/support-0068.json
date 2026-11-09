@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Juniper Home Goods",
+  "item_name": "Signature Serving Bowl",
+  "conversation_variation": "mention why you need help briefly"
+}

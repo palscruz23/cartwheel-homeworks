@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0166",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for legal advice about taking a seller to court.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Merchant account here. Can you change my payment card?",
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "Hi, I'm checking order [ORDER] for a customer. Which store and product are recorded on it, and can you verify those details? I have Blue Heron Ceramics and Portable Jam Trio noted. Please verify the store and product from the record; I need those details checked.",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0157",
+  "task": {
+    "role": "shopper",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Midnight Tote Bag",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 924,
+    "user_id": 440,
+    "store_id": 16,
+    "product_id": 605,
+    "quantity": 1,
+    "total_cents": 12200,
+    "status": "delivered",
+    "ordered_at": "2026-04-13",
+    "shipped_at": "2026-04-14",
+    "delivered_at": "2026-04-16",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I run Juniper Home Goods and need help with a charge dispute for order [ORDER]. What help is available? Please keep it short and simple.",
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "Hi, support lookup: customer needs help finding a tray at Blue Heron Ceramics. Listing title isn't visible. Can you locate the product?",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

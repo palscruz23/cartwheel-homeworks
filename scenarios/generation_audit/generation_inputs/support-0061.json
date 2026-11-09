@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 2,
+  "store_name": "Little Fox Toys",
+  "item_name": "Woven Wooden Train",
+  "conversation_variation": "start directly with the request"
+}

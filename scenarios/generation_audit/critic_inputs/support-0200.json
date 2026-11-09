@@ -1,0 +1,39 @@
+{
+  "scenario_id": "support-0200",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask what the store currently lists for this product.",
+    "user_style": "typo_heavy",
+    "turn_count": 2,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "Rustic Pitcher",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "i run Blue Heron Ceramics. wat does our store curently list for Rustic Pitcher? need to chek before i reply to a custmer.",
+    "followups": [
+      "pls include the availble listing details for Rustic Pitcher so i can point the custmer to the rite one."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 4,
+    "store_id": 1,
+    "title": "Rustic Pitcher",
+    "description": "Rustic Pitcher from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": -500
+  },
+  "other_openings_for_diversity": [
+    "Could you find the tray at Blue Heron Ceramics and explain the matching listings? I'm helping a customer, but the listing title isn't visible to me, so I'm a bit stuck trying to identify it. All I can really go on is that it's a tray.",
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "Can you change my payment card?",
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

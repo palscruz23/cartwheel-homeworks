@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+  "user_style": "confused_rambling",
+  "turn_count": 2,
+  "store_name": "Cascade Audio",
+  "item_name": "Portable Desk Lamp",
+  "conversation_variation": "mention why you need help briefly"
+}

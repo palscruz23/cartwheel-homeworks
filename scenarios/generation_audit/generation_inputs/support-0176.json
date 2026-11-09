@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask for the return deadline for order [ORDER].",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "store_name": "Atlas Stationery",
+  "item_name": "Classic Pencil Set",
+  "conversation_variation": "start directly with the request"
+}

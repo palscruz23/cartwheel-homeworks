@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0168",
+  "task": {
+    "role": "support",
+    "goal": "Ask for a weather forecast.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "Cascade Audio merchant. Please start a refund for order [ORDER], Portable Desk Lamp. What do I need to do next?",
+    "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "What is the current status of order [ORDER] for the Vintage Bar Soap from Fern & Fog Skincare? I'm checking on behalf of the customer.",
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

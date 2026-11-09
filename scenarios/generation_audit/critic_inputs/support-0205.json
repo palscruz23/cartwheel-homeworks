@@ -1,0 +1,39 @@
+{
+  "scenario_id": "support-0205",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask what the store currently lists for this product.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "tray (the listing title is not visible)",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I need to see what Blue Heron Ceramics currently lists for a tray so I can decide what to do next. The listing title isn't visible to me. Please check the current listing details for the tray; I need those details.",
+    "followups": [
+      "Please show me what the store currently lists for the tray. I need the current listing information before making a choice, so please pull up what's there."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 3,
+    "store_id": 1,
+    "title": "",
+    "description": "Portable Tray from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 975
+  },
+  "other_openings_for_diversity": [
+    "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain.",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "pls request a refnd for order [ORDER] from Northwind Books. im handlng this for the custmer in suport.",
+    "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?",
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "Need an update for planning: current status of my order [ORDER], Handmade Cookbook from Paper Lantern Press?",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

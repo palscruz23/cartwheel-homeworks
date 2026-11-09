@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0106",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask when merchants receive payouts.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "If an issue with my store is escalated to a human, how long should I expect to wait for a response?",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "Hi, I need a clear answer before I buy: can a store set its own return window? Please clarify that for me. Can the shop choose its own window?",
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?",
+    "How long does a human take to respond to an escalation? I'm assisting a customer and need a clear expected response time. Please give me the timeframe I can tell them.",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "I'm helping a customer who wants to dispute the charge for order [ORDER], the Walnut Bath Salts from Clover Field Naturals. I'm a bit unsure where to begin with a charge dispute, and I don't want to muddle the process. What help is available for this?",
+    "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "Cascade Audio merchant. Please start a refund for order [ORDER], Portable Desk Lamp. What do I need to do next?",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

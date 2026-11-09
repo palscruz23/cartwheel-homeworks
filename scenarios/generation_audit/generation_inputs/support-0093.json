@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "First ask to cancel the named item from the named store WITHOUT an order number. In the followup, independently supply the order reference [ORDER] and restate that you want it cancelled. Do not assume the agent offered cancellation or say the cancellation succeeded.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 2,
+  "store_name": "Trailhead Supply",
+  "item_name": "Heavy-Duty Camp Stove",
+  "conversation_variation": "mention why you need help briefly"
+}

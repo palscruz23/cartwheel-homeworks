@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "store_name": "Northwind Books",
+  "item_name": "Speckled Field Guide",
+  "conversation_variation": "focus on next steps"
+}

@@ -1,0 +1,30 @@
+{
+  "scenario_id": "support-0101",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask how the standard return window is counted.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "followups": [
+      "I need to give my customers a precise explanation. Please spell out what starts the return window and how to count through its final day. Please be specific about the counting."
+    ]
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "how long does an aproved refnd take to show up in my acount?",
+    "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "Shopping lookup: need to find Modern Headlamp so I can check the listing before buying.",
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly.",
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

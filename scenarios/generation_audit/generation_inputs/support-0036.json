@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "operational_shorthand",
+  "turn_count": 2,
+  "store_name": "Fern & Fog Skincare",
+  "item_name": "Midnight Bar Soap",
+  "conversation_variation": "start directly with the request"
+}

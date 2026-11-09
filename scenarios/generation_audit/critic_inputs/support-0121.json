@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0121",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask how the standard return window is counted.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them.",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "i run Juniper Home Goods and need to chek our Sturdy Tray listings for a custmer. can u find them and show whats availble with prices?",
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply.",
+    "hey, im helpin a custmer find the Compact Journal at Northwind Books. can u show the availble listings and prices?",
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

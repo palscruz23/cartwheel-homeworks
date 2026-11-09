@@ -1,0 +1,6 @@
+{
+  "opening_message": "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+  "followups": [
+    "Please also check the shipment and delivery details recorded for my order. I need those details too, so please pull up the shipment and delivery record."
+  ]
+}

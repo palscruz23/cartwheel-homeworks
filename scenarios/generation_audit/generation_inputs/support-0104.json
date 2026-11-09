@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask how long handling and shipping can take.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "conversation_variation": "use a conversational opening"
+}

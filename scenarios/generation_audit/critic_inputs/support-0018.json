@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0018",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Classic Wool Socks",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9561,
+    "user_id": 386,
+    "store_id": 16,
+    "product_id": 636,
+    "quantity": 1,
+    "total_cents": 22725,
+    "status": "delivered",
+    "ordered_at": "2026-05-20",
+    "shipped_at": "2026-05-22",
+    "delivered_at": "2026-05-27",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status.",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Hello, I'm with Meridian Cycles. I need you to check the current status of order [ORDER] for the Heavy-Duty Trekking Poles. Please check it now; I need a clear status update on this order.",
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please.",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

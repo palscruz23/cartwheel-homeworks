@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0160",
+  "task": {
+    "role": "shopper",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Everyday Journal",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4843,
+    "user_id": 135,
+    "store_id": 7,
+    "product_id": 270,
+    "quantity": 2,
+    "total_cents": 35800,
+    "status": "delivered",
+    "ordered_at": "2026-04-01",
+    "shipped_at": "2026-04-03",
+    "delivered_at": "2026-04-09",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "Merchant account here. Can you change my payment card?",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?",
+    "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

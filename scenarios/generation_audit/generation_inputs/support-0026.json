@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 1,
+  "store_name": "Paper Lantern Press",
+  "item_name": "Rustic Poetry Collection",
+  "conversation_variation": "start directly with the request"
+}

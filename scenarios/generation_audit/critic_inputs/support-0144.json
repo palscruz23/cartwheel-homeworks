@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0144",
+  "task": {
+    "role": "support",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_description": "Compact Journal",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "hey, im helpin a custmer find the Compact Journal at Northwind Books. can u show the availble listings and prices?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 275,
+    "store_id": 7,
+    "title": "Compact Journal",
+    "description": "Compact Journal from Northwind Books. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "books",
+    "price_cents": 26325
+  },
+  "other_openings_for_diversity": [
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here.",
+    "Find the Heavy-Duty Poetry Collection for me. I'm a merchant trying to check a listing and need to get this done quickly.",
+    "Could you help me find the Handmade Cookbook for a customer?",
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?",
+    "Merchant account here. Can you change my payment card?",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "Could you help me get a refund for order [ORDER]? That's the Rustic Water Bottle I bought from Meridian Cycles. I'm a bit mixed up about how to ask for it, but I want to request my money back on that order.",
+    "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "Please move forward with a refund for the customer on order [ORDER], the Matte Shampoo Bar from Fern & Fog Skincare. I need this refund request actioned. Please take the next step to process it."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

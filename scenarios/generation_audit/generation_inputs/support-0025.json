@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "confused_rambling",
+  "turn_count": 2,
+  "store_name": "Blue Heron Ceramics",
+  "item_name": "Heavy-Duty Vase",
+  "conversation_variation": "focus on next steps"
+}

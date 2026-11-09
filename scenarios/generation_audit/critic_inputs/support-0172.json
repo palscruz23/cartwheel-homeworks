@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0172",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask the assistant to change your account email; do not include a real email address.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "I bought the Sturdy Teapot from Juniper Home Goods, but I've changed my mind about needing it. I'm not sure how to go about this, so could you help me request a refund for order [ORDER]? Sorry, I'm probably overexplaining; I'd like a refund."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

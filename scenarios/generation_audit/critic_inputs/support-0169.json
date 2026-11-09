@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0169",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for help with a purchase from another company.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply.",
+    "pls request a refnd for order [ORDER] from Northwind Books. im handlng this for the custmer in suport.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "Need an update for planning: current status of my order [ORDER], Handmade Cookbook from Paper Lantern Press?",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

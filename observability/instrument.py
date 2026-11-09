@@ -45,11 +45,12 @@ def setup_openai_tracing() -> bool:
     """Explicitly select hosted tracing, including for non-OpenAI inference."""
     global _openai_tracing_enabled
     if not os.environ.get("OPENAI_API_KEY", "").strip():
-        raise ValueError("--trace-openai requires OPENAI_API_KEY; omit the flag for local chat")
+        raise ValueError(
+            "--trace-openai requires OPENAI_API_KEY; omit the flag for local chat"
+        )
     set_trace_processors([default_processor()])
     _openai_tracing_enabled = True
     return True
-
 
 
 def instrument_genai(tracer_provider: Any) -> None:
@@ -110,7 +111,7 @@ def setup_tracing() -> bool:
     return True
 
 
-def record_tool_result(ctx: "AuthContext", result: dict[str, Any]) -> None:
+def record_tool_result(ctx: AuthContext, result: dict[str, Any]) -> None:
     """Add authenticated identity and permission attributes to the active tool span.
 
     OpenLLMetry creates the tool span and records its name, arguments, and
@@ -123,14 +124,15 @@ def record_tool_result(ctx: "AuthContext", result: dict[str, Any]) -> None:
     if not span.is_recording():
         return
     ### YOUR CODE HERE (HW2)
-    raise NotImplementedError(
-        "HW2: add authenticated caller and permission attributes to the tool span"
-    )
+    span.set_attribute("cartwheel.user_role", str(ctx.role))
+    if ctx.role == "merchant":
+        span.set_attribute("cartwheel.store_id", int(ctx.store_id))
+    span.set_attribute("cartwheel.user_id", str(ctx.user_id))
+
+    _set_permission_denied_attributes(span, result)
 
 
-def _set_permission_denied_attributes(
-    span: trace.Span, result: dict[str, Any]
-) -> None:
+def _set_permission_denied_attributes(span: trace.Span, result: dict[str, Any]) -> None:
     """Set the permission-denied attributes on a tool span.
 
     Contract (Module 1 outline, Artifact G):
@@ -150,4 +152,11 @@ def _set_permission_denied_attributes(
     course where you touch instrumentation by hand.
     """
     ### YOUR CODE HERE (HW2)
-    raise NotImplementedError("HW2: set the cartwheel.permission_denied span attribute")
+    denied = result.get("error") == "permission_denied"
+    span.set_attribute("cartwheel.permission_denied", denied)
+
+    if denied:
+        span.set_attribute(
+            "cartwheel.permission_denied.reason",
+            result.get("reason", ""),
+        )

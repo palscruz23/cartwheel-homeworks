@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0004",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Everyday Cutting Board",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 5465,
+    "user_id": 187,
+    "store_id": 2,
+    "product_id": 42,
+    "quantity": 2,
+    "total_cents": 2250,
+    "status": "cancelled",
+    "ordered_at": "2026-06-28",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?",
+    "Could you check the current status of order [ORDER] for the Woven Poetry Collection from my store, Northwind Books?",
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "What is the current status of order [ORDER] for the Vintage Bar Soap from Fern & Fog Skincare? I'm checking on behalf of the customer.",
+    "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?",
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

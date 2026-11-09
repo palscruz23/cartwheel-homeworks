@@ -22,8 +22,7 @@ from typing import Any
 
 from agents import Agent, ModelSettings, RunContextWrapper, function_tool
 
-from agent import db
-from agent import tools as hw_tools
+from agent import db, tools as hw_tools
 from agent.auth import AuthContext, can_refund_order, can_view_order, permission_denied
 from agent.config import load_facts
 from agent.helpcenter import get_index
@@ -96,7 +95,9 @@ def render_system_prompt(ctx: AuthContext, template: str | None = None) -> str:
 
 def prompt_version(template: str | None = None) -> str:
     """Hash the system prompt template before injecting user context."""
-    return hashlib.sha256((template or SYSTEM_PROMPT_TEMPLATE).encode()).hexdigest()[:12]
+    return hashlib.sha256((template or SYSTEM_PROMPT_TEMPLATE).encode()).hexdigest()[
+        :12
+    ]
 
 
 # ---------------------------------------------------------------------------
@@ -171,7 +172,9 @@ def model_settings_for(model: Any) -> ModelSettings:
 SNIPPET_CHARS = 300
 
 
-def search_help_center_logic(ctx: AuthContext, query: str, k: int = 3) -> dict[str, Any]:
+def search_help_center_logic(
+    ctx: AuthContext, query: str, k: int = 3
+) -> dict[str, Any]:
     """BM25 search over the policy corpus. Read tool, no permission check."""
     query = query.strip()
     if not query:
@@ -194,7 +197,11 @@ def get_order_logic(ctx: AuthContext, order_id: int) -> dict[str, Any]:
     with db.connection() as conn:
         order = db.get_order(conn, order_id)
         if order is None:
-            return {"ok": False, "error": "not_found", "reason": f"no order #{order_id}"}
+            return {
+                "ok": False,
+                "error": "not_found",
+                "reason": f"no order #{order_id}",
+            }
         if not can_view_order(ctx, order.user_id, order.store_id):
             return permission_denied(
                 f"role '{ctx.role}' (user {ctx.user_id}) may not view order #{order_id}"
@@ -233,7 +240,11 @@ def issue_refund_logic(
     with db.connection() as conn:
         order = db.get_order(conn, order_id)
         if order is None:
-            return {"ok": False, "error": "not_found", "reason": f"no order #{order_id}"}
+            return {
+                "ok": False,
+                "error": "not_found",
+                "reason": f"no order #{order_id}",
+            }
         if not can_refund_order(ctx, order.user_id, order.store_id):
             return permission_denied(
                 f"role '{ctx.role}' (user {ctx.user_id}) may not refund order #{order_id}"
@@ -355,7 +366,10 @@ def get_order(wrapper: RunContextWrapper[AuthContext], order_id: int) -> dict[st
 
 
 def _issue_refund_impl(
-    wrapper: RunContextWrapper[AuthContext], order_id: int, amount_usd: float, reason: str
+    wrapper: RunContextWrapper[AuthContext],
+    order_id: int,
+    amount_usd: float,
+    reason: str,
 ) -> dict[str, Any]:
     """Shared refund tool body. Wrapped twice below: once plainly (default,
     Module 1 behavior) and once with ``needs_approval`` when ``defenses=True``.
@@ -365,7 +379,10 @@ def _issue_refund_impl(
 
 @function_tool
 def issue_refund(
-    wrapper: RunContextWrapper[AuthContext], order_id: int, amount_usd: float, reason: str
+    wrapper: RunContextWrapper[AuthContext],
+    order_id: int,
+    amount_usd: float,
+    reason: str,
 ) -> dict[str, Any]:
     """Issue a refund on an order. Large refunds are queued for human approval."""
     return _issue_refund_impl(wrapper, order_id, amount_usd, reason)
@@ -380,7 +397,9 @@ def escalate_to_human(
 
 
 @function_tool
-def get_policy(wrapper: RunContextWrapper[AuthContext], policy_id: str) -> dict[str, Any]:
+def get_policy(
+    wrapper: RunContextWrapper[AuthContext], policy_id: str
+) -> dict[str, Any]:
     """Fetch the full text of one policy doc by its exact policy id."""
     return _call(wrapper, hw_tools.get_policy, policy_id)
 
@@ -420,9 +439,7 @@ def cancel_order(
 
 
 @function_tool
-def find_order(
-    wrapper: RunContextWrapper[AuthContext], query: str
-) -> dict[str, Any]:
+def find_order(wrapper: RunContextWrapper[AuthContext], query: str) -> dict[str, Any]:
     """Search your orders by product name (fuzzy match)."""
     return _call(wrapper, hw_tools.find_order, query)
 
@@ -476,7 +493,10 @@ def _tools_with_defenses(role: str) -> list[Any]:
     """The role's tool list with the plain refund tool swapped for the
     approval-gated one. PROVIDED. Everything else is unchanged."""
     defended_refund = _defended_refund_tool()
-    return [defended_refund if tool is issue_refund else tool for tool in TOOLS_BY_ROLE[role]]
+    return [
+        defended_refund if tool is issue_refund else tool
+        for tool in TOOLS_BY_ROLE[role]
+    ]
 
 
 def build_agent(

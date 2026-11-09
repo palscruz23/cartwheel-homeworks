@@ -1,0 +1,41 @@
+{
+  "scenario_id": "support-0245",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Fern & Fog Skincare",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8654,
+    "user_id": 74,
+    "store_id": 17,
+    "product_id": 642,
+    "quantity": 1,
+    "total_cents": 10825,
+    "status": "delivered",
+    "ordered_at": "2025-10-01",
+    "shipped_at": "2025-10-03",
+    "delivered_at": "2025-10-10",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "Can you change my payment card?",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "Find the Heavy-Duty Poetry Collection for me. I'm a merchant trying to check a listing and need to get this done quickly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

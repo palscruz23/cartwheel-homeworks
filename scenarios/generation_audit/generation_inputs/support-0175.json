@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask for a weather forecast.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "conversation_variation": "focus on next steps"
+}

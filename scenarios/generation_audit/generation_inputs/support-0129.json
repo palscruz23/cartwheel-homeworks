@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "store_name": "Juniper Home Goods",
+  "item_description": "Midnight Cutting Board",
+  "conversation_variation": "use a conversational opening"
+}

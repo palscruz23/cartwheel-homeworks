@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0052",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Trailhead Supply",
+    "item_name": "Modern Daypack",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9232,
+    "user_id": 9,
+    "store_id": 9,
+    "product_id": 355,
+    "quantity": 1,
+    "total_cents": 6425,
+    "status": "delivered",
+    "ordered_at": "2025-02-05",
+    "shipped_at": "2025-02-07",
+    "delivered_at": "2025-02-11",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "Helping a customer with a refund. Order [ORDER], Slim Desk Organizer from Atlas Stationery. Please refund the order.",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "I need to work out the next step for a payment issue at my store. How long after delivery can a charge be disputed? Please be clear about the deadline. I need the actual dispute timeframe.",
+    "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

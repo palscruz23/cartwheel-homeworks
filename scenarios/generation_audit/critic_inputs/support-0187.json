@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0187",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask which store and product are recorded for order [ORDER] and whether those details can be verified. Do not request any write operation.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_name": "Portable Jam Trio",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8003,
+    "user_id": 119,
+    "store_id": 1,
+    "product_id": 553,
+    "quantity": 2,
+    "total_cents": 42950,
+    "status": "delivered",
+    "ordered_at": "2026-03-31",
+    "shipped_at": "2026-04-03",
+    "delivered_at": "2026-04-08",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details.",
+    "Hi, I'm checking order [ORDER] for a customer. Which store and product are recorded on it, and can you verify those details? I have Blue Heron Ceramics and Portable Jam Trio noted. Please verify the store and product from the record; I need those details checked.",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "What's the current status of my order [ORDER] from Wooden Whale Workshop, and what do I need to do next? I just want a clear answer so I can get on with my day.",
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

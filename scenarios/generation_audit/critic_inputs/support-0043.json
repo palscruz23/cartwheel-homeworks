@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0043",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Copperline Tools",
+    "item_name": "Portable Level",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9987,
+    "user_id": 417,
+    "store_id": 4,
+    "product_id": 133,
+    "quantity": 1,
+    "total_cents": 26050,
+    "status": "delivered",
+    "ordered_at": "2026-06-19",
+    "shipped_at": "2026-06-20",
+    "delivered_at": "2026-06-22",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "Please move forward with a refund for the customer on order [ORDER], the Matte Shampoo Bar from Fern & Fog Skincare. I need this refund request actioned. Please take the next step to process it.",
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "I'm handling a customer's cancellation request for order [ORDER] from Clover Field Naturals. Please get this moving and tell me exactly what needs to happen next.",
+    "Merchant payout timing: when do we receive funds from sales? Need the standard schedule.",
+    "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?",
+    "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

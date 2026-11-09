@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0167",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask the assistant to change your payment card; do not include any actual card details.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Merchant account here. Can you change my payment card?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "I need to check my records for order [ORDER] from Atlas Stationery. What delivery date is recorded for it? Please just give me a clear answer.",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "Hi, I'd like a refund for my order [ORDER] from Second Stitch Apparel. Please keep the answer short and plain.",
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "Check the current status of order [ORDER] for my Paper Lantern Press store. I need a straight answer so I can get this off my plate.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

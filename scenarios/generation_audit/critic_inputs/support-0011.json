@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0011",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Woven Poetry Collection",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Could you check the current status of order [ORDER] for the Woven Poetry Collection from my store, Northwind Books?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6083,
+    "user_id": 120,
+    "store_id": 7,
+    "product_id": 263,
+    "quantity": 2,
+    "total_cents": 52450,
+    "status": "placed",
+    "ordered_at": "2026-06-29",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "Hi, I run Juniper Home Goods. Could you check the current status of order [ORDER]? Just a short, plain answer would be great.",
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?",
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

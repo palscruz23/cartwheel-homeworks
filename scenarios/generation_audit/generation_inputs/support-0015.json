@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "store_name": "Clover Field Naturals",
+  "item_name": "Heavy-Duty Bar Soap",
+  "conversation_variation": "focus on next steps"
+}

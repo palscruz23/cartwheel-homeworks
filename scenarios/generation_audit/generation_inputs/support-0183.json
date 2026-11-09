@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask whether the shipment and delivery history for order [ORDER] can be verified.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "store_name": "Harbor Knits",
+  "item_name": "Woven Wool Socks",
+  "conversation_variation": "mention why you need help briefly"
+}

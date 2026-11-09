@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0080",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Vintage Rain Shell",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4453,
+    "user_id": 417,
+    "store_id": 16,
+    "product_id": 618,
+    "quantity": 1,
+    "total_cents": 9600,
+    "status": "placed",
+    "ordered_at": "2026-06-30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please.",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "I'm helping a customer who wants to dispute the charge for order [ORDER], the Walnut Bath Salts from Clover Field Naturals. I'm a bit unsure where to begin with a charge dispute, and I don't want to muddle the process. What help is available for this?",
+    "Hi, I'm checking order [ORDER] for a customer. Which store and product are recorded on it, and can you verify those details? I have Blue Heron Ceramics and Portable Jam Trio noted. Please verify the store and product from the record; I need those details checked.",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

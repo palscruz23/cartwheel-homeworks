@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "confused_rambling",
+  "turn_count": 2,
+  "store_name": "Copperline Tools",
+  "item_name": "Everyday Utility Knife",
+  "conversation_variation": "start directly with the request"
+}

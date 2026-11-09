@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0134",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Copperline Tools",
+    "item_description": "Speckled Screwdriver Set",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I run Copperline Tools. Could you find our Speckled Screwdriver Set and show the available listings and prices? Please keep it brief and plain.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 145,
+    "store_id": 4,
+    "title": "Speckled Screwdriver Set",
+    "description": "Speckled Screwdriver Set from Copperline Tools. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "tools",
+    "price_cents": 20625
+  },
+  "other_openings_for_diversity": [
+    "Need options for a customer before they choose. Find Portable Hammer at Copperline Tools. Show available listings and prices.",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "Could you find the Handmade USB-C Hub in my store, Cascade Audio, and show the available listings and prices? I'm trying to get my bearings in our catalog and keep losing track of which listing is which, so seeing them together would help.",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here.",
+    "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

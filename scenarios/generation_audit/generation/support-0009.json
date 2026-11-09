@@ -1,0 +1,6 @@
+{
+  "opening_message": "Hi, could you help me untangle an order question? I'm assisting a customer with order [ORDER], the Matte Coffee Beans from Golden Hour Coffee, and I'm getting a bit turned around about where it stands. Could you check its current status?",
+  "followups": [
+    "Could you also pull up the recorded shipment and delivery details for that order? I keep mixing up the shipping part and the delivery part, and I'd like to have the details from the record for the customer."
+  ]
+}

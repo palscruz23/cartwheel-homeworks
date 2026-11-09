@@ -1,0 +1,8 @@
+{
+  "role": "merchant",
+  "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+  "user_style": "neutral_conversational",
+  "turn_count": 2,
+  "store_name": "Meridian Cycles",
+  "conversation_variation": "ask a practical question"
+}

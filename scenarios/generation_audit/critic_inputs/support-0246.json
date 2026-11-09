@@ -1,0 +1,30 @@
+{
+  "scenario_id": "support-0246",
+  "task": {
+    "role": "support",
+    "goal": "Ask for legal advice about taking a seller to court.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 2,
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "followups": [
+      "Please also explain what evidence the customer would need to prove their case in court. Keep it simple."
+    ]
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Can you change my payment card?",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?",
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting.",
+    "I'm helping a customer work out their next step with a charge, and I'm getting confused about the timing. How long after delivery can a charge be disputed? I want to get that time limit straight before guiding them further.",
+    "Could you help me find the Handmade Cookbook for a customer?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0097",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_name": "Modern Pitcher",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4700,
+    "user_id": 212,
+    "store_id": 1,
+    "product_id": 14,
+    "quantity": 1,
+    "total_cents": 16075,
+    "status": "delivered",
+    "ordered_at": "2026-04-13",
+    "shipped_at": "2026-04-16",
+    "delivered_at": "2026-04-22",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue.",
+    "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?",
+    "hey, im helpin a custmer find the Compact Journal at Northwind Books. can u show the availble listings and prices?",
+    "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain.",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

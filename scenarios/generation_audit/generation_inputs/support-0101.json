@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask how the standard return window is counted.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 2,
+  "conversation_variation": "start directly with the request"
+}

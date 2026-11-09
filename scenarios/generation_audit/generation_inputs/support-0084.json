@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Bright Socket Electronics",
+  "item_name": "Rustic Headphones",
+  "conversation_variation": "use a conversational opening"
+}

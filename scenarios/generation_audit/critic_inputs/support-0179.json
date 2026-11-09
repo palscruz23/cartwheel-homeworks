@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0179",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask when the return window ends for order [ORDER].",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Atlas Stationery",
+    "item_name": "Classic Pencil Set",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8002,
+    "user_id": 392,
+    "store_id": 20,
+    "product_id": 790,
+    "quantity": 1,
+    "total_cents": 7075,
+    "status": "delivered",
+    "ordered_at": "2025-05-17",
+    "shipped_at": "2026-06-20",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

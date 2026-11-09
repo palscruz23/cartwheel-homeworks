@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to find the named product in the named store and explain the matching listings.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "tray (the listing title is not visible)",
+  "conversation_variation": "start directly with the request"
+}

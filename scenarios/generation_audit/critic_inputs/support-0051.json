@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0051",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "neutral_conversational",
+    "turn_count": 2,
+    "store_name": "Bright Socket Electronics",
+    "item_name": "Modern Desk Lamp",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics.",
+    "followups": [
+      "For the customer case, the action I'm requesting is a refund of that order. Could you handle the refund request through the usual process?"
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 6421,
+    "user_id": 463,
+    "store_id": 6,
+    "product_id": 205,
+    "quantity": 2,
+    "total_cents": 56350,
+    "status": "delivered",
+    "ordered_at": "2026-06-05",
+    "shipped_at": "2026-06-08",
+    "delivered_at": "2026-06-12",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue.",
+    "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?",
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

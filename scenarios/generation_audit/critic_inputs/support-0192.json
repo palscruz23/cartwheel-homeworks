@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0192",
+  "task": {
+    "role": "support",
+    "goal": "Ask to compare the matching listings for this item at the named store.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "Heavy-Duty Vase",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2,
+    "store_id": 1,
+    "title": "Heavy-Duty Vase",
+    "description": "Sturdy Teapot from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 900
+  },
+  "other_openings_for_diversity": [
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing.",
+    "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work.",
+    "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Cascade Audio merchant. Please start a refund for order [ORDER], Portable Desk Lamp. What do I need to do next?",
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics.",
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

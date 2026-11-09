@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0081",
+  "task": {
+    "role": "support",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Petal & Stem",
+    "item_name": "Everyday Planter",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 5473,
+    "user_id": 86,
+    "store_id": 3,
+    "product_id": 92,
+    "quantity": 1,
+    "total_cents": 4100,
+    "status": "placed",
+    "ordered_at": "2026-06-30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?",
+    "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?",
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "i run Juniper Home Goods and need to chek our Sturdy Tray listings for a custmer. can u find them and show whats availble with prices?",
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

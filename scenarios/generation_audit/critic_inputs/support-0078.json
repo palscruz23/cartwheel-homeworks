@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0078",
+  "task": {
+    "role": "support",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Second Stitch Apparel",
+    "item_name": "Slim Beanie",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6654,
+    "user_id": 360,
+    "store_id": 15,
+    "product_id": 596,
+    "quantity": 1,
+    "total_cents": 3525,
+    "status": "placed",
+    "ordered_at": "2026-06-30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel.",
+    "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving.",
+    "Hello, I'm with Bright Socket Electronics and I'm trying to sort something out with one of our orders. Could you cancel order [ORDER] for the Slim USB-C Hub? I'm getting myself confused with the admin, but canceling that order is what I need help with.",
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "I need to work out the next step for a payment issue at my store. How long after delivery can a charge be disputed? Please be clear about the deadline. I need the actual dispute timeframe.",
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

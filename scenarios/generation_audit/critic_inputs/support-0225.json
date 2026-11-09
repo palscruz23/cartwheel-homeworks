@@ -1,0 +1,36 @@
+{
+  "scenario_id": "support-0225",
+  "task": {
+    "role": "support",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2,
+    "name": "Juniper Home Goods",
+    "slug": "juniper-home-goods",
+    "category": "home_and_kitchen",
+    "return_window_days_override": 14,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?",
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

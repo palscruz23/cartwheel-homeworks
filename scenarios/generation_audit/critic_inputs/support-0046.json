@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0046",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 2,
+    "store_name": "Harbor Knits",
+    "item_name": "Vintage Wool Socks",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "followups": [
+      "Please also tell me how I can check on this refund request. Just the basic steps."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 6446,
+    "user_id": 336,
+    "store_id": 16,
+    "product_id": 604,
+    "quantity": 1,
+    "total_cents": 26250,
+    "status": "delivered",
+    "ordered_at": "2026-06-09",
+    "shipped_at": "2026-06-10",
+    "delivered_at": "2026-06-12",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please.",
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order.",
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting.",
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "Hi. I run a store here. Can I set my own return window?",
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?",
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

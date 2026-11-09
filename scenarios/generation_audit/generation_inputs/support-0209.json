@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds. Request a partial refund of $99.99; this is an amount you are asking for, not a claim about a price or rule.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "store_name": "Second Stitch Apparel",
+  "item_name": "Woven Rain Shell",
+  "conversation_variation": "use a conversational opening"
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0089",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Bright Socket Electronics",
+    "item_name": "Slim USB-C Hub",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hello, I'm with Bright Socket Electronics and I'm trying to sort something out with one of our orders. Could you cancel order [ORDER] for the Slim USB-C Hub? I'm getting myself confused with the admin, but canceling that order is what I need help with.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2550,
+    "user_id": 391,
+    "store_id": 6,
+    "product_id": 235,
+    "quantity": 1,
+    "total_cents": 29600,
+    "status": "delivered",
+    "ordered_at": "2025-05-03",
+    "shipped_at": "2025-05-04",
+    "delivered_at": "2025-05-06",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm handling a customer's cancellation request for order [ORDER] from Clover Field Naturals. Please get this moving and tell me exactly what needs to happen next.",
+    "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please.",
+    "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "how long does an aproved refnd take to show up in my acount?",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0135",
+  "task": {
+    "role": "support",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Copperline Tools",
+    "item_description": "Portable Hammer",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Need options for a customer before they choose. Find Portable Hammer at Copperline Tools. Show available listings and prices.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 158,
+    "store_id": 4,
+    "title": "Portable Hammer",
+    "description": "Portable Hammer from Copperline Tools. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "tools",
+    "price_cents": 25350
+  },
+  "other_openings_for_diversity": [
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "Could you find the Handmade USB-C Hub in my store, Cascade Audio, and show the available listings and prices? I'm trying to get my bearings in our catalog and keep losing track of which listing is which, so seeing them together would help.",
+    "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly.",
+    "Can you find the Woven Atlas at Northwind Books and show me the available listings and prices? A short, simple list would help.",
+    "Find the Heavy-Duty Poetry Collection for me. I'm a merchant trying to check a listing and need to get this done quickly.",
+    "I run Juniper Home Goods and need help with a charge dispute for order [ORDER]. What help is available? Please keep it short and simple.",
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "Hi, quick order check: current status for [ORDER]?",
+    "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0050",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "item_name": "Sturdy Water Bottle",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9570,
+    "user_id": 143,
+    "store_id": 10,
+    "product_id": 382,
+    "quantity": 1,
+    "total_cents": 25500,
+    "status": "delivered",
+    "ordered_at": "2026-06-12",
+    "shipped_at": "2026-06-15",
+    "delivered_at": "2026-06-19",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics.",
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order.",
+    "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order.",
+    "I bought the Sturdy Teapot from Juniper Home Goods, but I've changed my mind about needing it. I'm not sure how to go about this, so could you help me request a refund for order [ORDER]? Sorry, I'm probably overexplaining; I'd like a refund.",
+    "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request.",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "Could you find the tray at Blue Heron Ceramics and explain the matching listings? I'm helping a customer, but the listing title isn't visible to me, so I'm a bit stuck trying to identify it. All I can really go on is that it's a tray."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

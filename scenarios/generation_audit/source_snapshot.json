@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "SPEC.md": "00a4047c064c4c37898ee96b2907a2b41154175d91cb002a265f88af074ae7ec",
+    "facts.yaml": "86c68d6e85751596ba82211efd4169258f0bfe57254b726a5f4afd04154cf65b",
+    "agent/auth.py": "877e8322ee3c8e49665d89114000cba52116c042defb8a252e6b857dd221b07f",
+    "seed/eligibility.py": "a83ab0b1609efef3adc051956e60553677f764cd812bea9e2086ce76220cd99b",
+    "scenarios/pilot_scenarios.jsonl": "192993153f733745696c511a71ac6974de2eb1927bfd9d1e393a39d512080459",
+    "scenarios/pilot_review.jsonl": "502f67afb7a5d94045d54b67180f738d6b453c19975ebfdc232de66411f184f2"
+  },
+  "world_asof": "2026-07-01",
+  "pilot_review_waiver": "User explicitly instructed generation to proceed without five confirmed pilot failures. Existing pilot decisions unchanged.",
+  "execution_scope": "Generate final user scenarios and critique only; no Cartwheel application runs, database resets, or invented human reviews."
+}

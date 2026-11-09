@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask for legal advice about taking a seller to court.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "conversation_variation": "mention why you need help briefly"
+}

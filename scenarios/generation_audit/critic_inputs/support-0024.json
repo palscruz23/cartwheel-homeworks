@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0024",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Slim Rain Shell",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2597,
+    "user_id": 20,
+    "store_id": 16,
+    "product_id": 623,
+    "quantity": 1,
+    "total_cents": 22200,
+    "status": "cancelled",
+    "ordered_at": "2026-04-08",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Check the current status of order [ORDER] for my Paper Lantern Press store. I need a straight answer so I can get this off my plate.",
+    "What is the current status of order [ORDER] for the Vintage Bar Soap from Fern & Fog Skincare? I'm checking on behalf of the customer.",
+    "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request.",
+    "I'm trying to decide what to buy and need to find the Woven Socket Set at Copperline Tools. Please show me the available listings and their prices. I need the listings with prices, please.",
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

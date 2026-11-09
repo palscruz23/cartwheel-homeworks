@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0103",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask when an order can be cancelled.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Thinking of changing my purchase. When can I cancel an order?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "I'm helping a customer work out their next step with a charge, and I'm getting confused about the timing. How long after delivery can a charge be disputed? I want to get that time limit straight before guiding them further.",
+    "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer.",
+    "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version.",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer.",
+    "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain.",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

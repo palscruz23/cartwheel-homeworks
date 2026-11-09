@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0072",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Second Stitch Apparel",
+    "item_name": "Midnight Rain Shell",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "can u open a refnd request for order [ORDER] from Second Stitch Apparel? im helpng the custmer with this suport ticket.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9453,
+    "user_id": 217,
+    "store_id": 15,
+    "product_id": 573,
+    "quantity": 2,
+    "total_cents": 32400,
+    "status": "delivered",
+    "ordered_at": "2025-09-14",
+    "shipped_at": "2025-09-15",
+    "delivered_at": "2025-09-22",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I bought the Sturdy Teapot from Juniper Home Goods, but I've changed my mind about needing it. I'm not sure how to go about this, so could you help me request a refund for order [ORDER]? Sorry, I'm probably overexplaining; I'd like a refund.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "Hi. I run a store here. Can I set my own return window?",
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here.",
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

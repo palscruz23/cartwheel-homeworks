@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask for a weather forecast.",
+  "user_style": "typo_heavy",
+  "turn_count": 2,
+  "conversation_variation": "mention why you need help briefly"
+}

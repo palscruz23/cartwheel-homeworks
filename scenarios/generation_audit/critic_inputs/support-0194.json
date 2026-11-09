@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0194",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for help locating this product in the named store.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "Heavy-Duty Vase",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2,
+    "store_id": 1,
+    "title": "Heavy-Duty Vase",
+    "description": "Sturdy Teapot from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 900
+  },
+  "other_openings_for_diversity": [
+    "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose.",
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "Could you find the tray at Blue Heron Ceramics and explain the matching listings? I'm helping a customer, but the listing title isn't visible to me, so I'm a bit stuck trying to identify it. All I can really go on is that it's a tray.",
+    "I need to see what Blue Heron Ceramics currently lists for a tray so I can decide what to do next. The listing title isn't visible to me. Please check the current listing details for the tray; I need those details.",
+    "Could you help me get a refund for order [ORDER]? That's the Rustic Water Bottle I bought from Meridian Cycles. I'm a bit mixed up about how to ask for it, but I want to request my money back on that order.",
+    "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "Can you check where order [ORDER] stands right now? It's the Vintage Jam Trio from my shop, Saltbox Pantry. I'm trying to sort out my orders and I've rather lost track of this one.",
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

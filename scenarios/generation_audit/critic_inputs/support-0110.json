@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0110",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask which orders your role is allowed to view.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "How is the standard return window counted? Need to explain it to a customer.",
+    "how long does an aproved refnd take to show up in my acount?",
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?",
+    "How long does a human take to respond to an escalation? I'm assisting a customer and need a clear expected response time. Please give me the timeframe I can tell them.",
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "I'm trying to decide what to buy and need to find the Woven Socket Set at Copperline Tools. Please show me the available listings and their prices. I need the listings with prices, please.",
+    "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "Could you check the current status of order [ORDER] for the Woven Poetry Collection from my store, Northwind Books?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

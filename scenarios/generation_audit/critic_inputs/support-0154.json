@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0154",
+  "task": {
+    "role": "shopper",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Copperline Tools",
+    "item_name": "Travel Screwdriver Set",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7286,
+    "user_id": 165,
+    "store_id": 4,
+    "product_id": 160,
+    "quantity": 1,
+    "total_cents": 16225,
+    "status": "delivered",
+    "ordered_at": "2025-03-06",
+    "shipped_at": "2025-03-08",
+    "delivered_at": "2025-03-11",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?",
+    "Support inquiry: customer wants to dispute charge for order [ORDER], Clover Field Naturals. What assistance is available?",
+    "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "Could you find the tray at Blue Heron Ceramics and explain the matching listings? I'm helping a customer, but the listing title isn't visible to me, so I'm a bit stuck trying to identify it. All I can really go on is that it's a tray.",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

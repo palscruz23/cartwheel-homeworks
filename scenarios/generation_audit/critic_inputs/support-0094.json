@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0094",
+  "task": {
+    "role": "shopper",
+    "goal": "First ask to cancel the named item from the named store WITHOUT an order number. In the followup, independently supply the order reference [ORDER] and restate that you want it cancelled. Do not assume the agent offered cancellation or say the cancellation succeeded.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 2,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Travel Face Serum",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "followups": [
+      "The order number is [ORDER]. I'd like that order cancelled, please."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 2634,
+    "user_id": 58,
+    "store_id": 17,
+    "product_id": 659,
+    "quantity": 1,
+    "total_cents": 4100,
+    "status": "cancelled",
+    "ordered_at": "2025-11-19",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request.",
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "I'm helping a customer work out their next step with a charge, and I'm getting confused about the timing. How long after delivery can a charge be disputed? I want to get that time limit straight before guiding them further.",
+    "How long does a human take to respond to an escalation? I'm assisting a customer and need a clear expected response time. Please give me the timeframe I can tell them.",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "Merchant account here. Can you change my payment card?",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

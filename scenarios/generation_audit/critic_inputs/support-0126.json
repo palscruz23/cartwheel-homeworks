@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0126",
+  "task": {
+    "role": "support",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_description": "Rustic Teapot",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 41,
+    "store_id": 2,
+    "title": "Rustic Teapot",
+    "description": "Rustic Teapot from Juniper Home Goods. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 25075
+  },
+  "other_openings_for_diversity": [
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "i run Juniper Home Goods and need to chek our Sturdy Tray listings for a custmer. can u find them and show whats availble with prices?",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "I'm trying to decide what to buy and need to find the Woven Socket Set at Copperline Tools. Please show me the available listings and their prices. I need the listings with prices, please.",
+    "Could you find the Handmade USB-C Hub in my store, Cascade Audio, and show the available listings and prices? I'm trying to get my bearings in our catalog and keep losing track of which listing is which, so seeing them together would help.",
+    "Hello, I need to locate the Vintage Water Bottle in my catalog. Please find it for me. I need that item located.",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "What is the current status of order [ORDER] for the Vintage Bar Soap from Fern & Fog Skincare? I'm checking on behalf of the customer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

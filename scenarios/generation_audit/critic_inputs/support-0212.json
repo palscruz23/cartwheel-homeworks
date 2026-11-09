@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0212",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Pocket Arcade",
+    "item_name": "Travel Bluetooth Speaker",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2041,
+    "user_id": 408,
+    "store_id": 19,
+    "product_id": 759,
+    "quantity": 2,
+    "total_cents": 24200,
+    "status": "delivered",
+    "ordered_at": "2026-05-29",
+    "shipped_at": "2026-05-30",
+    "delivered_at": "2026-06-01",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Hi, I'd like a refund for my order [ORDER] from Second Stitch Apparel. Please keep the answer short and plain.",
+    "Cascade Audio merchant. Please start a refund for order [ORDER], Portable Desk Lamp. What do I need to do next?",
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Hi, could you help me untangle an order question? I'm assisting a customer with order [ORDER], the Matte Coffee Beans from Golden Hour Coffee, and I'm getting a bit turned around about where it stands. Could you check its current status?",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

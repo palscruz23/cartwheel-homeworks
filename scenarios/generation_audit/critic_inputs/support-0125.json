@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0125",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask how long after delivery a charge can be disputed.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I need to work out the next step for a payment issue at my store. How long after delivery can a charge be disputed? Please be clear about the deadline. I need the actual dispute timeframe.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer.",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "i run Juniper Home Goods and need to chek our Sturdy Tray listings for a custmer. can u find them and show whats availble with prices?",
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply.",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "Shopping lookup: need to find Modern Headlamp so I can check the listing before buying.",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "Check the current status of order [ORDER] for my Paper Lantern Press store. I need a straight answer so I can get this off my plate."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

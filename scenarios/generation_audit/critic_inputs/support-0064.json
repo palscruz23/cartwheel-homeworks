@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0064",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Heavy-Duty Cutting Board",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8683,
+    "user_id": 34,
+    "store_id": 2,
+    "product_id": 53,
+    "quantity": 2,
+    "total_cents": 34100,
+    "status": "delivered",
+    "ordered_at": "2025-05-20",
+    "shipped_at": "2025-05-23",
+    "delivered_at": "2025-05-30",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "How is the standard return window counted? Need to explain it to a customer.",
+    "Could you find the Handmade USB-C Hub in my store, Cascade Audio, and show the available listings and prices? I'm trying to get my bearings in our catalog and keep losing track of which listing is which, so seeing them together would help.",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "Cascade Audio merchant. Please start a refund for order [ORDER], Portable Desk Lamp. What do I need to do next?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0031",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "item_name": "Compact Trekking Poles",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2053,
+    "user_id": 341,
+    "store_id": 10,
+    "product_id": 366,
+    "quantity": 2,
+    "total_cents": 16650,
+    "status": "placed",
+    "ordered_at": "2026-06-29",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

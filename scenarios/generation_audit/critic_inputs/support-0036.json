@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0036",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "operational_shorthand",
+    "turn_count": 2,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Midnight Bar Soap",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request.",
+    "followups": [
+      "Need a record for the ticket: please include the refund amount requested and any action the customer needs to take."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 7228,
+    "user_id": 382,
+    "store_id": 17,
+    "product_id": 660,
+    "quantity": 1,
+    "total_cents": 17725,
+    "status": "delivered",
+    "ordered_at": "2026-01-21",
+    "shipped_at": "2026-01-24",
+    "delivered_at": "2026-01-28",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Can you refund order [ORDER] for my Everyday Dry Bag from Trailhead Supply? I want my money back, please. Please get the refund started.",
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund.",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?",
+    "Hi, I need a clear answer before I buy: can a store set its own return window? Please clarify that for me. Can the shop choose its own window?",
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here.",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

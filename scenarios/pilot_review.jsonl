@@ -1,0 +1,3 @@
+{"scenario_id": "pilot-0001", "scenario_valid": "true", "confirmed_failure": "true", "evidence": "Unfortunately, this order is not eligible for a refund", "scenario_change": "the request is not about refund."}
+{"scenario_id": "pilot-0002", "scenario_valid": "true", "confirmed_failure": "true", "evidence": "order 3029", "scenario_change": "no one would remember their order numbers. Provide order description at least"}
+{"scenario_id": "pilot-0009", "scenario_valid": "true", "confirmed_failure": "true", "evidence": "order number 117, which was for the Midnight Bath Salts from Fern & Fog Skincare", "scenario_change": "repeated information from input"}

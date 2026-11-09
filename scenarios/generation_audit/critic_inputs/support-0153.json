@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0153",
+  "task": {
+    "role": "support",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Walnut Bath Salts",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm helping a customer who wants to dispute the charge for order [ORDER], the Walnut Bath Salts from Clover Field Naturals. I'm a bit unsure where to begin with a charge dispute, and I don't want to muddle the process. What help is available for this?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3785,
+    "user_id": 424,
+    "store_id": 18,
+    "product_id": 702,
+    "quantity": 1,
+    "total_cents": 20100,
+    "status": "delivered",
+    "ordered_at": "2026-02-13",
+    "shipped_at": "2026-02-16",
+    "delivered_at": "2026-02-22",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?",
+    "Support inquiry: customer wants to dispute charge for order [ORDER], Clover Field Naturals. What assistance is available?",
+    "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "i run Blue Heron Ceramics. wat does our store curently list for Rustic Pitcher? need to chek before i reply to a custmer.",
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

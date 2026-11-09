@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0055",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Golden Hour Coffee",
+    "item_name": "Vintage Olive Oil",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9031,
+    "user_id": 152,
+    "store_id": 14,
+    "product_id": 523,
+    "quantity": 1,
+    "total_cents": 28475,
+    "status": "delivered",
+    "ordered_at": "2026-06-02",
+    "shipped_at": "2026-06-04",
+    "delivered_at": "2026-06-09",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language.",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "i run Juniper Home Goods and need to chek our Sturdy Tray listings for a custmer. can u find them and show whats availble with prices?",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

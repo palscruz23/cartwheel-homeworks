@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 2,
+  "store_name": "Harbor Knits",
+  "item_name": "Vintage Wool Socks",
+  "conversation_variation": "start directly with the request"
+}

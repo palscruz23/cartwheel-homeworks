@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0131",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Petal & Stem",
+    "item_description": "Compact Trowel Set",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please find the Compact Trowel Set in my store, Petal & Stem, and show me the available listings with their prices.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 106,
+    "store_id": 3,
+    "title": "Compact Trowel Set",
+    "description": "Compact Trowel Set from Petal & Stem. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "garden",
+    "price_cents": 5700
+  },
+  "other_openings_for_diversity": [
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply.",
+    "I'm trying to decide what to buy and need to find the Woven Socket Set at Copperline Tools. Please show me the available listings and their prices. I need the listings with prices, please.",
+    "Hi, I run Copperline Tools. Could you find our Speckled Screwdriver Set and show the available listings and prices? Please keep it brief and plain.",
+    "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly.",
+    "Can you find the Woven Atlas at Northwind Books and show me the available listings and prices? A short, simple list would help.",
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "I need to check my records for order [ORDER] from Atlas Stationery. What delivery date is recorded for it? Please just give me a clear answer.",
+    "Hi, support lookup: customer needs help finding a tray at Blue Heron Ceramics. Listing title isn't visible. Can you locate the product?",
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

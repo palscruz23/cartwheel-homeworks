@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0107",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask how long a human takes to respond to an escalation.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "If an issue with my store is escalated to a human, how long should I expect to wait for a response?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "Hi, I need a clear answer before I buy: can a store set its own return window? Please clarify that for me. Can the shop choose its own window?",
+    "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version.",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "I'm considering returning something I've opened. Can a restocking fee apply? Please explain briefly in plain language.",
+    "Find the Portable Trowel Set at Petal & Stem and show me the available listings and prices. I want to choose one and get on with my purchase.",
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "pls request a refnd for order [ORDER] from Northwind Books. im handlng this for the custmer in suport.",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

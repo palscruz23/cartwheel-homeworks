@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask which orders your role is allowed to view.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 1,
+  "conversation_variation": "focus on next steps"
+}

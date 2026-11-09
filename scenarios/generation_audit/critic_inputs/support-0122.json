@@ -1,0 +1,30 @@
+{
+  "scenario_id": "support-0122",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask how long an approved refund takes to arrive.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 2,
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them.",
+    "followups": [
+      "Please also tell me what the customer should do if an approved refund takes longer than the usual timeframe."
+    ]
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "I need to work out the next step for a payment issue at my store. How long after delivery can a charge be disputed? Please be clear about the deadline. I need the actual dispute timeframe.",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "I'm trying to decide what to buy and need to find the Woven Socket Set at Copperline Tools. Please show me the available listings and their prices. I need the listings with prices, please.",
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here.",
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

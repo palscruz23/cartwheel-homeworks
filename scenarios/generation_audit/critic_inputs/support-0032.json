@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0032",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Atlas Stationery",
+    "item_name": "Handmade Desk Organizer",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3521,
+    "user_id": 185,
+    "store_id": 20,
+    "product_id": 779,
+    "quantity": 1,
+    "total_cents": 8500,
+    "status": "shipped",
+    "ordered_at": "2026-06-23",
+    "shipped_at": "2026-06-25",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund.",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "I'm helping a customer work out their next step with a charge, and I'm getting confused about the timing. How long after delivery can a charge be disputed? I want to get that time limit straight before guiding them further.",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

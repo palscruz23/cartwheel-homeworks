@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "store_name": "Copperline Tools",
+  "item_description": "Portable Hammer",
+  "conversation_variation": "focus on next steps"
+}

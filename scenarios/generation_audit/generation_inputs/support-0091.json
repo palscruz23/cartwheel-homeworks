@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "First ask to cancel the named item from the named store WITHOUT an order number. In the followup, independently supply the order reference [ORDER] and restate that you want it cancelled. Do not assume the agent offered cancellation or say the cancellation succeeded.",
+  "user_style": "neutral_conversational",
+  "turn_count": 2,
+  "store_name": "Clover Field Naturals",
+  "item_name": "Heavy-Duty Shampoo Bar",
+  "conversation_variation": "start directly with the request"
+}

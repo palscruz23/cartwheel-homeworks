@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask how long an approved refund takes to arrive.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 2,
+  "conversation_variation": "ask a practical question"
+}

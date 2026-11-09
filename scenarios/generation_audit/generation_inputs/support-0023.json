@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "store_name": "Atlas Stationery",
+  "item_name": "Speckled Sticky Notes",
+  "conversation_variation": "mention why you need help briefly"
+}

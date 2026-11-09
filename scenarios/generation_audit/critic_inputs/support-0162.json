@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0162",
+  "task": {
+    "role": "support",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Woven Novel",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8750,
+    "user_id": 381,
+    "store_id": 7,
+    "product_id": 274,
+    "quantity": 1,
+    "total_cents": 4925,
+    "status": "delivered",
+    "ordered_at": "2025-02-17",
+    "shipped_at": "2025-02-20",
+    "delivered_at": "2025-02-24",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status.",
+    "Helping a customer with a refund. Order [ORDER], Slim Desk Organizer from Atlas Stationery. Please refund the order."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

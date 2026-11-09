@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 2,
+  "store_name": "Little Fox Toys",
+  "item_name": "Walnut Puzzle",
+  "conversation_variation": "mention why you need help briefly"
+}

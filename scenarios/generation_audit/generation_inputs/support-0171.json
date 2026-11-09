@@ -1,0 +1,7 @@
+{
+  "role": "support",
+  "goal": "Ask for a sports score.",
+  "user_style": "neutral_conversational",
+  "turn_count": 1,
+  "conversation_variation": "start directly with the request"
+}

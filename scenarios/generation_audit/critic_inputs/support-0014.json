@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0014",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Signature Pitcher",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I run Juniper Home Goods. Could you check the current status of order [ORDER]? Just a short, plain answer would be great.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3294,
+    "user_id": 159,
+    "store_id": 2,
+    "product_id": 69,
+    "quantity": 1,
+    "total_cents": 27375,
+    "status": "cancelled",
+    "ordered_at": "2026-06-05",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "Can you check where order [ORDER] stands right now? It's the Vintage Jam Trio from my shop, Saltbox Pantry. I'm trying to sort out my orders and I've rather lost track of this one.",
+    "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status.",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Can you refund order [ORDER] for my Everyday Dry Bag from Trailhead Supply? I want my money back, please. Please get the refund started.",
+    "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order.",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

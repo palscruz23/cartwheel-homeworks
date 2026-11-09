@@ -1,0 +1,6 @@
+{
+  "opening_message": "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it.",
+  "followups": [
+    "Could you also check the shipment and delivery details recorded for that order? I'm getting myself confused about what's been shipped and what's been delivered, so I'd like to know what the record actually says."
+  ]
+}

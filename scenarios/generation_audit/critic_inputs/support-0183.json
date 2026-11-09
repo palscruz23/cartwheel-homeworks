@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0183",
+  "task": {
+    "role": "support",
+    "goal": "Ask whether the shipment and delivery history for order [ORDER] can be verified.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Woven Wool Socks",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8001,
+    "user_id": 174,
+    "store_id": 16,
+    "product_id": 632,
+    "quantity": 1,
+    "total_cents": 22700,
+    "status": "delivered",
+    "ordered_at": "2025-01-14",
+    "shipped_at": "2026-06-25",
+    "delivered_at": "2026-06-23",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work.",
+    "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

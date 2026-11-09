@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0185",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for help understanding the recorded order timeline for order [ORDER].",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "store_name": "Harbor Knits",
+    "item_name": "Woven Wool Socks",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "followups": [
+      "Could you walk through the events recorded for that order in sequence? I keep losing track of what happened when, and understanding the timeline would help me decide my next step."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 8001,
+    "user_id": 174,
+    "store_id": 16,
+    "product_id": 632,
+    "quantity": 1,
+    "total_cents": 22700,
+    "status": "delivered",
+    "ordered_at": "2025-01-14",
+    "shipped_at": "2026-06-25",
+    "delivered_at": "2026-06-23",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details.",
+    "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply.",
+    "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose.",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat.",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

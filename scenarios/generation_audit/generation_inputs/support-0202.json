@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask to compare the matching listings for this item at the named store.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "tray (the listing title is not visible)",
+  "conversation_variation": "ask a practical question"
+}

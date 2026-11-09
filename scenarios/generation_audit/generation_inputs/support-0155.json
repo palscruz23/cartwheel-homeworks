@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "neutral_conversational",
+  "turn_count": 2,
+  "store_name": "Atlas Stationery",
+  "item_name": "Classic Fountain Pen",
+  "conversation_variation": "focus on next steps"
+}

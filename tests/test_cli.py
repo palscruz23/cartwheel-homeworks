@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 
 import httpx
 import langfuse
@@ -21,6 +22,53 @@ from agent import cli
 from agent.auth import AuthContext
 from observability import instrument
 from tests.eval.fake_model import FakeModel, text_message, tool_call
+
+
+@pytest.mark.parametrize("custom_path", [False, True])
+def test_cli_records_completed_exchanges(custom_path, tmp_path, monkeypatch, capsys):
+    @function_tool
+    def lookup(order_id: int) -> dict:
+        return {"ok": False, "error": "permission_denied", "reason": "another store"}
+
+    model = FakeModel()
+    model.set_next_output([tool_call("lookup", {"order_id": 4127})])
+    model.set_next_output([text_message("I cannot show that order.")])
+    model.set_next_output([text_message("You’re welcome.\nGoodbye!")])
+    agent = Agent(name="offline-recorder", model=model, tools=[lookup])
+    ctx = AuthContext(user_id=9002, role="merchant", store_id=2)
+    path = tmp_path / "hw1-session.jsonl"
+    previous = '{"existing":"student assessment"}\n'
+    path.write_text(previous)
+    messages = iter(["Show me order 4127.", "Thanks!", "quit"])
+    monkeypatch.setattr("builtins.input", lambda _: next(messages))
+    monkeypatch.setattr(cli, "build_agent", lambda *args, **kwargs: agent)
+    monkeypatch.setattr(cli, "resolve_auth", lambda *args: ctx)
+    monkeypatch.setattr(cli, "load_env", lambda: None)
+    monkeypatch.setattr(cli, "SESSIONS_DB", tmp_path / "sessions.db")
+    monkeypatch.setattr(cli, "REPO_ROOT", tmp_path)
+    argv = ["agent.cli", "--role", "merchant", "--record"]
+    if custom_path:
+        argv.append(str(path))
+    monkeypatch.setattr("sys.argv", argv)
+    cli.main()
+    assert path.read_text().startswith(previous)
+    records = [json.loads(line) for line in path.read_text().splitlines()]
+    assert records[1] == {
+        "role": "merchant", "user_id": 9002, "store_id": 2,
+        "request": "Show me order 4127.",
+        "tool_calls": [{
+            "name": "lookup", "arguments": {"order_id": 4127},
+            "result": {"ok": False, "error": "permission_denied", "reason": "another store"},
+        }],
+        "response": "I cannot show that order.",
+        "expected": "PENDING: student review", "requirement": None,
+        "met_requirement": None, "problem_source": None,
+    }
+    assert records[2]["request"] == "Thanks!"
+    assert records[2]["tool_calls"] == []
+    assert records[2]["response"] == "You’re welcome.\nGoodbye!"
+    assert len(records) == 3
+    assert "[tool]" not in capsys.readouterr().out
 
 
 @pytest.fixture

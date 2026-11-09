@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0056",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "typo_heavy",
+    "turn_count": 2,
+    "store_name": "Cascade Audio",
+    "item_name": "Midnight Webcam",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "followups": [
+      "also need a breif note for my custmer on how they can chek the refnd request later."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 2678,
+    "user_id": 405,
+    "store_id": 5,
+    "product_id": 170,
+    "quantity": 2,
+    "total_cents": 24750,
+    "status": "delivered",
+    "ordered_at": "2026-02-18",
+    "shipped_at": "2026-02-20",
+    "delivered_at": "2026-02-23",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "Helping a customer with a refund. Order [ORDER], Slim Desk Organizer from Atlas Stationery. Please refund the order.",
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

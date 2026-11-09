@@ -1,0 +1,7 @@
+{
+  "role": "support",
+  "goal": "Ask how long after delivery a charge can be disputed.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "conversation_variation": "focus on next steps"
+}

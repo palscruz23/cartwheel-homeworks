@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0201",
+  "task": {
+    "role": "support",
+    "goal": "Ask to find the named product in the named store and explain the matching listings.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "tray (the listing title is not visible)",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Could you find the tray at Blue Heron Ceramics and explain the matching listings? I'm helping a customer, but the listing title isn't visible to me, so I'm a bit stuck trying to identify it. All I can really go on is that it's a tray.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3,
+    "store_id": 1,
+    "title": "",
+    "description": "Portable Tray from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 975
+  },
+  "other_openings_for_diversity": [
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Hi, support lookup: customer needs help finding a tray at Blue Heron Ceramics. Listing title isn't visible. Can you locate the product?",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0206",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds. Request a partial refund of $99.99; this is an amount you are asking for, not a claim about a price or rule.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 2,
+    "store_name": "Paper Lantern Press",
+    "item_name": "Matte Atlas",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain.",
+    "followups": [
+      "Please note the requested partial refund amount is $99.99, and tell me if there's anything I need to provide."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 6418,
+    "user_id": 300,
+    "store_id": 8,
+    "product_id": 294,
+    "quantity": 1,
+    "total_cents": 29100,
+    "status": "delivered",
+    "ordered_at": "2026-06-10",
+    "shipped_at": "2026-06-12",
+    "delivered_at": "2026-06-15",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Could you help me get a refund for order [ORDER]? That's the Rustic Water Bottle I bought from Meridian Cycles. I'm a bit mixed up about how to ask for it, but I want to request my money back on that order.",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "Hello, I'm with Meridian Cycles. I need you to check the current status of order [ORDER] for the Heavy-Duty Trekking Poles. Please check it now; I need a clear status update on this order.",
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "If an issue with my store is escalated to a human, how long should I expect to wait for a response?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

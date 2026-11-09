@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0063",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Atlas Stationery",
+    "item_name": "Slim Desk Organizer",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Helping a customer with a refund. Order [ORDER], Slim Desk Organizer from Atlas Stationery. Please refund the order.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9140,
+    "user_id": 374,
+    "store_id": 20,
+    "product_id": 761,
+    "quantity": 1,
+    "total_cents": 21675,
+    "status": "delivered",
+    "ordered_at": "2026-06-21",
+    "shipped_at": "2026-06-22",
+    "delivered_at": "2026-06-27",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version.",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "Hi, I'd like a refund for my order [ORDER] from Second Stitch Apparel. Please keep the answer short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

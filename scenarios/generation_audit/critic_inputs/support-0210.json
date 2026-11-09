@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0210",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds. Request a partial refund of $100.00; this is an amount you are asking for, not a claim about a price or rule.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 2,
+    "store_name": "Paper Lantern Press",
+    "item_name": "Rustic Atlas",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly.",
+    "followups": [
+      "Please record $100.00 as the partial refund being requested and include what the customer needs to do to follow up."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 1161,
+    "user_id": 342,
+    "store_id": 8,
+    "product_id": 320,
+    "quantity": 1,
+    "total_cents": 26225,
+    "status": "delivered",
+    "ordered_at": "2026-06-14",
+    "shipped_at": "2026-06-17",
+    "delivered_at": "2026-06-19",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Could you help me get a refund for order [ORDER]? That's the Rustic Water Bottle I bought from Meridian Cycles. I'm a bit mixed up about how to ask for it, but I want to request my money back on that order.",
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?",
+    "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting.",
+    "How is the standard return window counted? Need to explain it to a customer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask when an order can be cancelled.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "conversation_variation": "mention why you need help briefly"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "merchant",
+  "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Clover Field Naturals",
+  "conversation_variation": "use a conversational opening"
+}

@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to compare the matching listings for this item at the named store.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "Heavy-Duty Vase",
+  "conversation_variation": "ask a practical question"
+}

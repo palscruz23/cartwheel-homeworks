@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask for tax advice unrelated to Cartwheel.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 2,
+  "conversation_variation": "focus on next steps"
+}

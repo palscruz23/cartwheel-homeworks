@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0208",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds. Request a partial refund of $100.01; this is an amount you are asking for, not a claim about a price or rule.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Sturdy Novel",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3939,
+    "user_id": 191,
+    "store_id": 7,
+    "product_id": 261,
+    "quantity": 1,
+    "total_cents": 25600,
+    "status": "delivered",
+    "ordered_at": "2026-05-28",
+    "shipped_at": "2026-05-31",
+    "delivered_at": "2026-06-04",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly.",
+    "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "Cascade Audio merchant. Please start a refund for order [ORDER], Portable Desk Lamp. What do I need to do next?",
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "Hi, I need a clear answer before I buy: can a store set its own return window? Please clarify that for me. Can the shop choose its own window?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

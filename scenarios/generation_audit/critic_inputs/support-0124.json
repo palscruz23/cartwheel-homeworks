@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0124",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask how long handling and shipping can take.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I need to work out the next step for a payment issue at my store. How long after delivery can a charge be disputed? Please be clear about the deadline. I need the actual dispute timeframe.",
+    "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer.",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "Please find the Compact Trowel Set in my store, Petal & Stem, and show me the available listings with their prices.",
+    "Need options for a customer before they choose. Find Portable Hammer at Copperline Tools. Show available listings and prices.",
+    "Could you help me find the Handmade Cookbook for a customer?",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

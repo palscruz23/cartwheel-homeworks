@@ -27,18 +27,16 @@ import hashlib
 import hmac
 import json
 import os
-import time
-import uuid
+from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
-from typing import Any, AsyncIterator
+from typing import Any
 
 from agents import Runner, SQLiteSession
 from fastapi import FastAPI, Header, HTTPException
 from opentelemetry import trace
 from pydantic import BaseModel
 
-from agent import db
-from agent.agent import build_agent, prompt_version
+from agent import agent, db
 from agent.auth import ROLES, AuthContext
 from agent.config import REPO_ROOT, db_path
 from observability.instrument import load_env, setup_tracing
@@ -124,7 +122,35 @@ def create_session(body: SessionCreate) -> dict[str, Any]:
     user_id, role, store_id, and issued_at.
     """
     ### YOUR CODE HERE (HW2)
-    raise NotImplementedError("HW2: implement POST /sessions")
+    import time
+    import uuid
+
+    with db.connection() as conn:
+        user = db.get_user(conn, body.user_id)
+
+        if body.role not in ROLES:
+            raise HTTPException(status_code=400, detail="unknown role")
+        if user is None:
+            raise HTTPException(status_code=404, detail="unknown user")
+
+        if user.role != body.role:
+            raise HTTPException(status_code=403, detail="role does not match user")
+
+        ctx = AuthContext(user_id=user.id, role=user.role, store_id=user.store_id)
+
+        session_id = str(uuid.uuid4())
+        session = SQLiteSession(session_id, str(SESSIONS_DB))
+        _SESSIONS[session_id] = (ctx, session)
+        token = create_token(
+            {
+                "session_id": session_id,
+                "user_id": ctx.user_id,
+                "role": ctx.role,
+                "store_id": ctx.store_id,
+                "issued_at": time.time(),
+            }
+        )
+        return {"session_id": session_id, "token": token}
 
 
 def _authorize(session_id: str, authorization: str | None) -> AuthContext:
@@ -136,7 +162,9 @@ def _authorize(session_id: str, authorization: str | None) -> AuthContext:
     if payload.get("session_id") != session_id:
         raise HTTPException(status_code=403, detail="token is for another session")
     if session_id not in _SESSIONS:
-        raise HTTPException(status_code=404, detail="unknown session (server restarted?)")
+        raise HTTPException(
+            status_code=404, detail="unknown session (server restarted?)"
+        )
     return _SESSIONS[session_id][0]
 
 
@@ -159,7 +187,51 @@ async def post_message(
     messages with role and parts fields.
     """
     ### YOUR CODE HERE (HW2)
-    raise NotImplementedError("HW2: implement the traced message endpoint")
+
+    ctx = _authorize(session_id, authorization)
+    _, session = _SESSIONS[session_id]
+    support_agent = agent.build_agent(ctx, model=body.model)
+    version = agent.prompt_version()
+
+    with _tracer.start_as_current_span("cartwheel.session_message") as span:
+        span.set_attribute("cartwheel.session_id", session_id)
+        span.set_attribute("cartwheel.user_role", ctx.role)
+        span.set_attribute("cartwheel.user_id", str(ctx.user_id))
+        span.set_attribute("cartwheel.prompt_version", version)
+
+        if body.scenario_id:
+            span.set_attribute("cartwheel.scenario_id", body.scenario_id)
+
+        capture_content = (
+            os.environ.get("TRACELOOP_TRACE_CONTENT", "false").lower() == "true"
+        )
+
+        input_messages = [
+            {"role": "user", "parts": [{"type": "text", "content": body.message}]}
+        ]
+        if capture_content:
+            span.set_attribute("gen_ai.input.messages", json.dumps(input_messages))
+
+        result = await Runner.run(
+            support_agent,
+            body.message,
+            session=session,
+            context=ctx,
+            max_turns=MAX_TURNS,
+        )
+        reply = str(result.final_output)
+
+        output_messages = [
+            {"role": "assistant", "parts": [{"type": "text", "content": reply}]}
+        ]
+        if capture_content:
+            span.set_attribute("gen_ai.output.messages", json.dumps(output_messages))
+
+    return {
+        "session_id": session_id,
+        "reply": reply,
+        "prompt_version": version,
+    }
 
 
 @app.get("/health")

@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "First ask to find the named item WITHOUT stating the store. In the followup, independently clarify that you mean the named store. Do not invent a price, stock level or specifications.",
+  "user_style": "neutral_conversational",
+  "turn_count": 2,
+  "store_name": "Paper Lantern Press",
+  "item_description": "Handmade Cookbook",
+  "conversation_variation": "ask a practical question"
+}

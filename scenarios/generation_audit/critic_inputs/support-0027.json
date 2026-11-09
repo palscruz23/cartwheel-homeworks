@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0027",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Vintage Bar Soap",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "What is the current status of order [ORDER] for the Vintage Bar Soap from Fern & Fog Skincare? I'm checking on behalf of the customer.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8588,
+    "user_id": 106,
+    "store_id": 17,
+    "product_id": 678,
+    "quantity": 1,
+    "total_cents": 17700,
+    "status": "shipped",
+    "ordered_at": "2026-06-30",
+    "shipped_at": "2026-07-01",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Need an update for planning: current status of my order [ORDER], Handmade Cookbook from Paper Lantern Press?",
+    "Hello, I'm with Meridian Cycles. I need you to check the current status of order [ORDER] for the Heavy-Duty Trekking Poles. Please check it now; I need a clear status update on this order.",
+    "I'm assisting a customer with order [ORDER] from Bright Socket Electronics. Please give me its current status and any next step in a few plain words.",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "I need to check my records for order [ORDER] from Atlas Stationery. What delivery date is recorded for it? Please just give me a clear answer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}
