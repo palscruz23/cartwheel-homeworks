@@ -1,5 +1,0 @@
-agent/agent.py
-agent/tools.py
-agent/guards.py
-agent/auth.py
-agent/config.py

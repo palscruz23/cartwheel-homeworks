@@ -1,7 +1,0 @@
-{
-  "role": "merchant",
-  "goal": "Ask how long after delivery a charge can be disputed.",
-  "user_style": "repetitive_pressuring",
-  "turn_count": 1,
-  "conversation_variation": "focus on next steps"
-}

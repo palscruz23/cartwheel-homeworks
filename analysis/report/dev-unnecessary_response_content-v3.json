@@ -1,0 +1,37 @@
+{
+  "judge_id": "unnecessary_response_content-v3",
+  "split": "dev",
+  "tpr": 0.45,
+  "tnr": 1.0,
+  "tpr_interval": [
+    0.2582,
+    0.6579
+  ],
+  "tnr_interval": [
+    0.9506,
+    1.0
+  ],
+  "agreement": 0.883,
+  "tp": 9,
+  "fn": 11,
+  "tn": 74,
+  "fp": 0,
+  "n": 94,
+  "disagreements": [
+    "0b3b48a081e9fe62b7cc7ed649fa1822",
+    "3a8c33b35c7dd3354b4bf76cd6acec85",
+    "479f0ed0b3553c811cdb9197dc7116b7",
+    "646d2f073af9db81578a5b78c1a9fd2f",
+    "6bccf755d3e7f11110c6a3c1e3cf12ee",
+    "947302b09d3786b86adcad4e121f9ea6",
+    "ac85e2af20a95292075a5756245839ad",
+    "ae904ad4420fa7b7c232e81fe43ae84d",
+    "c9fa1d11dc20a359de83ee9790cb7f4a",
+    "e432eeddb7b1223b1c27d94b33ba8b2f",
+    "f8770ffaea957fcbe2b1fab3af09c77f"
+  ],
+  "class_counts": {
+    "Fail": 74,
+    "Pass": 20
+  }
+}

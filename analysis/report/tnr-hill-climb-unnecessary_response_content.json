@@ -1,0 +1,62 @@
+{
+  "mode": "unnecessary_response_content",
+  "objective": "Maximize development TNR; stop at >=90% or after two additional iterations.",
+  "completed_at": "2026-11-18T12:48:20.455073+00:00",
+  "model": "gpt-4o-mini",
+  "trace_count_per_iteration": 94,
+  "maximum_additional_iterations": 2,
+  "completed_iterations": 1,
+  "unused_iterations": 1,
+  "target_tnr": 0.9,
+  "target_reached": true,
+  "stop_reason": "First iteration reached 100% TNR; obeyed requested early stop.",
+  "labels_changed": false,
+  "inputs_changed": false,
+  "splits_changed": false,
+  "test_run": false,
+  "baseline": {
+    "judge_id": "unnecessary_response_content-v2",
+    "tp": 18,
+    "fn": 2,
+    "tn": 56,
+    "fp": 18,
+    "tpr": 0.9,
+    "tnr": 0.7568,
+    "tpr_interval": [
+      0.699,
+      0.9721
+    ],
+    "tnr_interval": [
+      0.6479,
+      0.8402
+    ]
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "parent_judge_id": "unnecessary_response_content-v2",
+      "change": "Clarify clause-by-clause strict audit and forbid averaging helpful content against a generic closing; add training-only refund Fail and specific-policy-lookup Pass examples.",
+      "judge_id": "unnecessary_response_content-v3",
+      "tp": 9,
+      "fn": 11,
+      "tn": 74,
+      "fp": 0,
+      "tpr": 0.45,
+      "tnr": 1.0,
+      "tpr_interval": [
+        0.2582,
+        0.6579
+      ],
+      "tnr_interval": [
+        0.9506,
+        1.0
+      ],
+      "decision": "Improved the requested TNR objective; stopped early. Final judge selection remains pending because TPR fell sharply."
+    }
+  ],
+  "verification": {
+    "offline": "Six HW5 preparation/lifecycle tests passed. Recomputed all confusion counts independently; 94 dev predictions and critiques complete; provenance hashes unchanged; every prompt example from training. No test predictions present in v3.",
+    "live": "One completed 94-trace DocETL development batch using gpt-4o-mini."
+  },
+  "limitation": "TPR fell from 90% to 45%. This judge reaches the requested TNR target but does not reach 90% on both rates and is not recommended as a balanced replacement for v2."
+}

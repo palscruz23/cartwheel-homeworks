@@ -1,0 +1,62 @@
+{
+  "mode": "unnecessary_response_content",
+  "version": 3,
+  "status": "development_completed_tnr_target_reached",
+  "prompt_path": "analysis/prompts/unnecessary_response_content-v3.txt",
+  "prompt_sha256": "8be3a2e5630fe762b9e4bb789f750cd9c2049fe99c50b9d970126b9b6a668c5d",
+  "input_sha256": "7d42beef28520a8f7ff5d25ab82b44faf7b27f045983aa054263812460a64e46",
+  "splits_sha256": "15702e40237381257fa7561b94c02198ca7f6ccd92fcf930229f2e3419d198c1",
+  "examples": [
+    {
+      "trace_id": "ffc646cec684a84abf45671c701292d2",
+      "split": "train",
+      "human_verdict": "Pass",
+      "purpose": "clear_pass",
+      "excerpt_rule": "All user turns and tool calls/results plus final assistant reply; call IDs omitted."
+    },
+    {
+      "trace_id": "016de42625b7b5fe3fea972b92701613",
+      "split": "train",
+      "human_verdict": "Fail",
+      "purpose": "clear_fail",
+      "excerpt_rule": "All user turns and tool calls/results plus final assistant reply; call IDs omitted."
+    },
+    {
+      "trace_id": "383ef4888c490343f389d023b46e5736",
+      "split": "train",
+      "human_verdict": "Pass",
+      "purpose": "borderline_pass",
+      "excerpt_rule": "All user turns and tool calls/results plus final assistant reply; call IDs omitted."
+    },
+    {
+      "trace_id": "8606e0a3699805438cd2ccdfb988769a",
+      "split": "train",
+      "human_verdict": "Pass",
+      "purpose": "borderline_pass_action_specific_followup",
+      "excerpt_rule": "All user turns and tool calls/results plus final assistant reply; call IDs omitted."
+    },
+    {
+      "trace_id": "4736500261cea8a734cecccf94090c40",
+      "split": "train",
+      "human_verdict": "Fail",
+      "purpose": "fail_useful_answer_with_generic_closing",
+      "excerpt_rule": "All user turns and tool calls/results plus final assistant reply; call IDs omitted."
+    },
+    {
+      "trace_id": "63118e9dda7e8c1f6b67ae84dc958354",
+      "split": "train",
+      "human_verdict": "Pass",
+      "purpose": "pass_specific_policy_lookup",
+      "excerpt_rule": "All user turns and tool calls/results plus final assistant reply; call IDs omitted."
+    }
+  ],
+  "judge_model_planned": "gpt-4o-mini",
+  "development_trace_count": 94,
+  "paid_batch_approved": true,
+  "extra_revisions_authorized": 2,
+  "change": "Clarify clause-by-clause strict audit and forbid averaging helpful content against a generic closing; add training-only refund Fail and specific-policy-lookup Pass examples.",
+  "labels_sha256": "ebff8995dfd855a6051c1262cfcbbbd718b1eafc317aae1c058d5db35a73233e",
+  "predictions_generated": true,
+  "judge_registered": true,
+  "judge_id": "unnecessary_response_content-v3"
+}

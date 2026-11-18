@@ -3,6 +3,18 @@
     {
       "judge_id": "unnecessary_response_content-v0",
       "prompt_hash": "b5f55f1792cd"
+    },
+    {
+      "judge_id": "unnecessary_response_content-v1",
+      "prompt_hash": "6e412a12ffd8"
+    },
+    {
+      "judge_id": "unnecessary_response_content-v2",
+      "prompt_hash": "776007bb0ad9"
+    },
+    {
+      "judge_id": "unnecessary_response_content-v3",
+      "prompt_hash": "460d55365558"
     }
   ]
 }
