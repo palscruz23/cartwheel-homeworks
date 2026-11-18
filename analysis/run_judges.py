@@ -186,15 +186,19 @@ def split_data(mode: str = MODE) -> dict[str, list[str]]:
                         min_per_class=10, eligible_trace_ids=ids)
 
 
-def run_development(mode: str, prompt_path: str | Path, *, approved: bool = False) -> dict:
+def run_development(mode: str, prompt_path: str | Path, *, approved: bool = False,
+                    extra_dev_revisions: int = 0) -> dict:
     """Run/resume the approved development batch using DocETL and course helpers.
 
     The prompt's .examples.json records training provenance and fixed input/split
     hashes. Reuse an identical registered version after interruption; never
     regenerate splits or register a new version just to resume a batch.
+    Extra revisions beyond the homework cap require explicit student direction.
     """
     if not approved:
         raise ValueError('Student approval of the model and development batch is required')
+    if extra_dev_revisions not in (0, 1, 2):
+        raise ValueError('Extra development revisions must be 0, 1, or 2')
     prompt_path = Path(prompt_path)
     prompt_text = prompt_path.read_text()
     manifest = read_json(prompt_path.with_suffix('.examples.json'))
@@ -234,8 +238,9 @@ def run_development(mode: str, prompt_path: str | Path, *, approved: bool = Fals
             judge_id = judge['judge_id']
             break
     if judge_id is None:
-        if len(history['versions']) >= 3:
-            raise ValueError('HW5 permits an initial draft and at most two revisions')
+        if len(history['versions']) >= 3 + extra_dev_revisions:
+            raise ValueError('Prompt version limit reached: initial draft, two HW5 '
+                             'revisions, and any explicitly authorized extra revisions')
         judge_id = register_judge(mode, prompt_text, judge_model='gpt-4o-mini')['judge_id']
     run_judge(judge_id, split='dev', batch_size=10)
     metrics = judge_alignment(judge_id, split='dev')
@@ -312,6 +317,8 @@ def main():
     parser.add_argument('--prompt-path', help='Judge prompt with .examples.json provenance')
     parser.add_argument('--approve-dev-batch', action='store_true',
                         help='Run only after student approval of the displayed development batch')
+    parser.add_argument('--extra-dev-revisions', type=int, choices=(0, 1, 2), default=0,
+                        help='Student-authorized revisions beyond the HW5 two-revision cap')
     parser.add_argument('--approve-test-batch', action='store_true',
                         help='Confirm student selection and paid test approval after review')
     args = parser.parse_args()
@@ -319,7 +326,8 @@ def main():
         if not args.prompt_path:
             parser.error('dev requires --prompt-path')
         print(json.dumps(run_development(args.mode, args.prompt_path,
-                                        approved=args.approve_dev_batch), indent=2))
+                                        approved=args.approve_dev_batch,
+                                        extra_dev_revisions=args.extra_dev_revisions), indent=2))
         return
     if args.command == 'test':
         if not args.judge_id:

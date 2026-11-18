@@ -1,0 +1,72 @@
+{
+  "judge_id": "unnecessary_response_content-v2",
+  "verified_at": "2026-11-18T13:07:48.317459+00:00",
+  "model": "gpt-4o-mini",
+  "status": "frozen",
+  "split": "test",
+  "labels_sha256": "62a011370b3328bdad06aa89c0b070b083e29286932c41c3fe2b200743716268",
+  "verification": "Independently recomputed confusion counts; all 93 cached test predictions and critiques complete; frozen prompt, fixed inputs, and splits match development provenance; human labels match approved post-adjudication snapshot.",
+  "checks": {
+    "offline": "Confusion counts, class counts, critique completeness, frozen prompt, and provenance hashes passed.",
+    "live": "Authorized gpt-4o-mini DocETL test batch completed on 93 traces."
+  },
+  "limitation": "Reused test set with previously approved label adjudication; comparison results rather than a fresh independent held-out evaluation.",
+  "metrics": {
+    "judge_id": "unnecessary_response_content-v2",
+    "split": "test",
+    "tpr": 0.6957,
+    "tnr": 0.7571,
+    "tpr_interval": [
+      0.4913,
+      0.844
+    ],
+    "tnr_interval": [
+      0.645,
+      0.8425
+    ],
+    "agreement": 0.7419,
+    "tp": 16,
+    "fn": 7,
+    "tn": 53,
+    "fp": 17,
+    "n": 93,
+    "disagreements": [
+      "0daf5edc2bc52dd141c264181a1110d6",
+      "14fd7c3d57c2709727759a3327aa9693",
+      "167830affc9d1a7e7f28161db245691c",
+      "1dbb774d879ead469c098ad84a61dd8a",
+      "2de4034828214e1a9739d1007da2377d",
+      "2eac9b176c1dedf2109cf56d0f71099b",
+      "3a65fd20d21c38b1f3cf7339dd1007dc",
+      "3e02d9597f54c2a052bda149f882cecb",
+      "46434f1b15cf02029aab99511255dc5f",
+      "630e58adfc2e40fd6d3cd16ad68fc99f",
+      "67eb39abb2b588ebc9214ffcd53e438d",
+      "6adeb806427f9630cb9541ca6206d4dd",
+      "74769e1a2c770174059101ec1ba2868c",
+      "78ff514b7099a43c907ddd35568186ec",
+      "95b708dbc49c49b45bd7544da2acd0c8",
+      "96dade6df383c11d8b11e626a7310df8",
+      "9e87cb06c446a5b58def8df297c587b9",
+      "a8dc9b7659e43fbad7ee8cb5b0b1859b",
+      "c45a49546acc59f50d4315a70747a9f8",
+      "ca4d9727afb0bf663c8e6ceba604d1b3",
+      "e2130a153769e42fffc543f0a4da37bd",
+      "ec640359e43c79cecd95f3d81f33728c",
+      "f1f236fb9def788817e99124302d5336",
+      "fe9ef254c839702f28bd5d2cf41f6bfd"
+    ],
+    "class_counts": {
+      "Pass": 23,
+      "Fail": 70
+    }
+  },
+  "v3_comparison_same_labels": {
+    "tpr": 0.2174,
+    "tnr": 0.9857,
+    "tp": 5,
+    "fn": 18,
+    "tn": 69,
+    "fp": 1
+  }
+}

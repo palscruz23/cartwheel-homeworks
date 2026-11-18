@@ -1,0 +1,64 @@
+{
+  "judge_id": "unnecessary_response_content-v3",
+  "split": "test",
+  "tpr": 0.2174,
+  "tnr": 0.9857,
+  "tpr_interval": [
+    0.0966,
+    0.419
+  ],
+  "tnr_interval": [
+    0.9234,
+    0.9975
+  ],
+  "agreement": 0.7957,
+  "tp": 5,
+  "fn": 18,
+  "tn": 69,
+  "fp": 1,
+  "n": 93,
+  "disagreements": [
+    "023cad99520525cc52d78caea7f9eec5",
+    "0b73c5595f850bb1c0a1f887dbce5988",
+    "0da84caf6abe4aaf5fca0b5048fb8a94",
+    "1dbb774d879ead469c098ad84a61dd8a",
+    "2e740ccc56474632740bcf560455257c",
+    "2eac9b176c1dedf2109cf56d0f71099b",
+    "31d161b8ddee5ed619ee800d57e1e55c",
+    "37863bc82d95d26b18ad4e003be59131",
+    "3e02d9597f54c2a052bda149f882cecb",
+    "3eae6447043723eb835f5b9f1a6a026d",
+    "46434f1b15cf02029aab99511255dc5f",
+    "599c13ea4ab3b8c789cb6cbe210e5bc1",
+    "68e8d08d1d28871a5951a206021db7ae",
+    "bbd762d45342c737f369587fe8466b67",
+    "c45a49546acc59f50d4315a70747a9f8",
+    "ca4d9727afb0bf663c8e6ceba604d1b3",
+    "e3ca60f28a7f788c1397b3698ee22b42",
+    "f1f236fb9def788817e99124302d5336",
+    "fe9ef254c839702f28bd5d2cf41f6bfd"
+  ],
+  "class_counts": {
+    "Pass": 23,
+    "Fail": 70
+  },
+  "label_adjudication": {
+    "approved_at": "2026-11-18T12:56:35.804280+00:00",
+    "changes": {
+      "Pass_to_Fail": 7,
+      "Fail_to_Pass": 5
+    },
+    "review_path": "analysis/report/test-label-audit-unnecessary_response_content-v3.json",
+    "original_test_report": "analysis/report/test-unnecessary_response_content-v3.json",
+    "ambiguous_cases_unchanged": [
+      "14fd7c3d57c2709727759a3327aa9693",
+      "3eae6447043723eb835f5b9f1a6a026d",
+      "bbd762d45342c737f369587fe8466b67",
+      "fe9ef254c839702f28bd5d2cf41f6bfd"
+    ],
+    "labels_sha256": "62a011370b3328bdad06aa89c0b070b083e29286932c41c3fe2b200743716268",
+    "interpretation": "Post-test student-approved label adjudication, not prompt improvement or an independent test.",
+    "new_model_calls": 0,
+    "predictions_changed": false
+  }
+}

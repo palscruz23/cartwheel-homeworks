@@ -1,0 +1,17 @@
+{
+  "judge_id": "unnecessary_response_content-v1",
+  "attempted_at": "2026-11-18T11:48:44.145465+00:00",
+  "model": "gpt-4o-mini",
+  "status": "failed_api_connection",
+  "error": "litellm.InternalServerError: OpenAIException - Connection error.",
+  "dev_trace_count": 94,
+  "test_trace_count": 93,
+  "saved_prediction_counts": {
+    "dev": 0,
+    "test": 0
+  },
+  "dev_and_test_authorized": true,
+  "authorization_instruction": "let\u2019s run the dev and test run",
+  "test_status": "pending_development_completion",
+  "test_interpretation": "Existing test set already evaluated with v0; reuse is a comparison, not a fresh held-out estimate."
+}

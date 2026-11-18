@@ -1,0 +1,63 @@
+{
+  "judge_id": "unnecessary_response_content-v1",
+  "split": "dev",
+  "tpr": 0.65,
+  "tnr": 0.7703,
+  "tpr_interval": [
+    0.4329,
+    0.8188
+  ],
+  "tnr_interval": [
+    0.6625,
+    0.8513
+  ],
+  "agreement": 0.7447,
+  "tp": 13,
+  "fn": 7,
+  "tn": 57,
+  "fp": 17,
+  "n": 94,
+  "disagreements": [
+    "0b3b48a081e9fe62b7cc7ed649fa1822",
+    "2530e9c957ee78b92e5d851a951d904c",
+    "30e0820bc30efbef7b066d75d612bae4",
+    "358f44276b9109622faa83b93d4fa303",
+    "3a8c33b35c7dd3354b4bf76cd6acec85",
+    "3b324bc6a578ea899ae9c3eddc4b796f",
+    "49804473d4b34079a6929db47921de66",
+    "49978c79474665f09d746781fa737b80",
+    "52403ff28ed7fd8ecee70c9b707cc7d2",
+    "534c26f5a0ac33d80c5ca747001af37d",
+    "646d2f073af9db81578a5b78c1a9fd2f",
+    "69a03480d2a5fabb1cc5b9ef1ca91e20",
+    "6bccf755d3e7f11110c6a3c1e3cf12ee",
+    "781e5b8b700e87ff2d1366ea9ffa501a",
+    "8c5143449c11acb35cbd33935ee66fe2",
+    "95411956ccbcdfddfca1b3c26d2ff74e",
+    "a7f5d2e0bbb2e2be069b1f549c618f8c",
+    "be48fb04a0a178ef5990cc2cbfd62fe5",
+    "bfba3ea72b96c1d3ee5e059ac918febb",
+    "c9fa1d11dc20a359de83ee9790cb7f4a",
+    "da7f905b566322b983f0744b312c5308",
+    "dcc9fd073e650c8dffc8fd3b27b51374",
+    "e7fd3c65bc5c7b8dccbb25a3b4a65b93",
+    "f0125ab05596f5b7e75a4d64008dbf18"
+  ],
+  "class_counts": {
+    "Fail": 74,
+    "Pass": 20
+  },
+  "label_review": {
+    "corrected_at": "2026-11-18T12:37:12.828244+00:00",
+    "trace_ids": [
+      "36cfecb50701b3d52f7e659b03997bbd",
+      "38081a767c7a4aceabaffbd5f2e59221",
+      "44d6e92e5d77188764044ca8d1c33114",
+      "c04fc2994a9a56d1b234f0f57a372363",
+      "dcc9fd073e650c8dffc8fd3b27b51374",
+      "dd54ee274bb6ae81d62887521740aab2"
+    ],
+    "change": "Six student-authorized Pass-to-Fail corrections; predictions unchanged.",
+    "historical_metrics": "analysis/report/dev-unnecessary_response_content-v1-before-label-review.json"
+  }
+}

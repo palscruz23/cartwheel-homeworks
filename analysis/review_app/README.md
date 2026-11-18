@@ -84,6 +84,10 @@ the full conversation available. Clear the field or press Escape to reset it.
    in the left column; the split table sits above the results in the right
    column. The columns stack on narrower screens. The split table shows
    Pass and Fail counts and planned shares.
+   Use the **Judge prompt version** dropdown above the prompt to switch its
+   saved text, validation/test results, confusion matrices, and validation
+   trace critiques together. The results heading identifies the selected version.
+   With only one registered version the dropdown is disabled.
    Select a judge version to see separate validation and test confusion
    matrices (judge verdicts on rows, human labels on columns), with TPR and TNR
    in a results table below. The saved prompt stays alongside these results,

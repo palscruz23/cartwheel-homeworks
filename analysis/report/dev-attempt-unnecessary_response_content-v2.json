@@ -1,0 +1,103 @@
+{
+  "judge_id": "unnecessary_response_content-v2",
+  "attempted_at": "2026-11-18T11:55:40.509144+00:00",
+  "status": "completed",
+  "model": "gpt-4o-mini",
+  "split": "dev",
+  "trace_count": 94,
+  "saved_development_predictions": 94,
+  "error": "litellm.InternalServerError: OpenAIException - Connection error.",
+  "target_tpr": 0.9,
+  "target_reached": true,
+  "measurement_available": true,
+  "test_run": false,
+  "decision": "target_reached_after_student_authorized_label_corrections",
+  "baseline": {
+    "judge_id": "unnecessary_response_content-v1",
+    "tp": 14,
+    "fn": 12,
+    "tpr": 0.5385,
+    "tnr": 0.7647
+  },
+  "change": "Clarify relevant action-specific follow-ups, requested-action details, brief practical conclusions, and supported scope explanations. Add one training-only refund-reason example. Preserve generic-closing Fail rule.",
+  "label_conflicts": [],
+  "resume_attempts": [
+    {
+      "attempted_at": "2026-11-18T11:59:08.241112+00:00",
+      "command": "UV_CACHE_DIR=/tmp/cartwheel-uv-cache uv run python -m analysis.run_judges dev --mode unnecessary_response_content --prompt-path analysis/prompts/unnecessary_response_content-v2.txt --approve-dev-batch",
+      "status": "failed_api_connection",
+      "exit_code": 1,
+      "error": "litellm.InternalServerError: OpenAIException - Connection error.",
+      "dns_check": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "saved_development_predictions": 0,
+      "offline_validation": "DocETL operation syntax checks passed",
+      "test_run": false,
+      "prompt_changed": false
+    },
+    {
+      "attempted_at": "2026-11-18T12:35:04.932561+00:00",
+      "command": "UV_CACHE_DIR=/tmp/cartwheel-uv-cache uv run python -m analysis.run_judges dev --mode unnecessary_response_content --prompt-path analysis/prompts/unnecessary_response_content-v2.txt --approve-dev-batch",
+      "status": "completed",
+      "exit_code": 0,
+      "saved_development_predictions": 94,
+      "metrics_report": "analysis/report/dev-unnecessary_response_content-v2.json",
+      "test_run": false,
+      "prompt_changed": false
+    }
+  ],
+  "latest_metrics": {
+    "tp": 18,
+    "fn": 2,
+    "tn": 56,
+    "fp": 18,
+    "tpr": 0.9,
+    "tnr": 0.7568,
+    "tpr_interval": [
+      0.699,
+      0.9721
+    ],
+    "tnr_interval": [
+      0.6479,
+      0.8402
+    ]
+  },
+  "resolved_label_conflicts": [
+    {
+      "trace_id": "36cfecb50701b3d52f7e659b03997bbd",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "2e1ec196-c085-4fb9-9566-fc3aa3645a81"
+    },
+    {
+      "trace_id": "38081a767c7a4aceabaffbd5f2e59221",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "166ecb95-a367-48f2-8b8c-60d82e2edb0a"
+    },
+    {
+      "trace_id": "44d6e92e5d77188764044ca8d1c33114",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "c5289292-756c-4348-974b-a19ef983c165"
+    },
+    {
+      "trace_id": "c04fc2994a9a56d1b234f0f57a372363",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "c5598d60-d231-4124-86cf-6defffbb6f27"
+    },
+    {
+      "trace_id": "dcc9fd073e650c8dffc8fd3b27b51374",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "7e856543-0a3b-48d8-9c61-9441e4117584"
+    },
+    {
+      "trace_id": "dd54ee274bb6ae81d62887521740aab2",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "5322a691-2820-4c76-b677-fadc3dd71c41"
+    }
+  ],
+  "metric_change_reason": "Label adjudication only; no prompt or prediction changes and no new model calls."
+}
