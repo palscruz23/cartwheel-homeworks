@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0015",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Heavy-Duty Bar Soap",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 996,
+    "user_id": 473,
+    "store_id": 18,
+    "product_id": 694,
+    "quantity": 1,
+    "total_cents": 22600,
+    "status": "refunded",
+    "ordered_at": "2026-06-08",
+    "shipped_at": "2026-06-10",
+    "delivered_at": "2026-06-12",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "Can you check where order [ORDER] stands right now? It's the Vintage Jam Trio from my shop, Saltbox Pantry. I'm trying to sort out my orders and I've rather lost track of this one.",
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "Check the current status of order [ORDER] for my Paper Lantern Press store. I need a straight answer so I can get this off my plate.",
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language.",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?",
+    "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

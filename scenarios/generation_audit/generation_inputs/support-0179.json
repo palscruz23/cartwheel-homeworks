@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask when the return window ends for order [ORDER].",
+  "user_style": "neutral_conversational",
+  "turn_count": 1,
+  "store_name": "Atlas Stationery",
+  "item_name": "Classic Pencil Set",
+  "conversation_variation": "use a conversational opening"
+}

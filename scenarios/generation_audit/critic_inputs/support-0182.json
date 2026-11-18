@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0182",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for a delivery timeline for order [ORDER].",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Woven Wool Socks",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8001,
+    "user_id": 174,
+    "store_id": 16,
+    "product_id": 632,
+    "quantity": 1,
+    "total_cents": 22700,
+    "status": "delivered",
+    "ordered_at": "2025-01-14",
+    "shipped_at": "2026-06-25",
+    "delivered_at": "2026-06-23",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "Hi, I'm checking order [ORDER] for a customer. Which store and product are recorded on it, and can you verify those details? I have Blue Heron Ceramics and Portable Jam Trio noted. Please verify the store and product from the record; I need those details checked.",
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing.",
+    "I need to see what Blue Heron Ceramics currently lists for a tray so I can decide what to do next. The listing title isn't visible to me. Please check the current listing details for the tray; I need those details.",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0175",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for a weather forecast.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "I need to check my records for order [ORDER] from Atlas Stationery. What delivery date is recorded for it? Please just give me a clear answer.",
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain.",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

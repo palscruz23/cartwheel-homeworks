@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0013",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Little Fox Toys",
+    "item_name": "Walnut Puzzle",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "followups": [
+      "Please also check the shipment and delivery details recorded for my order. I need those details too, so please pull up the shipment and delivery record."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 5758,
+    "user_id": 99,
+    "store_id": 11,
+    "product_id": 435,
+    "quantity": 2,
+    "total_cents": 28000,
+    "status": "delivered",
+    "ordered_at": "2026-06-06",
+    "shipped_at": "2026-06-08",
+    "delivered_at": "2026-06-14",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hi, I run Juniper Home Goods. Could you check the current status of order [ORDER]? Just a short, plain answer would be great.",
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request.",
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them.",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

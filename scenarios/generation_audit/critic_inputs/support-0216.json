@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0216",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Sturdy Novel",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "pls request a refnd for order [ORDER] from Northwind Books. im handlng this for the custmer in suport.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8465,
+    "user_id": 142,
+    "store_id": 7,
+    "product_id": 261,
+    "quantity": 1,
+    "total_cents": 25600,
+    "status": "delivered",
+    "ordered_at": "2026-05-11",
+    "shipped_at": "2026-05-13",
+    "delivered_at": "2026-05-16",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Could you help me get a refund for order [ORDER]? That's the Rustic Water Bottle I bought from Meridian Cycles. I'm a bit mixed up about how to ask for it, but I want to request my money back on that order.",
+    "My Copperline Tools customer wants their money back for order [ORDER]. Please start a refund request so I can get this issue handled promptly.",
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund.",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "How long does a human take to respond to an escalation? I'm assisting a customer and need a clear expected response time. Please give me the timeframe I can tell them."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

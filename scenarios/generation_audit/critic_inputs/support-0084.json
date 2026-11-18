@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0084",
+  "task": {
+    "role": "support",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Bright Socket Electronics",
+    "item_name": "Rustic Headphones",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6360,
+    "user_id": 213,
+    "store_id": 6,
+    "product_id": 238,
+    "quantity": 1,
+    "total_cents": 26100,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please.",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "If an issue with my store is escalated to a human, how long should I expect to wait for a response?",
+    "Please find the Compact Trowel Set in my store, Petal & Stem, and show me the available listings with their prices.",
+    "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing.",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

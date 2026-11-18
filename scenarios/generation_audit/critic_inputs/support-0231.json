@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0231",
+  "task": {
+    "role": "support",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 2,
+    "store_name": "Trailhead Supply",
+    "item_name": "Signature Trekking Poles",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "followups": [
+      "Customer no longer needs the trekking poles. Requesting cancellation of that order."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 4137,
+    "user_id": 99,
+    "store_id": 9,
+    "product_id": 333,
+    "quantity": 1,
+    "total_cents": 12950,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "Need an update for planning: current status of my order [ORDER], Handmade Cookbook from Paper Lantern Press?",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "I'm handling a customer's cancellation request for order [ORDER] from Clover Field Naturals. Please get this moving and tell me exactly what needs to happen next.",
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

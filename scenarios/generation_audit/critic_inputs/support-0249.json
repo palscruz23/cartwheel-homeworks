@@ -1,0 +1,30 @@
+{
+  "scenario_id": "support-0249",
+  "task": {
+    "role": "support",
+    "goal": "Ask for help with a purchase from another company.",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "followups": [
+      "Just to clarify, their purchase was with the other company rather than through Cartwheel. I'm trying to help them resolve it, but I'm not quite sure what assistance you can give with an outside purchase."
+    ]
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly.",
+    "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it.",
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "What's the current status of my order [ORDER] from Wooden Whale Workshop, and what do I need to do next? I just want a clear answer so I can get on with my day.",
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "can u open a refnd request for order [ORDER] from Second Stitch Apparel? im helpng the custmer with this suport ticket.",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

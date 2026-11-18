@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0233",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "store_name": "Cascade Audio",
+    "item_name": "Portable Desk Lamp",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "followups": [
+      "The lamp is no longer needed for this order, which is why I'm asking for cancellation. I may be making this sound more complicated than it is, but I'd like to cancel it."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 6188,
+    "user_id": 257,
+    "store_id": 5,
+    "product_id": 191,
+    "quantity": 1,
+    "total_cents": 28975,
+    "status": "shipped",
+    "ordered_at": "2026-06-26",
+    "shipped_at": "2026-06-29",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "Hi, quick order check: current status for [ORDER]?",
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "I'm assisting a customer with order [ORDER] from Bright Socket Electronics. Please give me its current status and any next step in a few plain words.",
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?",
+    "Hi, I run Copperline Tools. Could you find our Speckled Screwdriver Set and show the available listings and prices? Please keep it brief and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0002",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Wooden Whale Workshop",
+    "item_name": "Travel Card Game",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4722,
+    "user_id": 260,
+    "store_id": 12,
+    "product_id": 476,
+    "quantity": 1,
+    "total_cents": 22250,
+    "status": "shipped",
+    "ordered_at": "2026-06-25",
+    "shipped_at": "2026-06-28",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "Hi, could you help me untangle an order question? I'm assisting a customer with order [ORDER], the Matte Coffee Beans from Golden Hour Coffee, and I'm getting a bit turned around about where it stands. Could you check its current status?",
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please.",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "How is the standard return window counted? Need to explain it to a customer.",
+    "I'm helping a customer who wants to dispute the charge for order [ORDER], the Walnut Bath Salts from Clover Field Naturals. I'm a bit unsure where to begin with a charge dispute, and I don't want to muddle the process. What help is available for this?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

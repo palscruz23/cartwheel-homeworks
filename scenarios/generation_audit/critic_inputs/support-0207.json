@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0207",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds. Request a partial refund of $100.00; this is an amount you are asking for, not a claim about a price or rule.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Sturdy Bath Salts",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 287,
+    "user_id": 388,
+    "store_id": 18,
+    "product_id": 688,
+    "quantity": 1,
+    "total_cents": 18525,
+    "status": "delivered",
+    "ordered_at": "2026-06-10",
+    "shipped_at": "2026-06-12",
+    "delivered_at": "2026-06-14",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly.",
+    "Hi, I'd like a refund for my order [ORDER] from Second Stitch Apparel. Please keep the answer short and plain.",
+    "My Copperline Tools customer wants their money back for order [ORDER]. Please start a refund request so I can get this issue handled promptly.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "I'm assisting a customer with order [ORDER] from Bright Socket Electronics. Please give me its current status and any next step in a few plain words.",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

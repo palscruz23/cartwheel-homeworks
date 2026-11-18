@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0140",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Bright Socket Electronics",
+    "item_description": "Portable USB-C Hub",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 223,
+    "store_id": 6,
+    "title": "Portable USB-C Hub",
+    "description": "Portable USB-C Hub from Bright Socket Electronics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "electronics",
+    "price_cents": 20775
+  },
+  "other_openings_for_diversity": [
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "Can you find the Woven Atlas at Northwind Books and show me the available listings and prices? A short, simple list would help.",
+    "Checking my store catalog. Northwind Books, Modern Novel. Find available listings and prices, please.",
+    "Could you help me find the Handmade Cookbook for a customer?",
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

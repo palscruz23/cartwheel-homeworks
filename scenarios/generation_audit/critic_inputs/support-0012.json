@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0012",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Petal & Stem",
+    "item_name": "Modern Garden Gloves",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7230,
+    "user_id": 150,
+    "store_id": 3,
+    "product_id": 114,
+    "quantity": 1,
+    "total_cents": 21450,
+    "status": "shipped",
+    "ordered_at": "2026-06-28",
+    "shipped_at": "2026-06-30",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "Hi, I run Juniper Home Goods. Could you check the current status of order [ORDER]? Just a short, plain answer would be great.",
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?",
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving.",
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Pocket Arcade",
+  "item_name": "Travel Bluetooth Speaker",
+  "conversation_variation": "ask a practical question"
+}

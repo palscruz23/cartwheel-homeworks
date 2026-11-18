@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0202",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to compare the matching listings for this item at the named store.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "tray (the listing title is not visible)",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3,
+    "store_id": 1,
+    "title": "",
+    "description": "Portable Tray from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 975
+  },
+  "other_openings_for_diversity": [
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Hi, support lookup: customer needs help finding a tray at Blue Heron Ceramics. Listing title isn't visible. Can you locate the product?",
+    "I need to see what Blue Heron Ceramics currently lists for a tray so I can decide what to do next. The listing title isn't visible to me. Please check the current listing details for the tray; I need those details.",
+    "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order.",
+    "Thinking of changing my purchase. When can I cancel an order?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

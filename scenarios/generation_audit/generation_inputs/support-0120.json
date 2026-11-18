@@ -1,0 +1,7 @@
+{
+  "role": "support",
+  "goal": "Ask which orders your role is allowed to view.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "conversation_variation": "focus on next steps"
+}

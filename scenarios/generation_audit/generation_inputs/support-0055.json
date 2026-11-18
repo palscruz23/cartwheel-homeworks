@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "store_name": "Golden Hour Coffee",
+  "item_name": "Vintage Olive Oil",
+  "conversation_variation": "focus on next steps"
+}

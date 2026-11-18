@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0138",
+  "task": {
+    "role": "support",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Cascade Audio",
+    "item_description": "Sturdy USB-C Hub",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 197,
+    "store_id": 5,
+    "title": "Sturdy USB-C Hub",
+    "description": "Sturdy USB-C Hub from Cascade Audio. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "electronics",
+    "price_cents": 25075
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm looking for the Everyday Desk Lamp at Bright Socket Electronics. Could you show me the available listings and how much they cost?",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here.",
+    "Hello, I need to locate the Vintage Water Bottle in my catalog. Please find it for me. I need that item located.",
+    "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "Can you change my payment card?",
+    "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

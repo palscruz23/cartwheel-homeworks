@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0133",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Copperline Tools",
+    "item_description": "Woven Socket Set",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm trying to decide what to buy and need to find the Woven Socket Set at Copperline Tools. Please show me the available listings and their prices. I need the listings with prices, please.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 132,
+    "store_id": 4,
+    "title": "Woven Socket Set",
+    "description": "Woven Socket Set from Copperline Tools. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "tools",
+    "price_cents": 3800
+  },
+  "other_openings_for_diversity": [
+    "Hi, I run Copperline Tools. Could you find our Speckled Screwdriver Set and show the available listings and prices? Please keep it brief and plain.",
+    "Need options for a customer before they choose. Find Portable Hammer at Copperline Tools. Show available listings and prices.",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "hey, im helpin a custmer find the Compact Journal at Northwind Books. can u show the availble listings and prices?",
+    "Support inquiry: customer wants to dispute charge for order [ORDER], Clover Field Naturals. What assistance is available?",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0197",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to compare the matching listings for this item at the named store.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "Rustic Pitcher",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4,
+    "store_id": 1,
+    "title": "Rustic Pitcher",
+    "description": "Rustic Pitcher from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": -500
+  },
+  "other_openings_for_diversity": [
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?",
+    "i run Blue Heron Ceramics. wat does our store curently list for Rustic Pitcher? need to chek before i reply to a custmer.",
+    "Hi, support lookup: customer needs help finding a tray at Blue Heron Ceramics. Listing title isn't visible. Can you locate the product?",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "Refund needed for my order [ORDER], Harbor Knits. Please open the request and list next steps for me.",
+    "Hi, quick order check: current status for [ORDER]?",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

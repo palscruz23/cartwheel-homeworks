@@ -1,0 +1,30 @@
+{
+  "scenario_id": "support-0247",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask the assistant to change your payment card; do not include any actual card details.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 2,
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you change my payment card?",
+    "followups": [
+      "Need to replace the card on my account. Please help update it."
+    ]
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly.",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat.",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer.",
+    "Shopping lookup: need to find Modern Headlamp so I can check the listing before buying."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

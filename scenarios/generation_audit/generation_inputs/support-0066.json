@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 2,
+  "store_name": "Trailhead Supply",
+  "item_name": "Portable Daypack",
+  "conversation_variation": "start directly with the request"
+}

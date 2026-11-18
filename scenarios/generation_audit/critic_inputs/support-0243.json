@@ -1,0 +1,41 @@
+{
+  "scenario_id": "support-0243",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Cascade Audio",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9238,
+    "user_id": 129,
+    "store_id": 5,
+    "product_id": 173,
+    "quantity": 1,
+    "total_cents": 10025,
+    "status": "delivered",
+    "ordered_at": "2025-11-26",
+    "shipped_at": "2025-11-29",
+    "delivered_at": "2025-12-02",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, quick order check: current status for [ORDER]?",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly.",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "hey, im helpin a custmer find the Compact Journal at Northwind Books. can u show the availble listings and prices?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

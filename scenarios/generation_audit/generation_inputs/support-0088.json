@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+  "user_style": "typo_heavy",
+  "turn_count": 2,
+  "store_name": "Golden Hour Coffee",
+  "item_name": "Compact Tea Sampler",
+  "conversation_variation": "mention why you need help briefly"
+}

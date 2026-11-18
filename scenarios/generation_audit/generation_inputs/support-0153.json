@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "store_name": "Clover Field Naturals",
+  "item_name": "Walnut Bath Salts",
+  "conversation_variation": "mention why you need help briefly"
+}

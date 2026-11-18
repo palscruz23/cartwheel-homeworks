@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Start by asking about the named item from the named store WITHOUT an order number. In the last followup independently add: the order reference is [ORDER]. Middle followups may restate the item or store without assuming an agent response.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 3,
+  "store_name": "Juniper Home Goods",
+  "item_name": "Walnut Dinner Plate Set",
+  "conversation_variation": "mention why you need help briefly"
+}

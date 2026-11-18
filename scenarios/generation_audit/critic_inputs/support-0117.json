@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0117",
+  "task": {
+    "role": "support",
+    "goal": "Ask how long a human takes to respond to an escalation.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "How long does a human take to respond to an escalation? I'm assisting a customer and need a clear expected response time. Please give me the timeframe I can tell them.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I'm considering returning something I've opened. Can a restocking fee apply? Please explain briefly in plain language.",
+    "Hi. I run a store here. Can I set my own return window?",
+    "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?",
+    "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "i run Juniper Home Goods and need to chek our Sturdy Tray listings for a custmer. can u find them and show whats availble with prices?",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

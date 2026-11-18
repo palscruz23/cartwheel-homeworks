@@ -1,0 +1,45 @@
+{
+  "scenario_id": "support-0237",
+  "task": {
+    "role": "support",
+    "goal": "Start by asking about the named item from the named store WITHOUT an order number. In the last followup independently add: the order reference is [ORDER]. Middle followups may restate the item or store without assuming an agent response.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 3,
+    "store_name": "Meridian Cycles",
+    "item_name": "Handmade Daypack",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you help me check on a customer's Handmade Daypack from Meridian Cycles? I need information about that purchase. Please help me look into it.",
+    "followups": [
+      "It's the Handmade Daypack from Meridian Cycles. Please focus on that item; I need help checking on the customer's purchase.",
+      "The order reference is [ORDER]. Please check that order for the customer; I need the order information."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 8885,
+    "user_id": 482,
+    "store_id": 10,
+    "product_id": 361,
+    "quantity": 1,
+    "total_cents": 10775,
+    "status": "delivered",
+    "ordered_at": "2025-08-12",
+    "shipped_at": "2025-08-15",
+    "delivered_at": "2025-08-22",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "Hi, quick order check: current status for [ORDER]?",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "What's the current status of my order [ORDER] from Wooden Whale Workshop, and what do I need to do next? I just want a clear answer so I can get on with my day.",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer.",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

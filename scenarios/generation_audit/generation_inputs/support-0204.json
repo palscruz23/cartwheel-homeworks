@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask for help locating this product in the named store.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "tray (the listing title is not visible)",
+  "conversation_variation": "use a conversational opening"
+}

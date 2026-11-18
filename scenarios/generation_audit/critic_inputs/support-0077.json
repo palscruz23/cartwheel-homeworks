@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0077",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Slim Hand Cream",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6552,
+    "user_id": 410,
+    "store_id": 18,
+    "product_id": 708,
+    "quantity": 2,
+    "total_cents": 43700,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "Hi, quick timing check before I order: how long can handling and shipping take?",
+    "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain.",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

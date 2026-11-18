@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "neutral_conversational",
+  "turn_count": 2,
+  "store_name": "Pocket Arcade",
+  "item_name": "Walnut Desk Lamp",
+  "conversation_variation": "mention why you need help briefly"
+}

@@ -1,0 +1,6 @@
+{
+  "temporary_seed_db": "/tmp/hw3-seed-check.db",
+  "compared_scenarios": 200,
+  "mismatches": [],
+  "working_database_modified": false
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0035",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Wooden Whale Workshop",
+    "item_name": "Modern Marble Run",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2365,
+    "user_id": 471,
+    "store_id": 12,
+    "product_id": 462,
+    "quantity": 1,
+    "total_cents": 11875,
+    "status": "refunded",
+    "ordered_at": "2026-06-20",
+    "shipped_at": "2026-06-23",
+    "delivered_at": "2026-06-25",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request.",
+    "Can you refund order [ORDER] for my Everyday Dry Bag from Trailhead Supply? I want my money back, please. Please get the refund started.",
+    "A customer asked my Petal & Stem store for their money back on order [ORDER]. Please request a refund and give me a short, plain update.",
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "hey, im helpin a custmer find the Compact Journal at Northwind Books. can u show the availble listings and prices?",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

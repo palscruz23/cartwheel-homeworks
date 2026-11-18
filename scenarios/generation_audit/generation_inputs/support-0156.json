@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Clover Field Naturals",
+  "item_name": "Walnut Face Serum",
+  "conversation_variation": "start directly with the request"
+}

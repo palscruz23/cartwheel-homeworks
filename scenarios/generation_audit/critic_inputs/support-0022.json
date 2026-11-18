@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0022",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "item_name": "Sturdy Trekking Poles",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6972,
+    "user_id": 146,
+    "store_id": 10,
+    "product_id": 391,
+    "quantity": 1,
+    "total_cents": 4200,
+    "status": "shipped",
+    "ordered_at": "2026-06-27",
+    "shipped_at": "2026-06-29",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Hello, I'm with Meridian Cycles. I need you to check the current status of order [ORDER] for the Heavy-Duty Trekking Poles. Please check it now; I need a clear status update on this order.",
+    "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "Please move forward with a refund for the customer on order [ORDER], the Matte Shampoo Bar from Fern & Fog Skincare. I need this refund request actioned. Please take the next step to process it.",
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting.",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "Please find the Compact Trowel Set in my store, Petal & Stem, and show me the available listings with their prices.",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

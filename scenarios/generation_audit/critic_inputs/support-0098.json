@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0098",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Trailhead Supply",
+    "item_name": "Vintage Water Bottle",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3083,
+    "user_id": 254,
+    "store_id": 9,
+    "product_id": 340,
+    "quantity": 2,
+    "total_cents": 32300,
+    "status": "cancelled",
+    "ordered_at": "2025-05-28",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "Please explain how the standard return window is counted for orders from my store. I need a clear answer on when the count starts and how the days are counted.",
+    "I'm helping a customer work out their next step with a charge, and I'm getting confused about the timing. How long after delivery can a charge be disputed? I want to get that time limit straight before guiding them further.",
+    "Hi, I need a clear answer before I buy: can a store set its own return window? Please clarify that for me. Can the shop choose its own window?",
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here.",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

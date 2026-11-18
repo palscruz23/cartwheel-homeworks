@@ -1,0 +1,41 @@
+{
+  "scenario_id": "support-0244",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, quick order check: current status for [ORDER]?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6701,
+    "user_id": 165,
+    "store_id": 18,
+    "product_id": 683,
+    "quantity": 1,
+    "total_cents": 2600,
+    "status": "delivered",
+    "ordered_at": "2025-11-11",
+    "shipped_at": "2025-11-13",
+    "delivered_at": "2025-11-16",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "Can you change my payment card?",
+    "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it.",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "Can you check where order [ORDER] stands right now? It's the Vintage Jam Trio from my shop, Saltbox Pantry. I'm trying to sort out my orders and I've rather lost track of this one.",
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "I'm trying to figure out what to buy next, but I've got a little lost looking for the Woven Field Guide at Paper Lantern Press. Could you find it and show me the available listings and prices? Seeing the choices would help me decide where to go from here."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

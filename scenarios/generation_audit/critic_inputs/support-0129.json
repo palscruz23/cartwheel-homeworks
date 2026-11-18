@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0129",
+  "task": {
+    "role": "support",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_description": "Midnight Cutting Board",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 80,
+    "store_id": 2,
+    "title": "Midnight Cutting Board",
+    "description": "Midnight Cutting Board from Juniper Home Goods. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 6475
+  },
+  "other_openings_for_diversity": [
+    "Find the Portable Trowel Set at Petal & Stem and show me the available listings and prices. I want to choose one and get on with my purchase.",
+    "Please find the Compact Trowel Set in my store, Petal & Stem, and show me the available listings with their prices.",
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply.",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "I'm assisting a customer with order [ORDER] from Bright Socket Electronics. Please give me its current status and any next step in a few plain words."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

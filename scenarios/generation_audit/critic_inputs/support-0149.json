@@ -1,0 +1,39 @@
+{
+  "scenario_id": "support-0149",
+  "task": {
+    "role": "merchant",
+    "goal": "First ask to find the named item WITHOUT stating the store. In the followup, independently clarify that you mean the named store. Do not invent a price, stock level or specifications.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Trailhead Supply",
+    "item_description": "Vintage Water Bottle",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hello, I need to locate the Vintage Water Bottle in my catalog. Please find it for me. I need that item located.",
+    "followups": [
+      "The store I mean is Trailhead Supply, my store. Please search for the Vintage Water Bottle there. I need the listing from Trailhead Supply."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 340,
+    "store_id": 9,
+    "title": "Vintage Water Bottle",
+    "description": "Vintage Water Bottle from Trailhead Supply. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "outdoors",
+    "price_cents": 16150
+  },
+  "other_openings_for_diversity": [
+    "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain.",
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?",
+    "Support inquiry: customer wants to dispute charge for order [ORDER], Clover Field Naturals. What assistance is available?",
+    "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose.",
+    "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain.",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

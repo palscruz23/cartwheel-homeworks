@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0085",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Speckled Field Guide",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7732,
+    "user_id": 315,
+    "store_id": 7,
+    "product_id": 247,
+    "quantity": 2,
+    "total_cents": 17300,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?",
+    "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "Customer product check: can you find Slim Trowel Set at Petal & Stem? Need available listings + prices for reply.",
+    "I run Juniper Home Goods and need help with a charge dispute for order [ORDER]. What help is available? Please keep it short and simple.",
+    "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work.",
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0174",
+  "task": {
+    "role": "support",
+    "goal": "Ask the assistant to change your payment card; do not include any actual card details.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "Can you change my payment card?",
+    "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

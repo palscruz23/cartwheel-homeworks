@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "store_name": "Bright Socket Electronics",
+  "item_name": "Slim USB-C Hub",
+  "conversation_variation": "use a conversational opening"
+}

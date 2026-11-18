@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 1,
+  "store_name": "Clover Field Naturals",
+  "item_name": "Slim Hand Cream",
+  "conversation_variation": "ask a practical question"
+}

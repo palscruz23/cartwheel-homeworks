@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask whether a return deadline can be checked for order [ORDER].",
+  "user_style": "operational_shorthand",
+  "turn_count": 2,
+  "store_name": "Atlas Stationery",
+  "item_name": "Classic Pencil Set",
+  "conversation_variation": "focus on next steps"
+}

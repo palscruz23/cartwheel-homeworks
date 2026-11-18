@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0030",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Bright Socket Electronics",
+    "item_name": "Matte Webcam",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'm assisting a customer with order [ORDER] from Bright Socket Electronics. Please give me its current status and any next step in a few plain words.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4060,
+    "user_id": 193,
+    "store_id": 6,
+    "product_id": 203,
+    "quantity": 1,
+    "total_cents": 1725,
+    "status": "refunded",
+    "ordered_at": "2026-06-24",
+    "shipped_at": "2026-06-27",
+    "delivered_at": "2026-06-29",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "Can you refund order [ORDER] for my Everyday Dry Bag from Trailhead Supply? I want my money back, please. Please get the refund started.",
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "Hi, I'm looking for the Everyday Desk Lamp at Bright Socket Electronics. Could you show me the available listings and how much they cost?",
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

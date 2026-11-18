@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0042",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Slim Hand Cream",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7563,
+    "user_id": 93,
+    "store_id": 18,
+    "product_id": 708,
+    "quantity": 1,
+    "total_cents": 21850,
+    "status": "delivered",
+    "ordered_at": "2026-06-01",
+    "shipped_at": "2026-06-02",
+    "delivered_at": "2026-06-06",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "Please move forward with a refund for the customer on order [ORDER], the Matte Shampoo Bar from Fern & Fog Skincare. I need this refund request actioned. Please take the next step to process it.",
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please.",
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "Hello, I'm with Bright Socket Electronics and I'm trying to sort something out with one of our orders. Could you cancel order [ORDER] for the Slim USB-C Hub? I'm getting myself confused with the admin, but canceling that order is what I need help with.",
+    "I'm considering disputing a charge and want to understand the timing before I take the next step. How long after delivery can I dispute it?",
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

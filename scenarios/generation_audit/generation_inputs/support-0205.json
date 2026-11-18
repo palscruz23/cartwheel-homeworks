@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask what the store currently lists for this product.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 2,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "tray (the listing title is not visible)",
+  "conversation_variation": "focus on next steps"
+}

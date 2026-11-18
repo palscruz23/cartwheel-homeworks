@@ -1,0 +1,36 @@
+{
+  "scenario_id": "support-0221",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2,
+    "name": "Juniper Home Goods",
+    "slug": "juniper-home-goods",
+    "category": "home_and_kitchen",
+    "return_window_days_override": 14,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain.",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?",
+    "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?",
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "Hi, quick order check: current status for [ORDER]?",
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

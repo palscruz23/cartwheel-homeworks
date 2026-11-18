@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0211",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds. Request a partial refund of $100.01; this is an amount you are asking for, not a claim about a price or rule.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Copperline Tools",
+    "item_name": "Rustic Tape Measure",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3945,
+    "user_id": 36,
+    "store_id": 4,
+    "product_id": 135,
+    "quantity": 1,
+    "total_cents": 21000,
+    "status": "delivered",
+    "ordered_at": "2026-05-28",
+    "shipped_at": "2026-05-30",
+    "delivered_at": "2026-06-06",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Hi, I'd like a refund for my order [ORDER] from Second Stitch Apparel. Please keep the answer short and plain.",
+    "My Copperline Tools customer wants their money back for order [ORDER]. Please start a refund request so I can get this issue handled promptly.",
+    "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat.",
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "how long does an aproved refnd take to show up in my acount?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

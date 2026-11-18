@@ -1,0 +1,8 @@
+{
+  "role": "merchant",
+  "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 1,
+  "store_name": "Harbor Knits",
+  "conversation_variation": "ask a practical question"
+}

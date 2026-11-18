@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0159",
+  "task": {
+    "role": "support",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 2,
+    "store_name": "Second Stitch Apparel",
+    "item_name": "Walnut Beanie",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "followups": [
+      "Customer wants to dispute that charge. Need the available assistance and steps."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 3953,
+    "user_id": 356,
+    "store_id": 15,
+    "product_id": 590,
+    "quantity": 1,
+    "total_cents": 23475,
+    "status": "delivered",
+    "ordered_at": "2026-01-08",
+    "shipped_at": "2026-01-10",
+    "delivered_at": "2026-01-14",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?",
+    "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain.",
+    "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain.",
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0003",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Portable Field Guide",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9050,
+    "user_id": 480,
+    "store_id": 7,
+    "product_id": 244,
+    "quantity": 1,
+    "total_cents": 3825,
+    "status": "delivered",
+    "ordered_at": "2026-06-26",
+    "shipped_at": "2026-06-27",
+    "delivered_at": "2026-06-30",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "What's the current status of my order [ORDER] from Wooden Whale Workshop, and what do I need to do next? I just want a clear answer so I can get on with my day.",
+    "Hi, I run Juniper Home Goods. Could you check the current status of order [ORDER]? Just a short, plain answer would be great.",
+    "Check the current status of order [ORDER] for my Paper Lantern Press store. I need a straight answer so I can get this off my plate.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "how long does an aproved refnd take to show up in my acount?",
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

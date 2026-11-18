@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0065",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Trailhead Supply",
+    "item_name": "Modern Headlamp",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'd like to get a refund moving on order [ORDER] for the Modern Headlamp from my store, Trailhead Supply. I'm a bit unsure about the steps, or where to start really, but could you help process the refund and tell me what I need to do next?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6476,
+    "user_id": 423,
+    "store_id": 9,
+    "product_id": 327,
+    "quantity": 1,
+    "total_cents": 5325,
+    "status": "delivered",
+    "ordered_at": "2026-06-23",
+    "shipped_at": "2026-06-24",
+    "delivered_at": "2026-07-01",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly.",
+    "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "can u open a refnd request for order [ORDER] from Second Stitch Apparel? im helpng the custmer with this suport ticket.",
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?",
+    "how long does an aproved refnd take to show up in my acount?",
+    "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly.",
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "pls request a refnd for order [ORDER] from Northwind Books. im handlng this for the custmer in suport."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

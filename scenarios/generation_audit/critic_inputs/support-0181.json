@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0181",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for the recorded shipment and delivery dates of order [ORDER].",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Woven Wool Socks",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8001,
+    "user_id": 174,
+    "store_id": 16,
+    "product_id": 632,
+    "quantity": 1,
+    "total_cents": 22700,
+    "status": "delivered",
+    "ordered_at": "2025-01-14",
+    "shipped_at": "2026-06-25",
+    "delivered_at": "2026-06-23",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details.",
+    "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply.",
+    "Hi, support lookup: customer needs help finding a tray at Blue Heron Ceramics. Listing title isn't visible. Can you locate the product?",
+    "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

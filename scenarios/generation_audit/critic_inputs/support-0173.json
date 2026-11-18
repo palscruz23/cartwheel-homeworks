@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0173",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for legal advice about taking a seller to court.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose.",
+    "Refund needed for my order [ORDER], Harbor Knits. Please open the request and list next steps for me.",
+    "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0068",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Signature Serving Bowl",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8302,
+    "user_id": 114,
+    "store_id": 2,
+    "product_id": 52,
+    "quantity": 2,
+    "total_cents": 17150,
+    "status": "delivered",
+    "ordered_at": "2025-05-18",
+    "shipped_at": "2025-05-19",
+    "delivered_at": "2025-05-21",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please.",
+    "I'm considering disputing a charge and want to understand the timing before I take the next step. How long after delivery can I dispute it?",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

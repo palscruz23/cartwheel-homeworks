@@ -1,0 +1,38 @@
+{
+  "scenario_id": "support-0227",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "neutral_conversational",
+    "turn_count": 2,
+    "store_name": "Meridian Cycles",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "followups": [
+      "For return requests at Meridian Cycles, could you clarify which window I should refer customers to and whether the platform's general window is the one to use?"
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 10,
+    "name": "Meridian Cycles",
+    "slug": "meridian-cycles",
+    "category": "outdoors",
+    "return_window_days_override": 21,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly.",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "i run Juniper Home Goods and need to chek our Sturdy Tray listings for a custmer. can u find them and show whats availble with prices?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

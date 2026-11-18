@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0196",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to find the named product in the named store and explain the matching listings.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "Rustic Pitcher",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4,
+    "store_id": 1,
+    "title": "Rustic Pitcher",
+    "description": "Rustic Pitcher from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": -500
+  },
+  "other_openings_for_diversity": [
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?",
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

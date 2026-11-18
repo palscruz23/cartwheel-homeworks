@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 2,
+  "store_name": "Second Stitch Apparel",
+  "item_name": "Walnut Beanie",
+  "conversation_variation": "use a conversational opening"
+}

@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0082",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 2,
+    "store_name": "Pocket Arcade",
+    "item_name": "Handmade Mechanical Keyboard",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "followups": [
+      "I no longer need the Handmade Mechanical Keyboard. Please add that to my cancellation request."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 6478,
+    "user_id": 280,
+    "store_id": 19,
+    "product_id": 736,
+    "quantity": 2,
+    "total_cents": 38450,
+    "status": "placed",
+    "ordered_at": "2026-06-30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving.",
+    "Hello, I'm with Bright Socket Electronics and I'm trying to sort something out with one of our orders. Could you cancel order [ORDER] for the Slim USB-C Hub? I'm getting myself confused with the admin, but canceling that order is what I need help with.",
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "I'm helping a customer work out their next step with a charge, and I'm getting confused about the timing. How long after delivery can a charge be disputed? I want to get that time limit straight before guiding them further.",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed.",
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

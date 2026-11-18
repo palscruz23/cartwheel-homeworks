@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask to compare the matching listings for this item at the named store.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "Rustic Pitcher",
+  "conversation_variation": "ask a practical question"
+}

@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 2,
+  "store_name": "Copperline Tools",
+  "item_name": "Everyday Socket Set",
+  "conversation_variation": "mention why you need help briefly"
+}

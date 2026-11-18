@@ -1,0 +1,38 @@
+{
+  "scenario_id": "support-0228",
+  "task": {
+    "role": "support",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "operational_shorthand",
+    "turn_count": 2,
+    "store_name": "Saltbox Pantry",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?",
+    "followups": [
+      "Need source for ticket notes too: where can I verify the applicable Saltbox Pantry return window?"
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 13,
+    "name": "Saltbox Pantry",
+    "slug": "saltbox-pantry",
+    "category": "grocery",
+    "return_window_days_override": 7,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it.",
+    "I'm trying to work out whether there's anything I need to do about my Heavy-Duty Vase order from Blue Heron Ceramics. Could you check the current status of [ORDER]? I've got a bit lost keeping track of it.",
+    "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics.",
+    "Customer cancellation request. Order [ORDER], Sturdy Dry Bag from Trailhead Supply. Can you cancel it?",
+    "Hi, I'm trying to help a customer find the Midnight Cutting Board at Juniper Home Goods, and I'm getting a little lost in what to look for. Could you find the available listings and show their prices? I want to pass along what's actually listed."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

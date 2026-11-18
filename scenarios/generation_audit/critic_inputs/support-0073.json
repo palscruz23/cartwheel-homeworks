@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0073",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Sturdy Teapot",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I bought the Sturdy Teapot from Juniper Home Goods, but I've changed my mind about needing it. I'm not sure how to go about this, so could you help me request a refund for order [ORDER]? Sorry, I'm probably overexplaining; I'd like a refund.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3804,
+    "user_id": 319,
+    "store_id": 2,
+    "product_id": 47,
+    "quantity": 1,
+    "total_cents": 6325,
+    "status": "delivered",
+    "ordered_at": "2026-06-20",
+    "shipped_at": "2026-06-23",
+    "delivered_at": "2026-06-30",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?",
+    "Find the Heavy-Duty Poetry Collection for me. I'm a merchant trying to check a listing and need to get this done quickly.",
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

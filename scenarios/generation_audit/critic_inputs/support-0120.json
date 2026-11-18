@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0120",
+  "task": {
+    "role": "support",
+    "goal": "Ask which orders your role is allowed to view.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy.",
+    "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them.",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "Please find the Compact Trowel Set in my store, Petal & Stem, and show me the available listings with their prices.",
+    "Checking my store catalog. Northwind Books, Modern Novel. Find available listings and prices, please.",
+    "Merchant account here. Can you change my payment card?",
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing.",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

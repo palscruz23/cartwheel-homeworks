@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0061",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Little Fox Toys",
+    "item_name": "Woven Wooden Train",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "I want a refund for order [ORDER], the Woven Wooden Train from Little Fox Toys. Please start the refund. I want my money back for this order.",
+    "followups": [
+      "Please keep my request focused on refunding this order. I'm asking for a refund, and I need that request taken care of."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 9378,
+    "user_id": 106,
+    "store_id": 11,
+    "product_id": 411,
+    "quantity": 2,
+    "total_cents": 3250,
+    "status": "delivered",
+    "ordered_at": "2026-05-28",
+    "shipped_at": "2026-05-30",
+    "delivered_at": "2026-06-04",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language.",
+    "Helping a customer with a refund. Order [ORDER], Slim Desk Organizer from Atlas Stationery. Please refund the order.",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "can u open a refnd request for order [ORDER] from Second Stitch Apparel? im helpng the custmer with this suport ticket.",
+    "Hi, support here. Customer requests cancellation of order [ORDER], Bright Socket Electronics. Please action the request.",
+    "Support policy check for a customer ticket: can a restocking fee apply when the returned item has been opened?",
+    "Hi, I run Copperline Tools. Could you find our Speckled Screwdriver Set and show the available listings and prices? Please keep it brief and plain.",
+    "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0009",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "store_name": "Golden Hour Coffee",
+    "item_name": "Matte Coffee Beans",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, could you help me untangle an order question? I'm assisting a customer with order [ORDER], the Matte Coffee Beans from Golden Hour Coffee, and I'm getting a bit turned around about where it stands. Could you check its current status?",
+    "followups": [
+      "Could you also pull up the recorded shipment and delivery details for that order? I keep mixing up the shipping part and the delivery part, and I'd like to have the details from the record for the customer."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 8379,
+    "user_id": 222,
+    "store_id": 14,
+    "product_id": 546,
+    "quantity": 1,
+    "total_cents": 21000,
+    "status": "cancelled",
+    "ordered_at": "2026-06-17",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "What's the current status of my order [ORDER] from Wooden Whale Workshop, and what do I need to do next? I just want a clear answer so I can get on with my day.",
+    "Could you check the current status of order [ORDER] for the Woven Poetry Collection from my store, Northwind Books?",
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "I'm considering returning something I've opened. Can a restocking fee apply? Please explain briefly in plain language.",
+    "i want to disput the charge for my Northwind Books order [ORDER]. wat help can u give and whats my next step?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

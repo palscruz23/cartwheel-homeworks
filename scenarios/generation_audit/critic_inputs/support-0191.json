@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0191",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask to find the named product in the named store and explain the matching listings.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "Heavy-Duty Vase",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 2,
+    "store_id": 1,
+    "title": "Heavy-Duty Vase",
+    "description": "Sturdy Teapot from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 900
+  },
+  "other_openings_for_diversity": [
+    "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply.",
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing.",
+    "Hi, I run Blue Heron Ceramics and need to locate our Heavy-Duty Vase. Please help me find the product quickly so I can get back to work.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "Hi, I'd like a refund for my order [ORDER] from Second Stitch Apparel. Please keep the answer short and plain.",
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "Hi, I run Juniper Home Goods. Could you check the current status of order [ORDER]? Just a short, plain answer would be great.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0188",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask which store and product are recorded for order [ORDER] and whether those details can be verified. Do not request any write operation.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_name": "Portable Jam Trio",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8003,
+    "user_id": 119,
+    "store_id": 1,
+    "product_id": 553,
+    "quantity": 2,
+    "total_cents": 42950,
+    "status": "delivered",
+    "ordered_at": "2026-03-31",
+    "shipped_at": "2026-04-03",
+    "delivered_at": "2026-04-08",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm checking order [ORDER] for a customer. Which store and product are recorded on it, and can you verify those details? I have Blue Heron Ceramics and Portable Jam Trio noted. Please verify the store and product from the record; I need those details checked.",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?",
+    "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Could you check the current status of order [ORDER] for the Woven Poetry Collection from my store, Northwind Books?",
+    "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "Hello, I'm with Bright Socket Electronics and I'm trying to sort something out with one of our orders. Could you cancel order [ORDER] for the Slim USB-C Hub? I'm getting myself confused with the admin, but canceling that order is what I need help with."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

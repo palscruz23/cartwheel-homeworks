@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0180",
+  "task": {
+    "role": "support",
+    "goal": "Ask whether a return deadline can be checked for order [ORDER].",
+    "user_style": "operational_shorthand",
+    "turn_count": 2,
+    "store_name": "Atlas Stationery",
+    "item_name": "Classic Pencil Set",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "followups": [
+      "Please include the recorded delivery date in the lookup so I can explain the deadline to the customer."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 8002,
+    "user_id": 392,
+    "store_id": 20,
+    "product_id": 790,
+    "quantity": 1,
+    "total_cents": 7075,
+    "status": "delivered",
+    "ordered_at": "2025-05-17",
+    "shipped_at": "2026-06-20",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please give me the recorded shipment and delivery dates for my order [ORDER], the Woven Wool Socks from Harbor Knits. I need both dates from the record. Please check the shipment date and the delivery date.",
+    "What's the delivery timeline for order [ORDER] from my Harbor Knits store? Please give me a short, plain answer I can pass to the customer.",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund.",
+    "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0152",
+  "task": {
+    "role": "merchant",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Bright Socket Electronics",
+    "item_name": "Matte Mechanical Keyboard",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9347,
+    "user_id": 50,
+    "store_id": 6,
+    "product_id": 202,
+    "quantity": 1,
+    "total_cents": 8525,
+    "status": "delivered",
+    "ordered_at": "2026-03-16",
+    "shipped_at": "2026-03-19",
+    "delivered_at": "2026-03-21",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm helping a customer who wants to dispute the charge for order [ORDER], the Walnut Bath Salts from Clover Field Naturals. I'm a bit unsure where to begin with a charge dispute, and I don't want to muddle the process. What help is available for this?",
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?",
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "Planning tomorrow's outing. Weather forecast for Sydney, please?",
+    "Hi. Looking for Rustic Pitcher at Blue Heron Ceramics. Help me find it?",
+    "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?",
+    "Could you check the current status of order [ORDER] for the Woven Poetry Collection from my store, Northwind Books?",
+    "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

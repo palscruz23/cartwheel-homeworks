@@ -1,0 +1,7 @@
+{
+  "role": "shopper",
+  "goal": "Ask whether a restocking fee can apply to an opened return.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 1,
+  "conversation_variation": "mention why you need help briefly"
+}

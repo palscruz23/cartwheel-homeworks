@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "store_name": "Golden Hour Coffee",
+  "item_name": "Woven Jam Trio",
+  "conversation_variation": "mention why you need help briefly"
+}

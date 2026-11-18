@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Fern & Fog Skincare",
+  "item_name": "Modern Bath Salts",
+  "conversation_variation": "focus on next steps"
+}

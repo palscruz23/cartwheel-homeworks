@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0112",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask how long an approved refund takes to arrive.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "how long does an aproved refnd take to show up in my acount?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "I'm considering disputing a charge and want to understand the timing before I take the next step. How long after delivery can I dispute it?",
+    "Hi. I run a store here. Can I set my own return window?",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?",
+    "Need options for a customer before they choose. Find Portable Hammer at Copperline Tools. Show available listings and prices.",
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

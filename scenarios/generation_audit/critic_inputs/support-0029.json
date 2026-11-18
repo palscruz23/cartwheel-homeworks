@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0029",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Meridian Cycles",
+    "item_name": "Heavy-Duty Trekking Poles",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hello, I'm with Meridian Cycles. I need you to check the current status of order [ORDER] for the Heavy-Duty Trekking Poles. Please check it now; I need a clear status update on this order.",
+    "followups": [
+      "Please get me the recorded shipment and delivery details as well. I need both parts of the record for this order, so please include both shipment and delivery details."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 9239,
+    "user_id": 377,
+    "store_id": 10,
+    "product_id": 374,
+    "quantity": 2,
+    "total_cents": 27700,
+    "status": "cancelled",
+    "ordered_at": "2026-06-29",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm assisting a customer with order [ORDER] from Bright Socket Electronics. Please give me its current status and any next step in a few plain words.",
+    "Status of my order [ORDER], please. Compact Trekking Poles. Meridian Cycles.",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request.",
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly.",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

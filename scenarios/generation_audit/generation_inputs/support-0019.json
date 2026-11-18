@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "neutral_conversational",
+  "turn_count": 1,
+  "store_name": "Second Stitch Apparel",
+  "item_name": "Portable Scarf",
+  "conversation_variation": "use a conversational opening"
+}

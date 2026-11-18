@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+  "user_style": "neutral_conversational",
+  "turn_count": 1,
+  "store_name": "Petal & Stem",
+  "item_name": "Handmade Garden Gloves",
+  "conversation_variation": "use a conversational opening"
+}

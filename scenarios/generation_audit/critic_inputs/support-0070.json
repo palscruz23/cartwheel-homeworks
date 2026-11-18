@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0070",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Atlas Stationery",
+    "item_name": "Handmade Fountain Pen",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9413,
+    "user_id": 263,
+    "store_id": 20,
+    "product_id": 780,
+    "quantity": 1,
+    "total_cents": 27450,
+    "status": "delivered",
+    "ordered_at": "2026-06-10",
+    "shipped_at": "2026-06-12",
+    "delivered_at": "2026-06-17",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "can u open a refnd request for order [ORDER] from Second Stitch Apparel? im helpng the custmer with this suport ticket.",
+    "I bought the Sturdy Teapot from Juniper Home Goods, but I've changed my mind about needing it. I'm not sure how to go about this, so could you help me request a refund for order [ORDER]? Sorry, I'm probably overexplaining; I'd like a refund.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel.",
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "How long does a human take to respond to an escalation? I'm assisting a customer and need a clear expected response time. Please give me the timeframe I can tell them.",
+    "Checking my store catalog. Northwind Books, Modern Novel. Find available listings and prices, please.",
+    "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "store_name": "Trailhead Supply",
+  "item_name": "Everyday Dry Bag",
+  "conversation_variation": "ask a practical question"
+}

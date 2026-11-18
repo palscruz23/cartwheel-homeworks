@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0096",
+  "task": {
+    "role": "support",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "item_name": "Heavy-Duty Dry Bag",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8316,
+    "user_id": 332,
+    "store_id": 10,
+    "product_id": 394,
+    "quantity": 1,
+    "total_cents": 23525,
+    "status": "shipped",
+    "ordered_at": "2026-06-28",
+    "shipped_at": "2026-07-01",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Can you cancel my order [ORDER] for the Modern Pitcher from Blue Heron Ceramics? I'm a bit lost about where to do that, and I keep circling back to the order, but it's cancellation I'm trying to request.",
+    "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue.",
+    "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "Thinking of changing my purchase. When can I cancel an order?",
+    "If an issue with my store is escalated to a human, how long should I expect to wait for a response?",
+    "Hi. I run a store here. Can I set my own return window?",
+    "Checking my store catalog. Northwind Books, Modern Novel. Find available listings and prices, please.",
+    "Hi, I'm a bit confused about who to ask. I bought a kettle directly from a different company, outside Cartwheel, and I'm having trouble getting help with the purchase. Could you help me sort it out? I keep ending up unsure where to go.",
+    "I need to see what Blue Heron Ceramics currently lists for a tray so I can decide what to do next. The listing title isn't visible to me. Please check the current listing details for the tray; I need those details.",
+    "Can you change my payment card?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

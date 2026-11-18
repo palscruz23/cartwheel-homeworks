@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0190",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask which store and product are recorded for order [ORDER] and whether those details can be verified. Do not request any write operation.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 2,
+    "store_name": "Blue Heron Ceramics",
+    "item_name": "Portable Jam Trio",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "followups": [
+      "Please also tell me how to follow up if the recorded store or product doesn't match my purchase."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 8003,
+    "user_id": 119,
+    "store_id": 1,
+    "product_id": 553,
+    "quantity": 2,
+    "total_cents": 42950,
+    "status": "delivered",
+    "ordered_at": "2026-03-31",
+    "shipped_at": "2026-04-03",
+    "delivered_at": "2026-04-08",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply.",
+    "I'm thinking about getting the Heavy-Duty Vase from Blue Heron Ceramics, but I haven't quite got my bearings with the listing. Could you give me the available listing information for it? I'm trying to understand what I'm looking at before choosing.",
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "Could you find the tray at Blue Heron Ceramics and explain the matching listings? I'm helping a customer, but the listing title isn't visible to me, so I'm a bit stuck trying to identify it. All I can really go on is that it's a tray.",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Can you help me check on a customer's Handmade Daypack from Meridian Cycles? I need information about that purchase. Please help me look into it.",
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please.",
+    "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

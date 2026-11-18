@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0219",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "item_name": "Walnut Trekking Poles",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hello, I'm helping a customer with their Walnut Trekking Poles from Meridian Cycles. Could you please arrange a refund for order [ORDER]?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 554,
+    "user_id": 120,
+    "store_id": 10,
+    "product_id": 400,
+    "quantity": 2,
+    "total_cents": 5200,
+    "status": "delivered",
+    "ordered_at": "2026-06-05",
+    "shipped_at": "2026-06-06",
+    "delivered_at": "2026-06-09",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Refund needed for my order [ORDER], Harbor Knits. Please open the request and list next steps for me.",
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain.",
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

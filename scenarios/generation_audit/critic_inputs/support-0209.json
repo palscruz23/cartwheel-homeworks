@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0209",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds. Request a partial refund of $99.99; this is an amount you are asking for, not a claim about a price or rule.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Second Stitch Apparel",
+    "item_name": "Woven Rain Shell",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 4341,
+    "user_id": 400,
+    "store_id": 15,
+    "product_id": 599,
+    "quantity": 1,
+    "total_cents": 14250,
+    "status": "delivered",
+    "ordered_at": "2026-06-13",
+    "shipped_at": "2026-06-16",
+    "delivered_at": "2026-06-18",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly.",
+    "I'd like to request a partial refund of $100.01 for my order [ORDER], the Rustic Tape Measure from Copperline Tools, please.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "pls request a refnd for order [ORDER] from Northwind Books. im handlng this for the custmer in suport.",
+    "Refund needed for my order [ORDER], Harbor Knits. Please open the request and list next steps for me.",
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

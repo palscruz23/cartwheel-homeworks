@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Start by asking about the named item from the named store WITHOUT an order number. In the last followup independently add: the order reference is [ORDER]. Middle followups may restate the item or store without assuming an agent response.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 3,
+  "store_name": "Meridian Cycles",
+  "item_name": "Handmade Daypack",
+  "conversation_variation": "ask a practical question"
+}

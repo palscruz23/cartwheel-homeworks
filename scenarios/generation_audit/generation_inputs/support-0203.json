@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask for the available listing information for this product.",
+  "user_style": "neutral_conversational",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "tray (the listing title is not visible)",
+  "conversation_variation": "mention why you need help briefly"
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0067",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Cascade Audio",
+    "item_name": "Sturdy Mechanical Keyboard",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Can you help me get a refund for order [ORDER]? It's my Sturdy Mechanical Keyboard from Cascade Audio.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7772,
+    "user_id": 299,
+    "store_id": 5,
+    "product_id": 194,
+    "quantity": 1,
+    "total_cents": 14525,
+    "status": "delivered",
+    "ordered_at": "2026-06-19",
+    "shipped_at": "2026-06-20",
+    "delivered_at": "2026-06-24",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "Hi, I'm handling a customer's request about the Sturdy Hand Cream from Fern & Fog Skincare. Please arrange a refund for order [ORDER]. I need the refund request processed, please; that's the action I'm requesting.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "I'm handling a customer's cancellation request for order [ORDER] from Clover Field Naturals. Please get this moving and tell me exactly what needs to happen next.",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "My Copperline Tools customer wants their money back for order [ORDER]. Please start a refund request so I can get this issue handled promptly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

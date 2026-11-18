@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0189",
+  "task": {
+    "role": "support",
+    "goal": "Ask which store and product are recorded for order [ORDER] and whether those details can be verified. Do not request any write operation.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Blue Heron Ceramics",
+    "item_name": "Portable Jam Trio",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm checking order [ORDER] for a customer. Which store and product are recorded on it, and can you verify those details? I have Blue Heron Ceramics and Portable Jam Trio noted. Please verify the store and product from the record; I need those details checked.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8003,
+    "user_id": 119,
+    "store_id": 1,
+    "product_id": 553,
+    "quantity": 2,
+    "total_cents": 42950,
+    "status": "delivered",
+    "ordered_at": "2026-03-31",
+    "shipped_at": "2026-04-03",
+    "delivered_at": "2026-04-08",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain.",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply.",
+    "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose.",
+    "i run Blue Heron Ceramics. wat does our store curently list for Rustic Pitcher? need to chek before i reply to a custmer.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "I'm handling a customer's cancellation request for order [ORDER] from Clover Field Naturals. Please get this moving and tell me exactly what needs to happen next."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,8 @@
+{
+  "role": "shopper",
+  "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 2,
+  "store_name": "Northwind Books",
+  "conversation_variation": "start directly with the request"
+}

@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 1,
+  "store_name": "Northwind Books",
+  "item_name": "Woven Novel",
+  "conversation_variation": "ask a practical question"
+}

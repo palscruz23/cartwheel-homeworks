@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "store_name": "Second Stitch Apparel",
+  "item_name": "Classic Wool Socks",
+  "conversation_variation": "mention why you need help briefly"
+}

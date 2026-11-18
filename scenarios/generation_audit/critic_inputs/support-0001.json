@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0001",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "store_name": "Copperline Tools",
+    "item_name": "Everyday Utility Knife",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it.",
+    "followups": [
+      "Could you also check the shipment and delivery details recorded for that order? I'm getting myself confused about what's been shipped and what's been delivered, so I'd like to know what the record actually says."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 3684,
+    "user_id": 37,
+    "store_id": 4,
+    "product_id": 143,
+    "quantity": 1,
+    "total_cents": 17325,
+    "status": "placed",
+    "ordered_at": "2026-07-01",
+    "shipped_at": null,
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "I'm helping a customer with their Portable Field Guide purchase from Northwind Books. Could you check the current status of order [ORDER] so I can give them an update?",
+    "Hey, quick status check on my order [ORDER] from Juniper Home Goods?",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat.",
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "I'm a merchant. Which orders am I allowed to view, and how do I find the ones I can access? Please give me the short, plain version.",
+    "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

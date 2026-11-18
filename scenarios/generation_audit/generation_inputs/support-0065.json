@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "store_name": "Trailhead Supply",
+  "item_name": "Modern Headlamp",
+  "conversation_variation": "focus on next steps"
+}

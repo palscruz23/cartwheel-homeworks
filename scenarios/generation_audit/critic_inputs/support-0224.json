@@ -1,0 +1,36 @@
+{
+  "scenario_id": "support-0224",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Saltbox Pantry",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 13,
+    "name": "Saltbox Pantry",
+    "slug": "saltbox-pantry",
+    "category": "grocery",
+    "return_window_days_override": 7,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?",
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "Can you change my payment card?",
+    "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status.",
+    "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "I'm managing an order change for my store, Golden Hour Coffee. Could you please cancel order [ORDER] for the Sturdy Jam Trio?",
+    "I need to work out the next step for a payment issue at my store. How long after delivery can a charge be disputed? Please be clear about the deadline. I need the actual dispute timeframe."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

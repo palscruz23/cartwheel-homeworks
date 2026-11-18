@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask how many days remain to return order [ORDER].",
+  "user_style": "confused_rambling",
+  "turn_count": 1,
+  "store_name": "Atlas Stationery",
+  "item_name": "Classic Pencil Set",
+  "conversation_variation": "ask a practical question"
+}

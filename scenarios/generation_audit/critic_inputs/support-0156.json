@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0156",
+  "task": {
+    "role": "support",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Walnut Face Serum",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Support inquiry: customer wants to dispute charge for order [ORDER], Clover Field Naturals. What assistance is available?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9651,
+    "user_id": 391,
+    "store_id": 18,
+    "product_id": 715,
+    "quantity": 1,
+    "total_cents": 15050,
+    "status": "delivered",
+    "ordered_at": "2025-02-04",
+    "shipped_at": "2025-02-06",
+    "delivered_at": "2025-02-10",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "I run Juniper Home Goods and need help with a charge dispute for order [ORDER]. What help is available? Please keep it short and simple.",
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "Merchant account here. Can you change my payment card?",
+    "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "I'm checking a tray listing in my store, Blue Heron Ceramics, but its title isn't visible to me. Could you pull up the available listing information for the tray?",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "Checking for a customer. Order [ORDER], Heavy-Duty Bar Soap from Clover Field Naturals. Current status? Need it to determine next steps.",
+    "Could you arrange a refund for order [ORDER]? I'm assisting the customer with the Portable Card Game from Little Fox Toys, and I'm getting tangled up explaining this. The request I'm trying to put through is a refund for that order."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

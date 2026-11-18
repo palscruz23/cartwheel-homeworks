@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0111",
+  "task": {
+    "role": "support",
+    "goal": "Ask how the standard return window is counted.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "How is the standard return window counted? Need to explain it to a customer.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "how long does an aproved refnd take to show up in my acount?",
+    "I'm trying to explain cancellations to customers at my shop, and I'm not quite clear on the timing. When can an order be canceled? I keep getting turned around about which stage matters, so could you explain when cancellation is possible?",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "I'm considering returning something I've opened. Can a restocking fee apply? Please explain briefly in plain language.",
+    "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them.",
+    "Hi, I run Copperline Tools. Could you find our Speckled Screwdriver Set and show the available listings and prices? Please keep it brief and plain.",
+    "I run Juniper Home Goods and need help with a charge dispute for order [ORDER]. What help is available? Please keep it short and simple.",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "Refund needed for my order [ORDER], Harbor Knits. Please open the request and list next steps for me.",
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

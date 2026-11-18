@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 1,
+  "store_name": "Petal & Stem",
+  "item_name": "Vintage Garden Gloves",
+  "conversation_variation": "mention why you need help briefly"
+}

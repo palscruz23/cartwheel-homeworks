@@ -1,0 +1,7 @@
+{
+  "role": "support",
+  "goal": "Ask how long a human takes to respond to an escalation.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "conversation_variation": "ask a practical question"
+}

@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask what the store currently lists for this product.",
+  "user_style": "neutral_conversational",
+  "turn_count": 2,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "Heavy-Duty Vase",
+  "conversation_variation": "focus on next steps"
+}

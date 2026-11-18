@@ -1,0 +1,39 @@
+{
+  "scenario_id": "support-0195",
+  "task": {
+    "role": "support",
+    "goal": "Ask what the store currently lists for this product.",
+    "user_style": "neutral_conversational",
+    "turn_count": 2,
+    "store_name": "Blue Heron Ceramics",
+    "item_description": "Heavy-Duty Vase",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "followups": [
+      "I'd like the current listing details for that product so I can help the customer decide their next step. Could you show what's listed by the store?"
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 2,
+    "store_id": 1,
+    "title": "Heavy-Duty Vase",
+    "description": "Sturdy Teapot from Blue Heron Ceramics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "home_and_kitchen",
+    "price_cents": 900
+  },
+  "other_openings_for_diversity": [
+    "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose.",
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language.",
+    "Can you compare the tray listings at Blue Heron Ceramics? The listing title isn't visible to me, and I need help figuring out which one to choose without wasting more time.",
+    "Please request a partial refund of $99.99 for order [ORDER] from my Paper Lantern Press store. Keep the answer short and plain.",
+    "My Copperline Tools customer wants their money back for order [ORDER]. Please start a refund request so I can get this issue handled promptly.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "I need the current status of order [ORDER] from Harbor Knits. I'm handling the customer's support inquiry and need a clear update now.",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "pls cancel order [ORDER] from Meridian Cycles. im handling the custmers suport request for the Heavy-Duty Dry Bag."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

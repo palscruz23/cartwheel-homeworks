@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Harbor Knits",
+  "item_name": "Modern Rain Shell",
+  "conversation_variation": "use a conversational opening"
+}

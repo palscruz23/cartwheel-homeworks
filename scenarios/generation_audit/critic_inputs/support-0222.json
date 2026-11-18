@@ -1,0 +1,36 @@
+{
+  "scenario_id": "support-0222",
+  "task": {
+    "role": "support",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7,
+    "name": "Northwind Books",
+    "slug": "northwind-books",
+    "category": "books",
+    "return_window_days_override": 45,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?",
+    "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "Hi there, I ordered the Portable Scarf from Second Stitch Apparel. Could you tell me the current status of my order [ORDER]?",
+    "Please move forward with a refund for the customer on order [ORDER], the Matte Shampoo Bar from Fern & Fog Skincare. I need this refund request actioned. Please take the next step to process it.",
+    "Please cancel order [ORDER], the Everyday Planter from Petal & Stem. I'm handling the customer's request, and I'm getting a bit tangled in the order details, but this is the order they're asking to cancel.",
+    "I'm putting together guidance for a customer who may want to cancel a purchase. When can an order be canceled?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

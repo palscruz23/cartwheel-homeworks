@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 2,
+  "store_name": "Cascade Audio",
+  "item_name": "Handmade USB-C Hub",
+  "conversation_variation": "use a conversational opening"
+}

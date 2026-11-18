@@ -1,0 +1,30 @@
+{
+  "scenario_id": "support-0248",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for a weather forecast.",
+    "user_style": "typo_heavy",
+    "turn_count": 2,
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "followups": [
+      "pls include the chance of rain too, i need to plan for the stall."
+    ]
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly.",
+    "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it.",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "Hi, could you help me untangle an order question? I'm assisting a customer with order [ORDER], the Matte Coffee Beans from Golden Hour Coffee, and I'm getting a bit turned around about where it stands. Could you check its current status?",
+    "Please check the current status of order [ORDER], the Walnut Bar Soap from Fern & Fog Skincare. I'm assisting the customer and need a status update. Please prioritize getting me that status.",
+    "Please move forward with a refund for the customer on order [ORDER], the Matte Shampoo Bar from Fern & Fog Skincare. I need this refund request actioned. Please take the next step to process it.",
+    "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "If an issue with my store is escalated to a human, how long should I expect to wait for a response?",
+    "Hello, I need to locate the Vintage Water Bottle in my catalog. Please find it for me. I need that item located."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0005",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Modern Mug",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status.",
+    "followups": [
+      "I also need the recorded shipment and delivery details for this order. Please check those details too; I need the actual shipment and delivery record before I take the next step."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 5620,
+    "user_id": 123,
+    "store_id": 2,
+    "product_id": 51,
+    "quantity": 1,
+    "total_cents": 20550,
+    "status": "refunded",
+    "ordered_at": "2026-06-28",
+    "shipped_at": "2026-06-29",
+    "delivered_at": "2026-07-01",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please check the current status of order [ORDER] from Atlas Stationery for a customer support inquiry. Keep the answer short and plain.",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat.",
+    "Support check: current status for order [ORDER], Petal & Stem? Need the status to pass on to the customer.",
+    "pls chek the curent status of my order [ORDER] from Fern & Fog Skincare, the Travel Lip Balm.",
+    "Need an update for planning: current status of my order [ORDER], Handmade Cookbook from Paper Lantern Press?",
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "Support inquiry: customer wants to dispute charge for order [ORDER], Clover Field Naturals. What assistance is available?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

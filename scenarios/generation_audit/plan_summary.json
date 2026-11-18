@@ -1,0 +1,70 @@
+{
+  "role": {
+    "shopper": 85,
+    "merchant": 83,
+    "support": 82
+  },
+  "intent": {
+    "order_status": 60,
+    "refund": 55,
+    "cancellation": 30,
+    "policy_question": 35,
+    "product_search": 40,
+    "dispute": 15,
+    "out_of_scope": 15
+  },
+  "order_status": {
+    "placed": 19,
+    "shipped": 14,
+    "delivered": 105,
+    "cancelled": 11,
+    "refunded": 11,
+    "not_applicable": 90
+  },
+  "order_age_days_range": {
+    "0–7": 37,
+    "8–14": 16,
+    "15–30": 28,
+    "31–60": 16,
+    "61+": 63,
+    "not_applicable": 90
+  },
+  "difficulty": {
+    "well_specified": 165,
+    "missing_information": 15,
+    "ambiguous": 30,
+    "boundary": 40
+  },
+  "user_style": {
+    "confused_rambling": 32,
+    "frustrated_impatient": 32,
+    "neutral_conversational": 31,
+    "operational_shorthand": 31,
+    "repetitive_pressuring": 31,
+    "requests_short_plain_answer": 31,
+    "terse_fragmentary": 31,
+    "typo_heavy": 31
+  },
+  "turn_count": {
+    "2": 64,
+    "1": 181,
+    "3": 5
+  },
+  "applicable_policy": {
+    "none": 110,
+    "cw-refunds": 58,
+    "cw-cancellations": 33,
+    "cw-returns": 8,
+    "cw-shipping": 3,
+    "cw-disputes": 18,
+    "cw-payouts": 2,
+    "cw-escalations": 2,
+    "cw-restocking-fees": 2,
+    "cw-store-overrides": 2,
+    "cw-roles": 2,
+    "store-juniper-home-goods-policy": 3,
+    "store-northwind-books-policy": 3,
+    "store-meridian-cycles-policy": 2,
+    "store-saltbox-pantry-policy": 2
+  }
+}

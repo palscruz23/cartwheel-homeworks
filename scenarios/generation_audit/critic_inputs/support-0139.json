@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0139",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Bright Socket Electronics",
+    "item_description": "Everyday Desk Lamp",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I'm looking for the Everyday Desk Lamp at Bright Socket Electronics. Could you show me the available listings and how much they cost?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 210,
+    "store_id": 6,
+    "title": "Everyday Desk Lamp",
+    "description": "Everyday Desk Lamp from Bright Socket Electronics. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "electronics",
+    "price_cents": 5425
+  },
+  "other_openings_for_diversity": [
+    "Bright Socket Electronics merchant: look up Portable USB-C Hub. Need available listings and prices before I direct a customer to a listing.",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options.",
+    "Can you find the Woven Atlas at Northwind Books and show me the available listings and prices? A short, simple list would help.",
+    "Find the Heavy-Duty Poetry Collection for me. I'm a merchant trying to check a listing and need to get this done quickly.",
+    "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain.",
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "im planning an outdoor stall for my store. whats the wether forcast for Sydney tomorow?",
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

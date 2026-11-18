@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0184",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask the assistant to check the delivery details of order [ORDER].",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Woven Wool Socks",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8001,
+    "user_id": 174,
+    "store_id": 16,
+    "product_id": 632,
+    "quantity": 1,
+    "total_cents": 22700,
+    "status": "delivered",
+    "ordered_at": "2025-01-14",
+    "shipped_at": "2026-06-25",
+    "delivered_at": "2026-06-23",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I'm trying to work out what to do next with order [ORDER] from my store, Harbor Knits, for the Woven Wool Socks. Could you help me understand the recorded order timeline? I'm getting the stages tangled up in my head.",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "Which store and product are recorded for my order [ORDER], and can you verify those details? I have it down as the Portable Jam Trio from Blue Heron Ceramics and would like to check that against the record.",
+    "Find Heavy-Duty Vase in my store, Blue Heron Ceramics. Explain the matching listings, please.",
+    "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "Customer refund request. Order [ORDER], Sturdy Bath Salts from Clover Field Naturals. Can you issue a partial refund of $100.00?",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0165",
+  "task": {
+    "role": "support",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Juniper Home Goods",
+    "item_name": "Compact Mug",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 5321,
+    "user_id": 348,
+    "store_id": 2,
+    "product_id": 72,
+    "quantity": 1,
+    "total_cents": 875,
+    "status": "delivered",
+    "ordered_at": "2026-01-16",
+    "shipped_at": "2026-01-18",
+    "delivered_at": "2026-01-23",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain.",
+    "Merchant account here. Can you change my payment card?",
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "wat is the return deadlne for order [ORDER] from my Atlas Stationery store? its the Classic Pencil Set.",
+    "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details.",
+    "Pocket Arcade merchant: can you open a refund request for order [ORDER], Travel Bluetooth Speaker?",
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "hey, im helpin a custmer with order [ORDER] from Harbor Knits. can you chek its curent status for me?",
+    "Start a refund request for order [ORDER] from Trailhead Supply. I'm handling this for the customer and need it dealt with promptly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

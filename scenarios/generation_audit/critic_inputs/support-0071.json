@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0071",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 2,
+    "store_name": "Atlas Stationery",
+    "item_name": "Walnut Notebook",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Refund order [ORDER], please. Walnut Notebook from my store, Atlas Stationery.",
+    "followups": [
+      "Requesting the order refund as the merchant. Please proceed with that request."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 3491,
+    "user_id": 62,
+    "store_id": 20,
+    "product_id": 777,
+    "quantity": 2,
+    "total_cents": 36000,
+    "status": "delivered",
+    "ordered_at": "2026-06-12",
+    "shipped_at": "2026-06-15",
+    "delivered_at": "2026-06-20",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "can u open a refnd request for order [ORDER] from Second Stitch Apparel? im helpng the custmer with this suport ticket.",
+    "I bought the Sturdy Teapot from Juniper Home Goods, but I've changed my mind about needing it. I'm not sure how to go about this, so could you help me request a refund for order [ORDER]? Sorry, I'm probably overexplaining; I'd like a refund.",
+    "Hi, I run Fern & Fog Skincare and I need a refund requested for order [ORDER]. Please get this underway; I need to move on with the rest of my work.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "I'm considering returning something I've opened. Can a restocking fee apply? Please explain briefly in plain language.",
+    "hey, im helpin a custmer find the Compact Journal at Northwind Books. can u show the availble listings and prices?",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

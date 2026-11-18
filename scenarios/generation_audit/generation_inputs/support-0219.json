@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "neutral_conversational",
+  "turn_count": 1,
+  "store_name": "Meridian Cycles",
+  "item_name": "Walnut Trekking Poles",
+  "conversation_variation": "use a conversational opening"
+}

@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0235",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to cancel order [ORDER]. Do not state whether cancellation is allowed. For followups, add that you no longer need the item; never confirm a previous agent offer.",
+    "user_style": "neutral_conversational",
+    "turn_count": 2,
+    "store_name": "Little Fox Toys",
+    "item_name": "Rustic Marble Run",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'd like to cancel my order [ORDER] for the Rustic Marble Run from Little Fox Toys. Could you help me get that started and let me know the next step?",
+    "followups": [
+      "I no longer need the marble run, so I'd like to proceed with my request to cancel the order."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 7147,
+    "user_id": 259,
+    "store_id": 11,
+    "product_id": 410,
+    "quantity": 2,
+    "total_cents": 51700,
+    "status": "shipped",
+    "ordered_at": "2026-06-27",
+    "shipped_at": "2026-06-28",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "Can you help me check on a customer's Handmade Daypack from Meridian Cycles? I need information about that purchase. Please help me look into it.",
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "can u chek the curent status of order [ORDER] for my Copperline Tools store? custmer is askin me for an updat.",
+    "whats the curent staus of order [ORDER] for my Atlas Stationery shop? need to chek where it stands.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,7 @@
+{
+  "role": "support",
+  "goal": "Ask how long an approved refund takes to arrive.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 1,
+  "conversation_variation": "ask a practical question"
+}

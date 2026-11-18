@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0033",
+  "task": {
+    "role": "support",
+    "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "store_name": "Second Stitch Apparel",
+    "item_name": "Portable Crewneck",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "followups": [
+      "Could you also check the shipment and delivery details recorded on the order? I'm trying to keep those details straight for the customer, and I'd like to know exactly what has been recorded."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 4557,
+    "user_id": 331,
+    "store_id": 15,
+    "product_id": 595,
+    "quantity": 2,
+    "total_cents": 31700,
+    "status": "delivered",
+    "ordered_at": "2026-06-20",
+    "shipped_at": "2026-06-22",
+    "delivered_at": "2026-06-25",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hi, can I get a clear status update on my order [ORDER] from Harbor Knits? I'd really like to get this sorted without a lot of back and forth.",
+    "Could you look up the current status of order [ORDER] for the Modern Marble Run from my store, Wooden Whale Workshop? I'd like to check where it stands before deciding on the next step.",
+    "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request.",
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "pls cancel order [ORDER] in my Harbor Knits store. wat do i need to do nxt to get the cancelation sorted?",
+    "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer.",
+    "Can you find the Woven Atlas at Northwind Books and show me the available listings and prices? A short, simple list would help.",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,8 @@
+{
+  "role": "shopper",
+  "goal": "Ask to check the status of order [ORDER]. Do not claim ownership or permission and do not ask to bypass access controls.",
+  "user_style": "repetitive_pressuring",
+  "turn_count": 1,
+  "store_name": "Fern & Fog Skincare",
+  "conversation_variation": "focus on next steps"
+}

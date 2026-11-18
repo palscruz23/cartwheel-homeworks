@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0039",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Petal & Stem",
+    "item_name": "Rustic Watering Can",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi. Customer refund request. Order [ORDER], Rustic Watering Can from Petal & Stem. Please process a refund.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 6998,
+    "user_id": 440,
+    "store_id": 3,
+    "product_id": 108,
+    "quantity": 1,
+    "total_cents": 26575,
+    "status": "delivered",
+    "ordered_at": "2026-06-01",
+    "shipped_at": "2026-06-02",
+    "delivered_at": "2026-06-09",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "i want a refnd for my order [ORDER] from Meridian Cycles. can u start that and tell me wat i need to do nxt?",
+    "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "how long does an aproved refnd take to show up in my acount?",
+    "Shopping lookup: need to find Modern Headlamp so I can check the listing before buying.",
+    "Please check which store and product are recorded for my order [ORDER]. Can you verify the details? Keep the answer short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

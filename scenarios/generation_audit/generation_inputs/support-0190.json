@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask which store and product are recorded for order [ORDER] and whether those details can be verified. Do not request any write operation.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 2,
+  "store_name": "Blue Heron Ceramics",
+  "item_name": "Portable Jam Trio",
+  "conversation_variation": "focus on next steps"
+}

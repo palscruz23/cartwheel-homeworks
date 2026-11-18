@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "confused_rambling",
+  "turn_count": 2,
+  "store_name": "Second Stitch Apparel",
+  "item_name": "Portable Crewneck",
+  "conversation_variation": "mention why you need help briefly"
+}

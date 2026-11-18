@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "store_name": "Bright Socket Electronics",
+  "item_name": "Matte Mechanical Keyboard",
+  "conversation_variation": "ask a practical question"
+}

@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0161",
+  "task": {
+    "role": "merchant",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Northwind Books",
+    "item_name": "Everyday Cookbook",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3321,
+    "user_id": 383,
+    "store_id": 7,
+    "product_id": 266,
+    "quantity": 1,
+    "total_cents": 10175,
+    "status": "delivered",
+    "ordered_at": "2025-04-24",
+    "shipped_at": "2025-04-25",
+    "delivered_at": "2025-05-02",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "im on a suport shift and planning my trip home. whats the wether forcast for Sydney tomorow?",
+    "Account update: can you change the email on my shopper account? Need to replace the current one.",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "i want to request some money bak for my order [ORDER] from Northwind Books. pls request a partial refnd of $100.01.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "Can you request a refund for order [ORDER] from my Trailhead Supply store? Please give me a short answer in plain language."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

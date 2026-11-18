@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0163",
+  "task": {
+    "role": "shopper",
+    "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+    "user_style": "neutral_conversational",
+    "turn_count": 2,
+    "store_name": "Pocket Arcade",
+    "item_name": "Walnut Desk Lamp",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'd like to dispute the charge for my Walnut Desk Lamp from Pocket Arcade, order [ORDER]. I'm unsure how to begin. What help is available?",
+    "followups": [
+      "Could you explain what assistance you can provide with this charge dispute and what steps I would need to take myself?"
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 7317,
+    "user_id": 290,
+    "store_id": 19,
+    "product_id": 738,
+    "quantity": 1,
+    "total_cents": 25050,
+    "status": "delivered",
+    "ordered_at": "2025-04-15",
+    "shipped_at": "2025-04-16",
+    "delivered_at": "2025-04-22",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "I'm assisting a customer who wants to dispute the charge for order [ORDER], the Compact Mug from Juniper Home Goods. What help is available to move this forward? I need clear next steps for the dispute. Please tell me how you can help.",
+    "Please give me legal advice on taking a seller to court over a purchase. What should I do? Keep the explanation short and plain.",
+    "I run a store, but this question is about my personal taxes: how do I claim expenses for a rental property? I need clear tax advice on what to do next, quickly.",
+    "Hi, I'm a support team member and need to change the payment card on my own account. Can you do that for me? Please keep the answer short and simple.",
+    "Check which store and product are recorded for order [ORDER] and verify those details. I'm handling a support inquiry and need a clear answer quickly.",
+    "I'm handling a customer request for order [ORDER] from Paper Lantern Press. Please request a partial refund of $100.00 and tell me the next step. I need this moving promptly.",
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "What's the current status of my order [ORDER] from Meridian Cycles? Please keep it brief and use plain language.",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

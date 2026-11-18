@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0220",
+  "task": {
+    "role": "shopper",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "operational_shorthand",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Vintage Wool Socks",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Refund needed for my order [ORDER], Harbor Knits. Please open the request and list next steps for me.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 3445,
+    "user_id": 88,
+    "store_id": 16,
+    "product_id": 604,
+    "quantity": 1,
+    "total_cents": 26250,
+    "status": "delivered",
+    "ordered_at": "2026-05-27",
+    "shipped_at": "2026-05-30",
+    "delivered_at": "2026-06-02",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "Which return window applies at Northwind Books? I'm answering a customer: should I use the general platform window? Please keep it short and plain.",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Can you check where order [ORDER] stands right now? It's the Vintage Jam Trio from my shop, Saltbox Pantry. I'm trying to sort out my orders and I've rather lost track of this one.",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Hi. Please cancel my order [ORDER]. Modern Mug from Blue Heron Ceramics.",
+    "Could you explain how the standard return window is counted? I'm getting myself confused about which day to start on, and then how to count forward from there. I just want to make sure I understand the window for returning something I buy."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

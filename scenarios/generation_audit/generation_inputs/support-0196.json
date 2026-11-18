@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask to find the named product in the named store and explain the matching listings.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "Rustic Pitcher",
+  "conversation_variation": "start directly with the request"
+}

@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "store_name": "Petal & Stem",
+  "item_description": "Slim Trowel Set",
+  "conversation_variation": "ask a practical question"
+}

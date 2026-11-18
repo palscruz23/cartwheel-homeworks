@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0177",
+  "task": {
+    "role": "support",
+    "goal": "Ask how many days remain to return order [ORDER].",
+    "user_style": "confused_rambling",
+    "turn_count": 1,
+    "store_name": "Atlas Stationery",
+    "item_name": "Classic Pencil Set",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 8002,
+    "user_id": 392,
+    "store_id": 20,
+    "product_id": 790,
+    "quantity": 1,
+    "total_cents": 7075,
+    "status": "delivered",
+    "ordered_at": "2025-05-17",
+    "shipped_at": "2026-06-20",
+    "delivered_at": null,
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "I need to check my records for order [ORDER] from Atlas Stationery. What delivery date is recorded for it? Please just give me a clear answer.",
+    "Hello, I'm with Atlas Stationery. Could you tell me when the return window ends for order [ORDER], for the Classic Pencil Set?",
+    "Support check: can you look up the return deadline for order [ORDER], Atlas Stationery? Need next steps for customer reply.",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "Merchant record check for a customer query: order [ORDER], which store + product are recorded? Please verify those details.",
+    "i run Blue Heron Ceramics. wat does our store curently list for Rustic Pitcher? need to chek before i reply to a custmer.",
+    "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?",
+    "I need tax advice for my personal rental property expenses. Tell me what I should do next to claim them on my tax return; I need to get this sorted quickly.",
+    "Support request: customer wants a refund for order [ORDER], Midnight Bar Soap from Fern & Fog Skincare. Please process the request.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

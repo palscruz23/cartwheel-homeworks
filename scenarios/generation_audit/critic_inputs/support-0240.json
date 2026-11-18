@@ -1,0 +1,45 @@
+{
+  "scenario_id": "support-0240",
+  "task": {
+    "role": "support",
+    "goal": "Start by asking about the named item from the named store WITHOUT an order number. In the last followup independently add: the order reference is [ORDER]. Middle followups may restate the item or store without assuming an agent response.",
+    "user_style": "typo_heavy",
+    "turn_count": 3,
+    "store_name": "Copperline Tools",
+    "item_name": "Portable Hammer",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "followups": [
+      "to clarify the item, its the Portable Hammer from Copperline Tools.",
+      "the order refrence is [ORDER]. pls use that for the lookup."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 1376,
+    "user_id": 53,
+    "store_id": 4,
+    "product_id": 158,
+    "quantity": 1,
+    "total_cents": 25350,
+    "status": "delivered",
+    "ordered_at": "2025-12-28",
+    "shipped_at": "2025-12-31",
+    "delivered_at": "2026-01-07",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Could you check the status of order [ORDER] at Meridian Cycles? I'm a little muddled about where things stand with that order, or really what stage it's at. I'd like to know its current status, please.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly.",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Can you change my payment card?",
+    "Can you check the current status of order [ORDER]? It's the Everyday Utility Knife from Copperline Tools, and I'm a bit mixed up about where things stand with it.",
+    "I need an update on order [ORDER], my Walnut Puzzle from Little Fox Toys. I'm trying to plan around receiving it, so please check its current status. I need to know where the order stands.",
+    "Can you refund order [ORDER] for my Everyday Dry Bag from Trailhead Supply? I want my money back, please. Please get the refund started.",
+    "Helping a customer with a refund. Order [ORDER], Slim Desk Organizer from Atlas Stationery. Please refund the order.",
+    "Hi, I'm helping a customer with their Handmade Garden Gloves from Petal & Stem. Could you please cancel order [ORDER] for them?",
+    "Find the Travel USB-C Hub at Bright Socket Electronics for a customer, please. I need the available listings and prices. Please provide both the listings and their prices so I can relay the options."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

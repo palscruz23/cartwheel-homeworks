@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0047",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Harbor Knits",
+    "item_name": "Slim Tote Bag",
+    "conversation_variation": "ask a practical question"
+  },
+  "draft": {
+    "opening_message": "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 5480,
+    "user_id": 147,
+    "store_id": 16,
+    "product_id": 609,
+    "quantity": 1,
+    "total_cents": 10250,
+    "status": "delivered",
+    "ordered_at": "2026-06-06",
+    "shipped_at": "2026-06-09",
+    "delivered_at": "2026-06-16",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please.",
+    "I need a refund requested for order [ORDER] in my Meridian Cycles store. Please get it moving and tell me the next step clearly.",
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "I want my money back for order [ORDER] from Clover Field Naturals. I don't want to keep this purchase, so please get the refund request started.",
+    "Please request a refund for my order [ORDER] from Atlas Stationery. Tell me what I need to do next, briefly and simply.",
+    "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "im in the suport role. wich orders am i alowed to view, and how shuld i go about looking one up?",
+    "Support inquiry: customer wants to dispute charge for order [ORDER], Clover Field Naturals. What assistance is available?",
+    "I'm answering a customer inquiry about the Rustic Pitcher at Blue Heron Ceramics. Please get the available listing information and explain it briefly in plain language."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

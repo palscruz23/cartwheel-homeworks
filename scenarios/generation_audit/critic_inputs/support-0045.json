@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0045",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Matte Shampoo Bar",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please move forward with a refund for the customer on order [ORDER], the Matte Shampoo Bar from Fern & Fog Skincare. I need this refund request actioned. Please take the next step to process it.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 9842,
+    "user_id": 97,
+    "store_id": 17,
+    "product_id": 670,
+    "quantity": 2,
+    "total_cents": 1550,
+    "status": "delivered",
+    "ordered_at": "2026-05-31",
+    "shipped_at": "2026-06-02",
+    "delivered_at": "2026-06-08",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "Harbor Knits merchant. Can you refund order [ORDER]? Slim Tote Bag.",
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "Juniper Home Goods merchant: customer wants money back for order [ORDER]. Need refund request opened, please.",
+    "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?",
+    "I'm considering returning something I've opened. Can a restocking fee apply? Please explain briefly in plain language.",
+    "Hi, I want to dispute the charge for my order [ORDER] from Copperline Tools. What help can you give me? I need a clear way to get this addressed.",
+    "Find Rustic Pitcher at Blue Heron Ceramics. Need matching listings explained so I can choose."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

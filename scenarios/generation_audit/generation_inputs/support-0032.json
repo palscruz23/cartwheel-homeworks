@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "store_name": "Atlas Stationery",
+  "item_name": "Handmade Desk Organizer",
+  "conversation_variation": "ask a practical question"
+}

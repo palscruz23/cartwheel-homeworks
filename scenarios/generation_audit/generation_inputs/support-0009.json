@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "confused_rambling",
+  "turn_count": 2,
+  "store_name": "Golden Hour Coffee",
+  "item_name": "Matte Coffee Beans",
+  "conversation_variation": "use a conversational opening"
+}

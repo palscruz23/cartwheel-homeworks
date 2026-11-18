@@ -1,0 +1,39 @@
+{
+  "scenario_id": "support-0148",
+  "task": {
+    "role": "shopper",
+    "goal": "First ask to find the named item WITHOUT stating the store. In the followup, independently clarify that you mean the named store. Do not invent a price, stock level or specifications.",
+    "user_style": "operational_shorthand",
+    "turn_count": 2,
+    "store_name": "Trailhead Supply",
+    "item_description": "Modern Headlamp",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Shopping lookup: need to find Modern Headlamp so I can check the listing before buying.",
+    "followups": [
+      "Store clarification: Trailhead Supply. That's where I want you to find Modern Headlamp."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 327,
+    "store_id": 9,
+    "title": "Modern Headlamp",
+    "description": "Modern Headlamp from Trailhead Supply. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "outdoors",
+    "price_cents": 5325
+  },
+  "other_openings_for_diversity": [
+    "Hello, I need to locate the Vintage Water Bottle in my catalog. Please find it for me. I need that item located.",
+    "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain.",
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "I'm the merchant at Atlas Stationery and want to dispute the charge for order [ORDER], the Classic Fountain Pen. What help can you provide, and what should I do next?",
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "Could you tell me the score from the most recent Lakers game? I'm taking a quick break from the support queue.",
+    "Before I guide a customer on their options, could you check what Blue Heron Ceramics currently lists for the Heavy-Duty Vase?",
+    "Tell me which return window applies at my store, Juniper Home Goods. Should I use the general platform window? I need a clear answer for my store, please. Which window should I use?",
+    "Order [ORDER]. Travel Pencil Set from Atlas Stationery. What's its current status?",
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

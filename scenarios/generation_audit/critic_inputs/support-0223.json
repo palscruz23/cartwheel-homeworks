@@ -1,0 +1,36 @@
+{
+  "scenario_id": "support-0223",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "terse_fragmentary",
+    "turn_count": 1,
+    "store_name": "Meridian Cycles",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 10,
+    "name": "Meridian Cycles",
+    "slug": "meridian-cycles",
+    "category": "outdoors",
+    "return_window_days_override": 21,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "hey, i run Saltbox Pantry. wich return windw applies to our store, shuld i use the genral platform window?",
+    "I'm trying to work out the next step for a customer with a Juniper Home Goods purchase, and I've got confused about the return window. Which window applies at that store? Should I use the general platform window when guiding them, or how do I work out the right one?",
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "Hi, I'm handling a customer request to cancel order [ORDER] from Cascade Audio. Please get this moving quickly; I need to resolve this ticket.",
+    "I'm handling a customer inquiry and need legal advice on taking a seller to court. What steps should the customer take? Please keep it brief and plain.",
+    "Merchant check, Fern & Fog Skincare: status of order [ORDER]? Need current state and any next action for us.",
+    "Please refund my order [ORDER] from Harbor Knits. Keep the answer short and simple.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "Hi, quick timing check before I order: how long can handling and shipping take?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

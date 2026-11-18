@@ -1,0 +1,39 @@
+{
+  "scenario_id": "support-0150",
+  "task": {
+    "role": "support",
+    "goal": "First ask to find the named item WITHOUT stating the store. In the followup, independently clarify that you mean the named store. Do not invent a price, stock level or specifications.",
+    "user_style": "requests_short_plain_answer",
+    "turn_count": 2,
+    "store_name": "Trailhead Supply",
+    "item_description": "Everyday Dry Bag",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain.",
+    "followups": [
+      "I mean the Everyday Dry Bag at Trailhead Supply. Please use that store for the lookup."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 353,
+    "store_id": 9,
+    "title": "Everyday Dry Bag",
+    "description": "Everyday Dry Bag from Trailhead Supply. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "outdoors",
+    "price_cents": 6300
+  },
+  "other_openings_for_diversity": [
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "i run Bright Socket Electronics and want to dispute the charge for order [ORDER]. wat help is availble for this?",
+    "I'm helping a customer who wants to dispute the charge for order [ORDER], the Walnut Bath Salts from Clover Field Naturals. I'm a bit unsure where to begin with a charge dispute, and I don't want to muddle the process. What help is available for this?",
+    "What can you do to help me dispute the charge for order [ORDER], my Midnight Tote Bag from Harbor Knits? I want to dispute this charge. Please tell me what help you can offer.",
+    "I want to dispute the charge for order [ORDER], the Everyday Cookbook from my store, Northwind Books. I'm not quite sure how that works from my side as the merchant, and I keep getting confused about where to start. What help is available?",
+    "I run a store and have a dispute over something I bought from another seller. I want legal advice on taking that seller to court. Tell me what claim to file and how to argue it. Please give me specific legal advice; I need to know how to take them to court.",
+    "Can you compare the matching Rustic Pitcher listings at my store, Blue Heron Ceramics? I need a clear comparison of the matches. Please put the matching listings side by side so I can see how they differ.",
+    "Checking before I buy at Meridian Cycles. Which return window applies? Should I use the general platform window?",
+    "Hi, could you help me untangle an order question? I'm assisting a customer with order [ORDER], the Matte Coffee Beans from Golden Hour Coffee, and I'm getting a bit turned around about where it stands. Could you check its current status?",
+    "Please request a refund for the customer on order [ORDER], the Modern Desk Lamp from Bright Socket Electronics."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

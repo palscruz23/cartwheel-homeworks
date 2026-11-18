@@ -1,0 +1,38 @@
+{
+  "scenario_id": "support-0226",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "frustrated_impatient",
+    "turn_count": 2,
+    "store_name": "Northwind Books",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return.",
+    "followups": [
+      "Please explain where I can check the return window that applies to Northwind Books purchases. I don't want to waste time using the wrong one."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 7,
+    "name": "Northwind Books",
+    "slug": "northwind-books",
+    "category": "books",
+    "return_window_days_override": 45,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "Which return window applies at my store, Meridian Cycles? Should I be using the general platform return window?",
+    "Support policy check for customer reply: which return window applies at Saltbox Pantry? Use general platform window or store-specific terms?",
+    "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "I'm sorting out an order change at my store, Cascade Audio, and I'm a little lost with the admin. Could you cancel order [ORDER], the Portable Desk Lamp? That's the order I'm trying to get canceled.",
+    "Can you help me check on a customer's Handmade Daypack from Meridian Cycles? I need information about that purchase. Please help me look into it.",
+    "Hi, I'm helping someone with a purchase they made directly from another company, outside Cartwheel, and I'm a bit unsure where to turn. Could you help with that purchase? I'm getting tangled up trying to figure out how to get it sorted.",
+    "Atlas Stationery merchant here. Checking an order for a customer: [ORDER], Speckled Sticky Notes. Current status, please.",
+    "Hi, I'm not quite sure how to ask for this, but I'd like my money back for the Portable Pruning Shears from Petal & Stem. It's order [ORDER]. I mean, I'd like to request a refund for that order, please.",
+    "Please start canceling my order [ORDER] for the Speckled Field Guide from Northwind Books. I want this order canceled. Tell me the next step and please get the cancellation moving.",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

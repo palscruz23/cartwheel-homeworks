@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "requests_short_plain_answer",
+  "turn_count": 2,
+  "store_name": "Second Stitch Apparel",
+  "item_name": "Walnut Tote Bag",
+  "conversation_variation": "use a conversational opening"
+}

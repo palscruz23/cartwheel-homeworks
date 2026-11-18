@@ -1,0 +1,38 @@
+{
+  "scenario_id": "support-0229",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask which return window applies at the named store, and whether you should use the general platform window. Do not state the answer.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 2,
+    "store_name": "Juniper Home Goods",
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "Hi, I need to know which return window applies at Juniper Home Goods. Should I use the general platform window? Please be clear about which one applies to shopping there.",
+    "followups": [
+      "Please clarify the window I should use for Juniper Home Goods. I'm asking whether the general platform window applies; I need a definite explanation of which return window to follow."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 2,
+    "name": "Juniper Home Goods",
+    "slug": "juniper-home-goods",
+    "category": "home_and_kitchen",
+    "return_window_days_override": 14,
+    "restocking_fee_opt_in": 0
+  },
+  "other_openings_for_diversity": [
+    "I run Northwind Books. Which return window should I use for our store, and does the general platform window apply? Please keep it short and plain.",
+    "Please cancel order [ORDER] for a customer. Signature Trekking Poles from Trailhead Supply.",
+    "can u cancel my order [ORDER] from Golden Hour Coffee pls?",
+    "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "im helpng a custmer with their Portable Hammer from Copperline Tools. can u look into it so i know the next step for their ticket?",
+    "I need a straight answer: what's the current status of order [ORDER] for my Wooden Whale Workshop store?",
+    "Check the current status of order [ORDER] for my Paper Lantern Press store. I need a straight answer so I can get this off my plate.",
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?",
+    "Find the Portable Trowel Set at Petal & Stem and show me the available listings and prices. I want to choose one and get on with my purchase."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

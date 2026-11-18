@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0053",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "repetitive_pressuring",
+    "turn_count": 1,
+    "store_name": "Second Stitch Apparel",
+    "item_name": "Slim Beanie",
+    "conversation_variation": "mention why you need help briefly"
+  },
+  "draft": {
+    "opening_message": "I'm handling a refund request for my store, Second Stitch Apparel. Please refund order [ORDER] for the Slim Beanie. I need this taken care of, so please process the refund.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 7050,
+    "user_id": 382,
+    "store_id": 15,
+    "product_id": 596,
+    "quantity": 1,
+    "total_cents": 3525,
+    "status": "delivered",
+    "ordered_at": "2026-06-18",
+    "shipped_at": "2026-06-21",
+    "delivered_at": "2026-06-23",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Hi, I'm helping a customer who wants a refund for order [ORDER] from Trailhead Supply. Please start the request and keep the explanation brief.",
+    "Please start a refund for my order [ORDER]. Vintage Olive Oil, Golden Hour Coffee. What do I need to do next?",
+    "pls request a refnd for order [ORDER] in my Cascade Audio store, the Midnight Webcam.",
+    "Support: refund requested by customer for order [ORDER], Wooden Whale Workshop. Please initiate and flag next action needed from customer.",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "Cancel request: my order [ORDER], Bright Socket Electronics. What's needed from me next?",
+    "Please find the Rustic Teapot at Juniper Home Goods for a customer inquiry. Show the available listings and prices in a short, plain answer.",
+    "What can you do to help with a charge dispute for order [ORDER] from Northwind Books? I'm handling this customer inquiry and need a practical answer promptly.",
+    "Hi, support lookup: customer needs help finding a tray at Blue Heron Ceramics. Listing title isn't visible. Can you locate the product?"
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

@@ -1,0 +1,7 @@
+{
+  "role": "merchant",
+  "goal": "Ask when merchants receive payouts.",
+  "user_style": "operational_shorthand",
+  "turn_count": 1,
+  "conversation_variation": "start directly with the request"
+}

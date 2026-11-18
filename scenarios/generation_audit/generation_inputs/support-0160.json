@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "You want to dispute the charge for order [ORDER]. Ask what help is available; do not invent previous support conversations or shipping facts.",
+  "user_style": "typo_heavy",
+  "turn_count": 1,
+  "store_name": "Northwind Books",
+  "item_name": "Everyday Journal",
+  "conversation_variation": "focus on next steps"
+}

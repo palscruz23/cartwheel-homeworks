@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "terse_fragmentary",
+  "turn_count": 1,
+  "store_name": "Harbor Knits",
+  "item_name": "Slim Tote Bag",
+  "conversation_variation": "ask a practical question"
+}

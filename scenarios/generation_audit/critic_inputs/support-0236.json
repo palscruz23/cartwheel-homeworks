@@ -1,0 +1,45 @@
+{
+  "scenario_id": "support-0236",
+  "task": {
+    "role": "merchant",
+    "goal": "Start by asking about the named item from the named store WITHOUT an order number. In the last followup independently add: the order reference is [ORDER]. Middle followups may restate the item or store without assuming an agent response.",
+    "user_style": "operational_shorthand",
+    "turn_count": 3,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Portable Face Serum",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "Merchant inquiry: need help checking Portable Face Serum from my Clover Field Naturals store.",
+    "followups": [
+      "Item for lookup: Portable Face Serum. Store: Clover Field Naturals.",
+      "Order reference is [ORDER]. Please use that for this inquiry."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 8902,
+    "user_id": 402,
+    "store_id": 18,
+    "product_id": 706,
+    "quantity": 1,
+    "total_cents": 4700,
+    "status": "delivered",
+    "ordered_at": "2025-06-01",
+    "shipped_at": "2025-06-03",
+    "delivered_at": "2025-06-05",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Can you help me check on a customer's Handmade Daypack from Meridian Cycles? I need information about that purchase. Please help me look into it.",
+    "I need help checking my purchase of the Walnut Dinner Plate Set from Juniper Home Goods. Can you look into it? Please keep the answer short and plain.",
+    "Hi. Clover Field Naturals merchant. Can you check on a Speckled Shampoo Bar purchase from my store?",
+    "I'm looking for an update on an order from Cascade Audio. Could you check the current status of order [ORDER]?",
+    "Can you change my payment card?",
+    "Hi, could you help me untangle an order question? I'm assisting a customer with order [ORDER], the Matte Coffee Beans from Golden Hour Coffee, and I'm getting a bit turned around about where it stands. Could you check its current status?",
+    "I'm helping a customer put together an order update, and I'm getting myself turned around on this one. It's order [ORDER], the Portable Crewneck from Second Stitch Apparel. Can you check what its current status is?",
+    "Hello, I'm contacting you from Clover Field Naturals. I'd like to request a refund for order [ORDER], for the Modern Hand Cream, please.",
+    "Trailhead Supply merchant. Need to cancel an order for Midnight Trekking Poles. Please start the cancellation process.",
+    "Could you find the Handmade USB-C Hub in my store, Cascade Audio, and show the available listings and prices? I'm trying to get my bearings in our catalog and keep losing track of which listing is which, so seeing them together would help."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

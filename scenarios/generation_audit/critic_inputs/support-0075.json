@@ -1,0 +1,42 @@
+{
+  "scenario_id": "support-0075",
+  "task": {
+    "role": "support",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "neutral_conversational",
+    "turn_count": 1,
+    "store_name": "Fern & Fog Skincare",
+    "item_name": "Compact Lip Balm",
+    "conversation_variation": "focus on next steps"
+  },
+  "draft": {
+    "opening_message": "I'm assisting a customer with order [ORDER] for the Compact Lip Balm from Fern & Fog Skincare. Please initiate a refund and let me know what the customer needs to do next.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 1321,
+    "user_id": 10,
+    "store_id": 17,
+    "product_id": 648,
+    "quantity": 1,
+    "total_cents": 25450,
+    "status": "delivered",
+    "ordered_at": "2026-06-01",
+    "shipped_at": "2026-06-03",
+    "delivered_at": "2026-06-10",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Cancel my order [ORDER], Rustic Granola from Golden Hour Coffee, please.",
+    "Can you cancel order [ORDER] for the Slim Hand Cream from my store, Clover Field Naturals? I need it canceled, please. Please get the cancellation started.",
+    "I'm helping a customer who wants to cancel order [ORDER] from Second Stitch Apparel. Please handle the cancellation request and keep your answer short and plain.",
+    "Can you cancel my order [ORDER] from Pocket Arcade? I need this dealt with quickly.",
+    "Please cancel order [ORDER] for my Pocket Arcade store. Give me a brief update in plain language.",
+    "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue.",
+    "How long does an approved refund take to reach my customer? I run a store and need a clear timeframe to give them.",
+    "Shopping lookup: need to find Modern Headlamp so I can check the listing before buying.",
+    "hey, can u chek the delivry details for my order [ORDER] from Harbor Knits pls? its the Woven Wool Socks.",
+    "Tell me which return window applies at Northwind Books. Should I use the general platform window? I need a clear answer so I can sort out my return."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

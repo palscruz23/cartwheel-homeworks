@@ -1,0 +1,37 @@
+{
+  "scenario_id": "support-0136",
+  "task": {
+    "role": "shopper",
+    "goal": "Ask to find the named item in the named store and show available listings and prices. Do not invent a price or specifications.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "store_name": "Cascade Audio",
+    "item_description": "Heavy-Duty Headphones",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "find the Heavy-Duty Headphones at Cascade Audio pls, i need the availble listings and thier prices.",
+    "followups": []
+  },
+  "actual_record_for_verification_only": {
+    "id": 171,
+    "store_id": 5,
+    "title": "Heavy-Duty Headphones",
+    "description": "Heavy-Duty Headphones from Cascade Audio. Placeholder dev-scale listing; the full-scale catalog is sampled from the Amazon Reviews 2023 metadata.",
+    "category": "electronics",
+    "price_cents": 21525
+  },
+  "other_openings_for_diversity": [
+    "Could you find the Handmade USB-C Hub in my store, Cascade Audio, and show the available listings and prices? I'm trying to get my bearings in our catalog and keep losing track of which listing is which, so seeing them together would help.",
+    "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly.",
+    "Hi, I'm looking for the Everyday Desk Lamp at Bright Socket Electronics. Could you show me the available listings and how much they cost?",
+    "Checking my store catalog. Northwind Books, Modern Novel. Find available listings and prices, please.",
+    "Could you help me find the Handmade Cookbook for a customer?",
+    "Hi. Assisting a customer with a charge dispute. Order [ORDER], Walnut Beanie from Second Stitch Apparel. What help is available?",
+    "Checking a customer's order history. [ORDER], Woven Wool Socks from Harbor Knits. Can you verify the shipment and delivery history?",
+    "Hi, I'm with Second Stitch Apparel and I'm trying to arrange a partial refund on order [ORDER] for the Woven Rain Shell. The amount I'd like to request is $99.99. I'm getting a little tangled explaining it, but could you help put through that partial refund?",
+    "Please check the current status of order [ORDER] from Fern & Fog Skincare. I need to know where it stands before figuring out the next step. Please get the status for that order; I need a clear update.",
+    "Can you refund order [ORDER] for my Everyday Dry Bag from Trailhead Supply? I want my money back, please. Please get the refund started."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

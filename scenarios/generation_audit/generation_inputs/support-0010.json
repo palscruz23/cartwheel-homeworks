@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask for the current status of order [ORDER]. For multiple turns, add an independent request for the recorded shipment/delivery details; do not invent any dates.",
+  "user_style": "frustrated_impatient",
+  "turn_count": 1,
+  "store_name": "Wooden Whale Workshop",
+  "item_name": "Speckled Plush Fox",
+  "conversation_variation": "focus on next steps"
+}

@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0091",
+  "task": {
+    "role": "shopper",
+    "goal": "First ask to cancel the named item from the named store WITHOUT an order number. In the followup, independently supply the order reference [ORDER] and restate that you want it cancelled. Do not assume the agent offered cancellation or say the cancellation succeeded.",
+    "user_style": "neutral_conversational",
+    "turn_count": 2,
+    "store_name": "Clover Field Naturals",
+    "item_name": "Heavy-Duty Shampoo Bar",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "I'd like to cancel my Heavy-Duty Shampoo Bar from Clover Field Naturals, please.",
+    "followups": [
+      "My order reference is [ORDER]. I'd like that order canceled, please."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 6465,
+    "user_id": 189,
+    "store_id": 18,
+    "product_id": 690,
+    "quantity": 1,
+    "total_cents": 18475,
+    "status": "refunded",
+    "ordered_at": "2025-12-28",
+    "shipped_at": "2025-12-30",
+    "delivered_at": "2026-01-04",
+    "refund_eligible": 0
+  },
+  "other_openings_for_diversity": [
+    "Petal & Stem merchant: can you cancel the Sturdy Watering Can order for our store?",
+    "I'm handling a customer cancellation request for the Heavy-Duty Camp Stove from Trailhead Supply. Please cancel it. I need that cancellation request taken care of.",
+    "Hi, I'd like to cancel my Travel Face Serum order from Fern & Fog Skincare. Please keep your answer short and simple.",
+    "A customer wants order [ORDER] cancelled in my Trailhead Supply store. Please handle the request promptly; I need to clear this from my work queue.",
+    "A customer is asking when their approved refund will arrive. How long should I tell them it takes? Please keep it short and plain.",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "I need to answer a customer about the Sturdy USB-C Hub at Cascade Audio. Please find the available listings and prices so I can close out this inquiry quickly.",
+    "Hi, Harbor Knits merchant here. Looking to dispute the charge for order [ORDER]. What help is available?",
+    "i run Blue Heron Ceramics. wat does our store curently list for Rustic Pitcher? need to chek before i reply to a custmer.",
+    "Can you check the status of order [ORDER]? I need a clear answer quickly."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

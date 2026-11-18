@@ -1,0 +1,44 @@
+{
+  "scenario_id": "support-0041",
+  "task": {
+    "role": "merchant",
+    "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+    "user_style": "confused_rambling",
+    "turn_count": 2,
+    "store_name": "Harbor Knits",
+    "item_name": "Everyday Scarf",
+    "conversation_variation": "start directly with the request"
+  },
+  "draft": {
+    "opening_message": "I'd like to request a refund for order [ORDER], the Everyday Scarf from my shop, Harbor Knits. I'm a little muddled about how to handle this, but refunding that order is what I'm trying to do.",
+    "followups": [
+      "Just to make sure I've explained it properly, this is a request to refund that Everyday Scarf order through my store. I keep getting caught up in the wording, but that's the outcome I'm asking for."
+    ]
+  },
+  "actual_record_for_verification_only": {
+    "id": 1825,
+    "user_id": 7,
+    "store_id": 16,
+    "product_id": 631,
+    "quantity": 1,
+    "total_cents": 9850,
+    "status": "delivered",
+    "ordered_at": "2026-06-01",
+    "shipped_at": "2026-06-03",
+    "delivered_at": "2026-06-10",
+    "refund_eligible": 1
+  },
+  "other_openings_for_diversity": [
+    "Can you get a refund started for order [ORDER] from Clover Field Naturals? I'm handling the customer's support request and need this moving.",
+    "I no longer need the Portable Level I ordered from Copperline Tools. Could you please arrange a refund for my order [ORDER]?",
+    "Hi, Paper Lantern Press merchant here. Refund request for order [ORDER], Walnut Novel. Please start the process.",
+    "im on a custmer suport ticket, they want their money bak for order [ORDER] from Second Stitch Apparel. pls start a refnd request.",
+    "Refund request: my order [ORDER], Modern Daypack from Trailhead Supply. Can you put that through?",
+    "hey there, id like a refnd on my order [ORDER] from Juniper Home Goods pls. its the Heavy-Duty Cutting Board.",
+    "my plans hav changed so i want to cancel order [ORDER] from Golden Hour Coffee. can u help with the cancelation?",
+    "Hi, I need a clear answer for a customer ticket: how long can handling and shipping take? Please give me the actual timeframes so I can get back to the customer.",
+    "Please find the Everyday Dry Bag so I can point a customer to it. Keep the answer short and plain.",
+    "can u compare the matchng Heavy-Duty Vase listings at Blue Heron Ceramics? need the diffrences for a custmer suport reply."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

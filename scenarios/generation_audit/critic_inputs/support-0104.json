@@ -1,0 +1,28 @@
+{
+  "scenario_id": "support-0104",
+  "task": {
+    "role": "merchant",
+    "goal": "Ask how long handling and shipping can take.",
+    "user_style": "typo_heavy",
+    "turn_count": 1,
+    "conversation_variation": "use a conversational opening"
+  },
+  "draft": {
+    "opening_message": "hey, i run a store here and want to set custmer expectatons. how long can handlng and shipping take?",
+    "followups": []
+  },
+  "actual_record_for_verification_only": null,
+  "other_openings_for_diversity": [
+    "I'm helping a customer work out their next step with a charge, and I'm getting confused about the timing. How long after delivery can a charge be disputed? I want to get that time limit straight before guiding them further.",
+    "When do merchants actually receive their payouts? I'm a shopper trying to understand where my payment goes, and I just want a clear answer.",
+    "If an issue with my store is escalated to a human, how long should I expect to wait for a response?",
+    "How is the standard return window counted? Need to explain it to a customer.",
+    "I'm considering disputing a charge and want to understand the timing before I take the next step. How long after delivery can I dispute it?",
+    "Handmade Mug at Juniper Home Goods. Can you find the available listings and prices?",
+    "Want to dispute the charge for order [ORDER]. Everyday Granola, Saltbox Pantry. What help is available?",
+    "How many days does the customer have left to return order [ORDER], the Classic Pencil Set from Atlas Stationery? I'm trying to help them work out the timing and I'm getting mixed up counting the days. Could you check the days remaining?",
+    "I'm assisting a customer who wants a refund for the Woven Jam Trio from Golden Hour Coffee, order [ORDER]. Please process the refund request. I need this refund actioned for the customer, so please get it moving.",
+    "Please check the current status of order [ORDER] for the Modern Mug from my store, Juniper Home Goods. I need to know where it stands so I can decide what to do next. Please get me that status."
+  ],
+  "instruction": "Independently critique ONE conversation. Repair invented details, response-dependent followups, repetition and style mismatches. Preserve goal, requested amount and turns. Do not add dates, prices, statuses, eligibility, policy rules, expected outcomes or private facts into messages. Use [ORDER] and [PRODUCT] placeholders instead of actual identifiers. Return JSON opening_message, followups, issues (list of specific issues; empty if no issue), changed (boolean). The actual record is for checking hallucinations only; do not copy hidden facts into messages."
+}

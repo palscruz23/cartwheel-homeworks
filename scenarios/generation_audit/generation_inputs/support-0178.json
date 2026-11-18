@@ -1,0 +1,9 @@
+{
+  "role": "shopper",
+  "goal": "Ask what delivery date is recorded for order [ORDER].",
+  "user_style": "frustrated_impatient",
+  "turn_count": 1,
+  "store_name": "Atlas Stationery",
+  "item_name": "Classic Pencil Set",
+  "conversation_variation": "mention why you need help briefly"
+}

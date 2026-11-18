@@ -1,0 +1,9 @@
+{
+  "role": "support",
+  "goal": "Request a refund for order [ORDER]. Do not state the order status, policy rules, eligibility or internal approval thresholds.",
+  "user_style": "neutral_conversational",
+  "turn_count": 2,
+  "store_name": "Bright Socket Electronics",
+  "item_name": "Modern Desk Lamp",
+  "conversation_variation": "start directly with the request"
+}

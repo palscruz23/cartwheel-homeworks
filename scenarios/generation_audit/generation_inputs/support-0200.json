@@ -1,0 +1,9 @@
+{
+  "role": "merchant",
+  "goal": "Ask what the store currently lists for this product.",
+  "user_style": "typo_heavy",
+  "turn_count": 2,
+  "store_name": "Blue Heron Ceramics",
+  "item_description": "Rustic Pitcher",
+  "conversation_variation": "focus on next steps"
+}
