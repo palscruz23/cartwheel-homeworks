@@ -1,0 +1,58 @@
+{
+  "judge_id": "unnecessary_response_content-v3",
+  "verified_at": "2026-11-18T12:49:52.167037+00:00",
+  "model": "gpt-4o-mini",
+  "status": "frozen",
+  "split": "test",
+  "verification": "Independently recomputed confusion counts from all 93 cached test predictions and live human labels; every test critique present; prompt, fixed inputs, splits, and labels match development provenance hashes.",
+  "test_set_limitation": "Existing test set was evaluated for earlier judge versions; these are comparison results, not a fresh independent held-out estimate.",
+  "checks": {
+    "offline": "Counts, critique completeness, frozen prompt, and provenance hashes verified.",
+    "live": "Authorized gpt-4o-mini DocETL test batch completed on 93 traces."
+  },
+  "metrics": {
+    "judge_id": "unnecessary_response_content-v3",
+    "split": "test",
+    "tpr": 0.24,
+    "tnr": 1.0,
+    "tpr_interval": [
+      0.115,
+      0.4343
+    ],
+    "tnr_interval": [
+      0.9465,
+      1.0
+    ],
+    "agreement": 0.7957,
+    "tp": 6,
+    "fn": 19,
+    "tn": 68,
+    "fp": 0,
+    "n": 93,
+    "disagreements": [
+      "023cad99520525cc52d78caea7f9eec5",
+      "0b73c5595f850bb1c0a1f887dbce5988",
+      "193e04b798a496fcdbe8c02517f84318",
+      "1dbb774d879ead469c098ad84a61dd8a",
+      "278e9ad5118361e22778762edb3e9c62",
+      "2888bc124c4579dbb1f964ae150ec3c8",
+      "31d161b8ddee5ed619ee800d57e1e55c",
+      "3e02d9597f54c2a052bda149f882cecb",
+      "3eae6447043723eb835f5b9f1a6a026d",
+      "46434f1b15cf02029aab99511255dc5f",
+      "599c13ea4ab3b8c789cb6cbe210e5bc1",
+      "68e8d08d1d28871a5951a206021db7ae",
+      "82950e902a02d2a777455af6cf82b9ed",
+      "8963fdb3685951deb3112b844bd2a492",
+      "bbd762d45342c737f369587fe8466b67",
+      "c45a49546acc59f50d4315a70747a9f8",
+      "e5f647eba131f7af37225d867dbc17f1",
+      "f1f236fb9def788817e99124302d5336",
+      "fe9ef254c839702f28bd5d2cf41f6bfd"
+    ],
+    "class_counts": {
+      "Pass": 25,
+      "Fail": 68
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "mode": "unnecessary_response_content",
+  "corrected_at": "2026-11-18T12:37:12.828244+00:00",
+  "student_instruction": "change label",
+  "scope": "Six flagged development HW5 Pass labels changed to Fail under the strict generic-closing rubric.",
+  "changes": [
+    {
+      "trace_id": "36cfecb50701b3d52f7e659b03997bbd",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "2e1ec196-c085-4fb9-9566-fc3aa3645a81"
+    },
+    {
+      "trace_id": "38081a767c7a4aceabaffbd5f2e59221",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "166ecb95-a367-48f2-8b8c-60d82e2edb0a"
+    },
+    {
+      "trace_id": "44d6e92e5d77188764044ca8d1c33114",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "c5289292-756c-4348-974b-a19ef983c165"
+    },
+    {
+      "trace_id": "c04fc2994a9a56d1b234f0f57a372363",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "c5598d60-d231-4124-86cf-6defffbb6f27"
+    },
+    {
+      "trace_id": "dcc9fd073e650c8dffc8fd3b27b51374",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "7e856543-0a3b-48d8-9c61-9441e4117584"
+    },
+    {
+      "trace_id": "dd54ee274bb6ae81d62887521740aab2",
+      "from": "Pass",
+      "to": "Fail",
+      "revision_id": "5322a691-2820-4c76-b677-fadc3dd71c41"
+    }
+  ],
+  "new_model_calls": 0,
+  "prompt_changed": false,
+  "test_run": false,
+  "test_reports_recalculated": false,
+  "hw4_labels_changed": false,
+  "inputs_or_splits_changed": false,
+  "recomputed_dev_metrics": {
+    "unnecessary_response_content-v0": {
+      "tp": 16,
+      "fn": 4,
+      "tn": 53,
+      "fp": 21,
+      "tpr": 0.8,
+      "tnr": 0.7162,
+      "tpr_interval": [
+        0.584,
+        0.9193
+      ],
+      "tnr_interval": [
+        0.6048,
+        0.8063
+      ],
+      "class_counts": {
+        "Fail": 74,
+        "Pass": 20
+      }
+    },
+    "unnecessary_response_content-v1": {
+      "tp": 13,
+      "fn": 7,
+      "tn": 57,
+      "fp": 17,
+      "tpr": 0.65,
+      "tnr": 0.7703,
+      "tpr_interval": [
+        0.4329,
+        0.8188
+      ],
+      "tnr_interval": [
+        0.6625,
+        0.8513
+      ],
+      "class_counts": {
+        "Fail": 74,
+        "Pass": 20
+      }
+    },
+    "unnecessary_response_content-v2": {
+      "tp": 18,
+      "fn": 2,
+      "tn": 56,
+      "fp": 18,
+      "tpr": 0.9,
+      "tnr": 0.7568,
+      "tpr_interval": [
+        0.699,
+        0.9721
+      ],
+      "tnr_interval": [
+        0.6479,
+        0.8402
+      ],
+      "class_counts": {
+        "Fail": 74,
+        "Pass": 20
+      }
+    }
+  },
+  "verification": "Exactly six live labels changed; each prior record marked superseded_by and each replacement appended. Independent expected v2 counts checked. Split/input/prompt/HW4 label/test report hashes unchanged."
+}

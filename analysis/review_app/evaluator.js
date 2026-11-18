@@ -183,18 +183,20 @@ const EvaluatorPanel = (() => {
     const columns = el('div', 'evaluator-card-columns');
     const prompt = el('section', 'evaluator-card-section evaluator-prompt-column');
     const promptHeading = el('h4', '', 'Judge prompt');
-    prompt.append(promptHeading);
+    const promptControls = el('header', 'evaluator-prompt-controls');
+    promptControls.append(promptHeading); prompt.append(promptControls);
     const data = el('div', 'evaluator-data-column');
     columns.append(prompt, data); card.append(columns);
     const setsHeading = el('header', 'evaluator-set-heading');
     setsHeading.append(el('h4', '', 'Train / validation / test'));
-    columns.insertBefore(setsHeading, data);
     const sets = el('section', 'evaluator-card-section');
+    sets.append(setsHeading);
     sets.append(table('Dataset split counts', ['Set', 'Planned share', 'Pass', 'Fail', 'Total'],
       Object.entries(mode.splits).map(([name, split]) => [name === 'dev' ? 'Validation' : name === 'train' ? 'Training' : 'Test',
         percent(split.fraction), split.pass, split.fail, split.total])));
     data.append(sets);
-    const results = el('section', 'evaluator-card-section'); results.append(el('h4', '', 'Validation / test results'));
+    const results = el('section', 'evaluator-card-section');
+    const resultsHeading = el('h4', '', 'Validation / test results'); results.append(resultsHeading);
     if (!mode.judges.length) {
       prompt.append(el('p', 'quiet', 'No judge prompt saved yet.'));
       results.append(el('p', 'empty', 'No judge registered for this mode yet.'));
@@ -204,10 +206,14 @@ const EvaluatorPanel = (() => {
     selectedJudges.set(mode.id, judge.judge_id);
     const sha = judge.prompt_sha256 ? ` - ${judge.prompt_sha256.slice(-7)}` : '';
     promptHeading.textContent = `Judge prompt (v${judge.version}${sha})`;
+    const promptSelector = selector('Judge prompt version', 'evaluator-judge-' + encodeURIComponent(mode.id),
+      mode.judges.map(j => [j.judge_id, `v${j.version} · ${j.judge_id}`]), judge.judge_id,
+      value => selectedJudges.set(mode.id, value));
+    promptSelector.querySelector('select').disabled = mode.judges.length === 1;
+    promptControls.append(promptSelector);
+    resultsHeading.textContent = `Validation / test results (v${judge.version})`;
     prompt.append(judge.prompt_text ? el('pre', 'evaluator-prompt', judge.prompt_text)
       : el('p', 'quiet', 'No judge prompt saved yet.'));
-    if (mode.judges.length > 1) results.append(selector('Judge version', 'evaluator-judge-' + encodeURIComponent(mode.id),
-      mode.judges.map(j => [j.judge_id, j.judge_id]), judge.judge_id, value => selectedJudges.set(mode.id, value)));
     const metric = (split, format) => judge[split] ? format(judge[split]) : split === 'test' && judge.status !== 'frozen' ? 'Locked until frozen' : 'Pending';
     const matrices = el('div', 'evaluator-confusion-matrices');
     for (const [split, title] of [['dev', 'Validation'], ['test', 'Test']]) {
