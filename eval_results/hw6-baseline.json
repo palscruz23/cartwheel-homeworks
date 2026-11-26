@@ -1,0 +1,761 @@
+{
+  "status": "all_50_baseline_trials_completed; student_classifications_pending",
+  "agent_model": "gpt-4o-mini",
+  "agent_runs": 50,
+  "agent_model_requests": 96,
+  "judge_evaluations": 25,
+  "infrastructure_errors_in_baseline": 0,
+  "judge": {
+    "judge_id": "unnecessary_response_content-v2",
+    "model": "gpt-4o-mini",
+    "prompt_sha256": "996064d86efb517760daf2a1ce7ef14d53771637a9574c2eb9d2c750a29a53cb",
+    "record_sha256": "01722c38f4a062c2169bd06da82fd5fac3533697eeb2b63456a20a45556cac91"
+  },
+  "cases_sha256": "ef0740853e6db7a97cda4f2bc0e9168aa4c465ef72c63d552ff5bfc330433c21",
+  "source_jobs": [
+    "hw6-baseline-e-001",
+    "hw6-baseline-e-002-through-e-010"
+  ],
+  "trial_presentation_order": "started_at then trial_name; not a Part E trial-order artifact",
+  "setup_only_error_jobs": [
+    "hw6-infra-e-001-buildx-readonly",
+    "hw6-infra-e-001-desktop-credentials"
+  ],
+  "cases": [
+    {
+      "case_id": "e-001",
+      "mode": "unnecessary_response_content",
+      "source_trace_id": "e28cb30aefd6d9ab2febf73572f98d12",
+      "passes": 1,
+      "n": 5,
+      "pass_rate": 0.2,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-001__pHiaWN7",
+          "started_at": "2026-11-18T13:29:27.900700Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-001/e-001__pHiaWN7/agent/cartwheel-result.json",
+          "evidence_sha256": "407ca421c40cc18e62fad091e4f7e00dde5c333ce9b7a8477b88905880b3dd65"
+        },
+        {
+          "trial_name": "e-001__Hau9FVG",
+          "started_at": "2026-11-18T13:29:28.046600Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-001/e-001__Hau9FVG/agent/cartwheel-result.json",
+          "evidence_sha256": "24f82aad98fecd09db8fff80d2e5b5416d6be7bb9ba068d01d75591611b89b18"
+        },
+        {
+          "trial_name": "e-001__Civ2ZHP",
+          "started_at": "2026-11-18T13:35:23.311372Z",
+          "reward": 1.0,
+          "passed": true,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 1.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-001/e-001__Civ2ZHP/agent/cartwheel-result.json",
+          "evidence_sha256": "f5f056f3a4a4daa406e1a4abe199d9f7c38fa58d019d93c932c96ff4ef92a4f7"
+        },
+        {
+          "trial_name": "e-001__KvsWsnx",
+          "started_at": "2026-11-18T13:35:29.064507Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-001/e-001__KvsWsnx/agent/cartwheel-result.json",
+          "evidence_sha256": "c54979329ca50aa20a40da81981aaeb46f797743a9765cf3ace300e9195efa9c"
+        },
+        {
+          "trial_name": "e-001__gSUjr3g",
+          "started_at": "2026-11-18T13:40:46.661345Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-001/e-001__gSUjr3g/agent/cartwheel-result.json",
+          "evidence_sha256": "860dc3c5380941e0a39bf7a49394f10d35b9eeafd16abee892b709874b6ab034"
+        }
+      ]
+    },
+    {
+      "case_id": "e-002",
+      "mode": "unnecessary_response_content",
+      "source_trace_id": "016de42625b7b5fe3fea972b92701613",
+      "passes": 0,
+      "n": 5,
+      "pass_rate": 0.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-002__F5tcBG4",
+          "started_at": "2026-11-18T13:48:55.889369Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-002__F5tcBG4/agent/cartwheel-result.json",
+          "evidence_sha256": "ffb83665d8b6bc1e6771e2d5d4eb537433a6d105ac368d45a7c496ef2f1915e6"
+        },
+        {
+          "trial_name": "e-002__SkpnCk2",
+          "started_at": "2026-11-18T13:57:31.953764Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-002__SkpnCk2/agent/cartwheel-result.json",
+          "evidence_sha256": "cc7591c6f577d95c846f72794f0c22f82849767c2090c2d4d44fee71605d0d6f"
+        },
+        {
+          "trial_name": "e-002__Joixvzb",
+          "started_at": "2026-11-18T14:08:29.440708Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-002__Joixvzb/agent/cartwheel-result.json",
+          "evidence_sha256": "78d8630fd430986e7fddb2902581000a763689bf1c0ca88c02ec63b1ab9d26ea"
+        },
+        {
+          "trial_name": "e-002__NNTu4g3",
+          "started_at": "2026-11-18T14:17:05.865047Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-002__NNTu4g3/agent/cartwheel-result.json",
+          "evidence_sha256": "f48fa80ea82a34473b1ffcb350535b7a8130f6a29b9e9a4c43aaa4c77c9afca9"
+        },
+        {
+          "trial_name": "e-002__ikvRETp",
+          "started_at": "2026-11-18T14:26:01.879051Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-002__ikvRETp/agent/cartwheel-result.json",
+          "evidence_sha256": "d7253d5c74664aafe6808a9a776fafd5a90f2706538fb9f6b95486f19c287d83"
+        }
+      ]
+    },
+    {
+      "case_id": "e-003",
+      "mode": "unnecessary_response_content",
+      "source_trace_id": "022f2eeac593564254f719992880ad4c",
+      "passes": 0,
+      "n": 5,
+      "pass_rate": 0.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-003__7SxGvvc",
+          "started_at": "2026-11-18T13:36:12.603337Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-003__7SxGvvc/agent/cartwheel-result.json",
+          "evidence_sha256": "204ec0f894617758c377d7763fc22968582030a464564003bc47ea111bb369bb"
+        },
+        {
+          "trial_name": "e-003__XL8idKR",
+          "started_at": "2026-11-18T13:49:27.929485Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-003__XL8idKR/agent/cartwheel-result.json",
+          "evidence_sha256": "a62a93a298f10fe552a5117f2fa8ef208f3b3bb252611b208739f9a672c4e287"
+        },
+        {
+          "trial_name": "e-003__hU6ZADs",
+          "started_at": "2026-11-18T14:00:23.893439Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-003__hU6ZADs/agent/cartwheel-result.json",
+          "evidence_sha256": "7c54e402fce97a1d28968c9ba974f8e9618670c86f1ceca66fce289542ecc591"
+        },
+        {
+          "trial_name": "e-003__7D7cuLN",
+          "started_at": "2026-11-18T14:09:50.955243Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-003__7D7cuLN/agent/cartwheel-result.json",
+          "evidence_sha256": "896666e962424e26605e1fbbf1394fd10c452be5b0a120f4a77043377bd82c0b"
+        },
+        {
+          "trial_name": "e-003__pNhPwXA",
+          "started_at": "2026-11-18T14:18:40.604213Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-003__pNhPwXA/agent/cartwheel-result.json",
+          "evidence_sha256": "229660d713f95edce87fcbc48c5a9f84b48471c086cb4616d993c799f9f9c5fc"
+        }
+      ]
+    },
+    {
+      "case_id": "e-004",
+      "mode": "unnecessary_response_content",
+      "source_trace_id": "d1764466a31934aadadaab02879315ad",
+      "passes": 0,
+      "n": 5,
+      "pass_rate": 0.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-004__a5oUSb2",
+          "started_at": "2026-11-18T13:46:53.568156Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-004__a5oUSb2/agent/cartwheel-result.json",
+          "evidence_sha256": "35c99240d8729028962758b7f84911707c87a1bbe6800f4b34f4a0bbaf38a5f7"
+        },
+        {
+          "trial_name": "e-004__ZFPPGjZ",
+          "started_at": "2026-11-18T13:57:22.874457Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-004__ZFPPGjZ/agent/cartwheel-result.json",
+          "evidence_sha256": "984127e34bbc3671d7bb751e5131770a5317643b05f2569b4f77e5ff89696593"
+        },
+        {
+          "trial_name": "e-004__u53A96z",
+          "started_at": "2026-11-18T14:07:36.797619Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-004__u53A96z/agent/cartwheel-result.json",
+          "evidence_sha256": "df9dc70842921371582087d5b7a7f3de111963aaff6234a70ba7bef961f07202"
+        },
+        {
+          "trial_name": "e-004__6rNbg6t",
+          "started_at": "2026-11-18T14:16:23.533757Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-004__6rNbg6t/agent/cartwheel-result.json",
+          "evidence_sha256": "8b87225f09d7731b4361a9600a8548ac68870ecb2505fb3c60236ca7525d149e"
+        },
+        {
+          "trial_name": "e-004__MPAzZsn",
+          "started_at": "2026-11-18T14:25:16.364850Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-004__MPAzZsn/agent/cartwheel-result.json",
+          "evidence_sha256": "43c035466674a9fa6037d38647febc690838d7142acd3d378aa8ea5d2930578a"
+        }
+      ]
+    },
+    {
+      "case_id": "e-005",
+      "mode": "unnecessary_response_content",
+      "source_trace_id": "781e5b8b700e87ff2d1366ea9ffa501a",
+      "passes": 5,
+      "n": 5,
+      "pass_rate": 1.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-005__cFHMU4X",
+          "started_at": "2026-11-18T13:41:09.207954Z",
+          "reward": 1.0,
+          "passed": true,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 1.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-005__cFHMU4X/agent/cartwheel-result.json",
+          "evidence_sha256": "a98b59718939c730227e6f63463cb0efdf7c1eaaae8cd47db5cb1259544b0d42"
+        },
+        {
+          "trial_name": "e-005__u8edXZa",
+          "started_at": "2026-11-18T13:53:06.280920Z",
+          "reward": 1.0,
+          "passed": true,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 1.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-005__u8edXZa/agent/cartwheel-result.json",
+          "evidence_sha256": "b065ee1a23ff14815c4cc1abef676bf4fe89145b577ed201cfdab529b249af76"
+        },
+        {
+          "trial_name": "e-005__hHohLe8",
+          "started_at": "2026-11-18T14:03:19.366445Z",
+          "reward": 1.0,
+          "passed": true,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 1.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-005__hHohLe8/agent/cartwheel-result.json",
+          "evidence_sha256": "724069da5ef0de9ee8131415c7397e19b70f20084b217242c553cbd4eff7dae1"
+        },
+        {
+          "trial_name": "e-005__wzXBtLA",
+          "started_at": "2026-11-18T14:12:19.837384Z",
+          "reward": 1.0,
+          "passed": true,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 1.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-005__wzXBtLA/agent/cartwheel-result.json",
+          "evidence_sha256": "395e3d49b6de2a9126ffd2c4a4e03aa7bc56221d2b9772e448cded89f1ceef5c"
+        },
+        {
+          "trial_name": "e-005__V7LKynV",
+          "started_at": "2026-11-18T14:21:11.127124Z",
+          "reward": 1.0,
+          "passed": true,
+          "component_scores": {
+            "checks": 1.0,
+            "judge_unnecessary_response_content": 1.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-005__V7LKynV/agent/cartwheel-result.json",
+          "evidence_sha256": "0a5c29ec1184f453ffcd7541b242d4dd7e254aba1f16a4022fd283db7549c6f6"
+        }
+      ]
+    },
+    {
+      "case_id": "e-006",
+      "mode": "missing_human_escalation",
+      "source_trace_id": "f820bda867728400d62e82f64919334c",
+      "passes": 1,
+      "n": 5,
+      "pass_rate": 0.2,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-006__erJtsdQ",
+          "started_at": "2026-11-18T13:44:25.775175Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-006__erJtsdQ/agent/cartwheel-result.json",
+          "evidence_sha256": "83d759b348b0f4868a5e447cc93811aba1e710eb94d48f339cd418a1d36721a7"
+        },
+        {
+          "trial_name": "e-006__fzsN86g",
+          "started_at": "2026-11-18T13:55:21.462482Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-006__fzsN86g/agent/cartwheel-result.json",
+          "evidence_sha256": "cbfbe8c388522b60358cd29ed46b23245bd5fccffa41bfac0efbfeef5fffb091"
+        },
+        {
+          "trial_name": "e-006__jJ2aLTM",
+          "started_at": "2026-11-18T14:05:47.337664Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-006__jJ2aLTM/agent/cartwheel-result.json",
+          "evidence_sha256": "4a653be7dd9220310f226d628cf105e6da92bd3876578fe7db3000db1b76b1f2"
+        },
+        {
+          "trial_name": "e-006__Fw3Qmg8",
+          "started_at": "2026-11-18T14:14:33.804603Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-006__Fw3Qmg8/agent/cartwheel-result.json",
+          "evidence_sha256": "c9dfbdfa7f6eeeba188df7f40b453afc61c2d7761f39650daaf00e42dbdcd1d9"
+        },
+        {
+          "trial_name": "e-006__BdsnnTF",
+          "started_at": "2026-11-18T14:23:22.691332Z",
+          "reward": 1.0,
+          "passed": true,
+          "component_scores": {
+            "checks": 1.0
+          },
+          "agent_requests": 3,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-006__BdsnnTF/agent/cartwheel-result.json",
+          "evidence_sha256": "cdd0e9bfbb2132e9e8e50f5401223e4d0b13b433da78a3f60a574b6c47b78893"
+        }
+      ]
+    },
+    {
+      "case_id": "e-007",
+      "mode": "missing_human_escalation",
+      "source_trace_id": "1458dce853883cbcb195c85697a0c394",
+      "passes": 0,
+      "n": 5,
+      "pass_rate": 0.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-007__SWweRhD",
+          "started_at": "2026-11-18T13:36:12.747685Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 1,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-007__SWweRhD/agent/cartwheel-result.json",
+          "evidence_sha256": "d3ead4caea07bbb396c6c0fe61e319deae7aad2d52e8d31f7b89bf568da9bf56"
+        },
+        {
+          "trial_name": "e-007__nbgawYu",
+          "started_at": "2026-11-18T13:51:14.259963Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 1,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-007__nbgawYu/agent/cartwheel-result.json",
+          "evidence_sha256": "2ba3c0caf9df17b86b71014167bb22aec07a662c05b1c8c6ffc34e7d9ab6ec74"
+        },
+        {
+          "trial_name": "e-007__QAgNNTE",
+          "started_at": "2026-11-18T14:00:28.919889Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 1,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-007__QAgNNTE/agent/cartwheel-result.json",
+          "evidence_sha256": "e233f4e0d7262c1d195bcde54fa0decb05bc32a0d60c075948ba082fd1e82489"
+        },
+        {
+          "trial_name": "e-007__xbJbVo5",
+          "started_at": "2026-11-18T14:10:38.967462Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 1,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-007__xbJbVo5/agent/cartwheel-result.json",
+          "evidence_sha256": "8cc01063ab8a9a1865abf522926dc22ff4947a266e84db0334bfba2f221987c8"
+        },
+        {
+          "trial_name": "e-007__Bi5x2HY",
+          "started_at": "2026-11-18T14:19:24.724834Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 1,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-007__Bi5x2HY/agent/cartwheel-result.json",
+          "evidence_sha256": "df2be7549222980900e169430e4d26812a0fbdfd9339c36bc1afc6d56bec1eb1"
+        }
+      ]
+    },
+    {
+      "case_id": "e-008",
+      "mode": "missing_human_escalation",
+      "source_trace_id": "16547f3e6ccd562469793b8750ebc634",
+      "passes": 0,
+      "n": 5,
+      "pass_rate": 0.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-008__vNRDu4M",
+          "started_at": "2026-11-18T13:46:33.464118Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-008__vNRDu4M/agent/cartwheel-result.json",
+          "evidence_sha256": "06d4b42620fd8c6419ea19095568ee71408ac5ce5838b53ee9c32756f1f4d88a"
+        },
+        {
+          "trial_name": "e-008__WLMfQEG",
+          "started_at": "2026-11-18T13:55:29.571696Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-008__WLMfQEG/agent/cartwheel-result.json",
+          "evidence_sha256": "f8dfa18e9d021bb6dc49754292a2189133d8be0f29c80e53edd516efe7cd550e"
+        },
+        {
+          "trial_name": "e-008__XUGrkfx",
+          "started_at": "2026-11-18T14:06:34.169593Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-008__XUGrkfx/agent/cartwheel-result.json",
+          "evidence_sha256": "88ad6f638217578bb204f0d48c787b54c1392cf7b070c24f6b5c83d1b3b94bfa"
+        },
+        {
+          "trial_name": "e-008__EuBmYw8",
+          "started_at": "2026-11-18T14:15:22.407606Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-008__EuBmYw8/agent/cartwheel-result.json",
+          "evidence_sha256": "1df7ebe70aa8fcb9774e37958762bd512dc952d37fda53c0fabccf97a27337df"
+        },
+        {
+          "trial_name": "e-008__WVEu46h",
+          "started_at": "2026-11-18T14:24:17.424725Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-008__WVEu46h/agent/cartwheel-result.json",
+          "evidence_sha256": "d109b0de3c36dfa475e0764bf812c89c053ebb11dde1572f3f61c71be12907c9"
+        }
+      ]
+    },
+    {
+      "case_id": "e-009",
+      "mode": "missing_human_escalation",
+      "source_trace_id": "46434f1b15cf02029aab99511255dc5f",
+      "passes": 0,
+      "n": 5,
+      "pass_rate": 0.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-009__HvEXa8j",
+          "started_at": "2026-11-18T13:43:47.117508Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-009__HvEXa8j/agent/cartwheel-result.json",
+          "evidence_sha256": "3540592c70da593022d5604ee06e19282808f953b6db7d692eb36339a5a3cdf3"
+        },
+        {
+          "trial_name": "e-009__gPeAyK8",
+          "started_at": "2026-11-18T13:53:32.976823Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-009__gPeAyK8/agent/cartwheel-result.json",
+          "evidence_sha256": "c7df0d696bce30f430136ed5bf4ae71b1ba14b970cff8f23915c5b3e00fd13ea"
+        },
+        {
+          "trial_name": "e-009__7otgXSs",
+          "started_at": "2026-11-18T14:04:53.233503Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-009__7otgXSs/agent/cartwheel-result.json",
+          "evidence_sha256": "c21675e3c7c83bd76520fec4a39f7fde09c5b48f6fc1e65f6127ebd3cb81f3c9"
+        },
+        {
+          "trial_name": "e-009__XgEinhF",
+          "started_at": "2026-11-18T14:13:44.702338Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-009__XgEinhF/agent/cartwheel-result.json",
+          "evidence_sha256": "b6b3b3edb45d14f99f02e8a9011643f85895a0a131e4865956af28bcc0414b50"
+        },
+        {
+          "trial_name": "e-009__ZpwDmTB",
+          "started_at": "2026-11-18T14:22:39.168407Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-009__ZpwDmTB/agent/cartwheel-result.json",
+          "evidence_sha256": "b099613ce4c43d6a977bc7fcf15de13ce23bb9f741bb82515697f7d4b835365e"
+        }
+      ]
+    },
+    {
+      "case_id": "e-010",
+      "mode": "missing_human_escalation",
+      "source_trace_id": "479f0ed0b3553c811cdb9197dc7116b7",
+      "passes": 0,
+      "n": 5,
+      "pass_rate": 0.0,
+      "student_classification": null,
+      "trials": [
+        {
+          "trial_name": "e-010__2FkG4Gy",
+          "started_at": "2026-11-18T13:40:48.093057Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-010__2FkG4Gy/agent/cartwheel-result.json",
+          "evidence_sha256": "7a63372185dfc2eb6ff7e1ad95ed5e78e28bfb57d47c3c7ca0242ca69f66a9f3"
+        },
+        {
+          "trial_name": "e-010__Aj3gyjY",
+          "started_at": "2026-11-18T13:51:45.252349Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-010__Aj3gyjY/agent/cartwheel-result.json",
+          "evidence_sha256": "7680495b58924316633dd81512803bd142a9f1dcb533660d57dc1b0623e81220"
+        },
+        {
+          "trial_name": "e-010__KFyNjcL",
+          "started_at": "2026-11-18T14:02:54.313669Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-010__KFyNjcL/agent/cartwheel-result.json",
+          "evidence_sha256": "c450541df4fb21c753f7d2e14b7a8da823da13da3b71055751f67280c494890c"
+        },
+        {
+          "trial_name": "e-010__JMDnAML",
+          "started_at": "2026-11-18T14:11:58.108595Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-010__JMDnAML/agent/cartwheel-result.json",
+          "evidence_sha256": "3391173c20f2edfb03661ab4efe9b3ca4a1a397fef44f7a9ee5ca92538d20617"
+        },
+        {
+          "trial_name": "e-010__2A74PCJ",
+          "started_at": "2026-11-18T14:20:51.425539Z",
+          "reward": 0.0,
+          "passed": false,
+          "component_scores": {
+            "checks": 0.0
+          },
+          "agent_requests": 2,
+          "evidence_path": ".harbor/jobs/hw6-baseline-e-002-through-e-010/e-010__2A74PCJ/agent/cartwheel-result.json",
+          "evidence_sha256": "348d64e51edbb44f24f5a92285648af36393d7182f10ea6f4036be081ef7fb75"
+        }
+      ]
+    }
+  ]
+}
