@@ -30,6 +30,13 @@
           <h2>Conversations</h2>
           <input id="queue-search" type="search" placeholder="Search IDs" aria-label="Search conversations by run or scenario ID" title="Search a run ID or scenario, e.g. support-0140" autocomplete="off" spellcheck="false">
         </div>
+        <label class="queue-source">Comment source
+          <select id="queue-source">
+            <option value="">All conversations</option>
+            <option value="human">Human comments</option>
+            <option value="human_accepted_ai">AI comments</option>
+          </select>
+        </label>
         <span id="queue-count" role="status" aria-live="polite"></span>
       </div>
       <div class="sampling-controls" id="sampling-controls" hidden>

@@ -261,6 +261,19 @@ main {
   min-width:0;
 }
 .queue-title-row h2 { flex-shrink:0; white-space:nowrap; }
+.queue-source {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  width:100%;
+  margin:4px 0;
+}
+.queue-source select {
+  width:auto;
+  margin:0;
+  padding:4px 6px;
+}
 #queue-search {
   flex:0 0 104px;
   width:104px;

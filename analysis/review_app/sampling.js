@@ -25,4 +25,18 @@ function conversationMatchesSearch(session, query) {
     .some(value => String(value ?? '').toLowerCase().includes(term));
 }
 
-if (typeof module !== 'undefined') module.exports = {dimensionValues, sampleMatches, conversationMatchesSearch};
+function commentCountsByTrace(annotations, source) {
+  const counts = new Map();
+  for (const note of annotations) {
+    const origin = note.source ?? note.author ?? 'human';
+    if (source && origin !== source) continue;
+    counts.set(note.trace_id, (counts.get(note.trace_id) || 0) + 1);
+  }
+  return counts;
+}
+
+function conversationsWithComments(sessions, counts) {
+  return sessions.filter(session => session.traces.some(trace => counts.has(trace.id)));
+}
+
+if (typeof module !== 'undefined') module.exports = {dimensionValues, sampleMatches, conversationMatchesSearch, commentCountsByTrace, conversationsWithComments};

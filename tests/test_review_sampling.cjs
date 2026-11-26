@@ -1,6 +1,31 @@
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
-const {dimensionValues, sampleMatches, conversationMatchesSearch} = require('../analysis/review_app/sampling.js');
+const {dimensionValues, sampleMatches, conversationMatchesSearch, commentCountsByTrace, conversationsWithComments} = require('../analysis/review_app/sampling.js');
+
+test('comment source matches any turn and keeps mixed conversations in both filters', () => {
+  const sessions = [['old'], ['ai'], ['human', 'accepted'], ['uncommented']]
+    .map(ids => ({traces: ids.map(id => ({id}))}));
+  const notes = [
+    {trace_id: 'old'},
+    {trace_id: 'ai', source: 'human_accepted_ai'},
+    {trace_id: 'human', source: 'human'},
+    {trace_id: 'accepted', source: 'human_accepted_ai'},
+  ];
+  assert.deepEqual(conversationsWithComments(sessions, commentCountsByTrace(notes, 'human')), [sessions[0], sessions[2]]);
+  assert.deepEqual(conversationsWithComments(sessions, commentCountsByTrace(notes, 'human_accepted_ai')), [sessions[1], sessions[2]]);
+});
+
+test('comment badges count saved notes by origin, including older human annotations', () => {
+  const notes = [
+    {trace_id: 'old'},
+    {trace_id: 'old', author: 'human'},
+    {trace_id: 'mixed', source: 'human'},
+    {trace_id: 'mixed', source: 'human_accepted_ai'},
+  ];
+  assert.deepEqual(Object.fromEntries(commentCountsByTrace(notes, '')), {old: 2, mixed: 2});
+  assert.deepEqual(Object.fromEntries(commentCountsByTrace(notes, 'human')), {old: 2, mixed: 1});
+  assert.deepEqual(Object.fromEntries(commentCountsByTrace(notes, 'human_accepted_ai')), {mixed: 1});
+});
 
 test('conversation search matches scenario and run IDs in any turn, ignoring case and whitespace', () => {
   const session = {id: 'session-1', traces: [

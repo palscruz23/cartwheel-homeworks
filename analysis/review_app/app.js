@@ -199,21 +199,25 @@ function renderQueue() {
   const matches = sampleMatches(manifest, allTraces(), selected, dimensions);
   const query = $('queue-search').value.trim();
   const sampledGroups = enabled ? state.catalog.sessions.filter(session => session.traces.some(trace => matches.has(trace.id))) : state.catalog.sessions;
-  const groups = sampledGroups.filter(session => conversationMatchesSearch(session, query));
+  const source = $('queue-source').value;
+  const annotations = [...state.review.annotations, ...state.catalog.legacy_annotations];
+  const commentCounts = commentCountsByTrace(annotations, source);
+  const bySource = source ? conversationsWithComments(sampledGroups, commentCounts) : sampledGroups;
+  const groups = bySource.filter(session => conversationMatchesSearch(session, query));
   const totalReviewed = state.catalog.sessions.filter(session => conversationReviewed(session.traces.map(trace => trace.id))).length;
   $('total-reviews').textContent = `${totalReviewed} reviewed`;
   $('total-reviews').title = `${totalReviewed} reviewed conversations across the full list`;
   $('total-reviews').setAttribute('aria-label', `${totalReviewed} reviewed conversations across the full list`);
-  $('queue-count').textContent = query
+  $('queue-count').textContent = query || source
     ? `${groups.reduce((count, session) => count + session.traces.length, 0)} traces · ${groups.length} conversations`
     : enabled
     ? `${allTraces().filter(trace => matches.has(trace.id)).length} matching traces · ${groups.length} conversations`
-    : `${allTraces().length} traces · ${state.review.annotations.length} comments`;
+    : `${allTraces().length} traces · ${annotations.length} comments`;
   const list = $('queue-list');
   list.replaceChildren();
   for (const session of groups) {
     const first = session.traces[0];
-    const comments = session.traces.reduce((count, trace) => count + notesFor(trace.id).length, 0);
+    const comments = session.traces.reduce((count, trace) => count + (commentCounts.get(trace.id) || 0), 0);
     const item = button('', () => openSession(session.id), 'conversation' + (state.session?.id === session.id ? ' active' : ''));
     item.setAttribute('aria-current', state.session?.id === session.id ? 'true' : 'false');
     const title = el('span', 'conversation-title');
@@ -237,8 +241,11 @@ function renderQueue() {
     item.append(title, counts);
     list.append(item);
   }
-  if (!groups.length) list.append(el('p', 'empty', query ? 'No conversations match this ID in the current filters.' : enabled ? (selected.length || Object.keys(dimensions).length ? 'No traces match these selections.' : 'Choose one or more sampling methods or dimensions.') : 'No conversations available.'));
+  if (!groups.length) list.append(el('p', 'empty', source ? 'No conversations match the current filters.' : query ? 'No conversations match this ID in the current filters.' : enabled ? (selected.length || Object.keys(dimensions).length ? 'No traces match these selections.' : 'Choose one or more sampling methods or dimensions.') : 'No conversations available.'));
 }
+$('queue-source').addEventListener('change', () => {
+  if (state.catalog && state.review) renderQueue();
+});
 $('queue-search').addEventListener('input', () => {
   if (state.catalog && state.review) renderQueue();
 });
