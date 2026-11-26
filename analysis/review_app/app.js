@@ -581,7 +581,7 @@ function renderTaxonomy() {
     let sum = 0, split = 0;
     while (split < items.length - 1 && (sum < total / 2 || split === 0)) sum += weight(items[split++]);
     const group = el('div', 'taxonomy-group');
-    group.style.flexDirection = depth % 2 ? 'column' : 'row';
+    group.style.flexFlow = depth % 2 ? 'column' : 'row wrap';
     const left = buildTiles(items.slice(0, split), depth + 1);
     const right = buildTiles(items.slice(split), depth + 1);
     const basis = depth % 2 ? 'auto' : '0px';
