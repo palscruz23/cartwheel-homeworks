@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM evaluation process</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f7f8f5;
+      color: #172e38;
+      font: 1rem/1.5 Inter, "DejaVu Sans", sans-serif;
+    }
+    main { max-width: 1200px; margin: 0 auto; }
+    .chart { overflow-x: auto; }
+    object { display: block; width: 100%; min-width: 960px; aspect-ratio: 1200 / 860; }
+    .chart:focus-visible, a:focus-visible { outline: 3px solid #274858; outline-offset: -3px; }
+    footer { padding: 0.75rem clamp(1rem, 7vw, 84px) 1.5rem; }
+    a { color: #274858; }
+    .scroll-hint { display: none; }
+    @media (max-width: 959px) {
+      .scroll-hint { display: block; margin: 0; padding: 0.75rem 1rem; }
+    }
+    @media print {
+      object { min-width: 0; }
+      footer, .scroll-hint { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="scroll-hint">Scroll horizontally to follow all nine stages.</p>
+    <section class="chart" tabindex="0" aria-label="LLM evaluation flowchart">
+      <object data="llm-evaluation-process.svg" type="image/svg+xml" aria-label="Nine stages of LLM evaluation, with descriptions and CI pass and fail paths">
+        <a href="llm-evaluation-process.svg">View the SVG flowchart</a>
+      </object>
+    </section>
+    <footer><a href="llm-evaluation-process.svg">Open SVG</a></footer>
+  </main>
+</body>
+</html>

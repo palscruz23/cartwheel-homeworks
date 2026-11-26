@@ -1,9 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690"
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860"
      role="img" aria-labelledby="title description">
   <title id="title">LLM evaluation process</title>
-  <desc id="description">Capture traces, perform open coding and axial coding, then scale review with an LLM.
-    Develop an evaluator using code and an LLM judge, then develop the rubric. Run regression and capability
-    tests in CI. If they pass, deploy and monitor production. If they fail, review gaps, improve, and rerun the tests.</desc>
+  <desc id="description">1. Capture user messages, model replies, and tool calls for each run.
+    2. Read individual traces and write a short note about what went wrong.
+    3. Group related notes into recurring failure modes.
+    4. Ask an LLM to find more examples of each failure mode and have a reviewer confirm the matches.
+    5. Use code checks for exact rules and an LLM judge for judgments such as relevance.
+    6. Define pass and fail with examples so reviewers and the judge can score consistently.
+    7. Run regression cases for past bugs and capability cases for new tasks in CI.
+    If a test fails, inspect the failing trace, fix the gap, and rerun CI.
+    8. When the tests pass, release the tested version.
+    9. Sample live traces and track how often each failure occurs.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M1 1 9 5 1 9" fill="none" stroke="#455964" stroke-width="1.7" stroke-linejoin="round"/>
@@ -26,77 +33,116 @@
       .branch { font-size: 16px; font-weight: 700; }
     </style>
   </defs>
-  <rect width="1200" height="690" fill="#f7f8f5"/>
+  <rect width="1200" height="860" fill="#f7f8f5"/>
   <text x="84" y="72" font-size="44" font-weight="700">LLM evaluation process</text>
   <path d="M84 96H1116" stroke="#cbd3d1"/>
 
   <!-- Follow the numbered cards across the first row and back along the second. -->
   <g>
-    <path class="flow" d="M374 171H450"/>
-    <path class="flow" d="M745 171H821"/>
-    <path class="flow" d="M971 209V257"/>
-    <path class="flow" d="M826 300H750"/>
-    <path class="flow" d="M455 300H379"/>
-    <path class="flow" d="M229 338V377"/>
+    <path class="flow" d="M374 196H450"/>
+    <path class="flow" d="M745 196H821"/>
+    <path class="flow" d="M971 266V312"/>
+    <path class="flow" d="M826 387H750"/>
+    <path class="flow" d="M455 387H379"/>
+    <path class="flow" d="M229 457V493"/>
   </g>
-  <g transform="translate(84 133)">
-    <rect class="card" width="290" height="76" rx="10"/>
-    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">1</text>
-    <text class="label" x="61" y="45">Capture traces</text>
+  <g transform="translate(84 126)">
+    <rect class="card" width="290" height="140" rx="10"/>
+    <circle class="number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">1</text>
+    <text class="label" x="61" y="41">Capture traces</text>
+    <text class="detail">
+      <tspan x="20" y="78">Record each user request,</tspan>
+      <tspan x="20" y="100">model reply, and tool call.</tspan>
+    </text>
   </g>
-  <g transform="translate(455 133)">
-    <rect class="card" width="290" height="76" rx="10"/>
-    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">2</text>
-    <text class="label" x="61" y="45">Open coding</text>
+  <g transform="translate(455 126)">
+    <rect class="card" width="290" height="140" rx="10"/>
+    <circle class="number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">2</text>
+    <text class="label" x="61" y="41">Open coding</text>
+    <text class="detail">
+      <tspan x="20" y="78">Read each trace and note what</tspan>
+      <tspan x="20" y="100">went wrong in your own words.</tspan>
+    </text>
   </g>
-  <g transform="translate(826 133)">
-    <rect class="card" width="290" height="76" rx="10"/>
-    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">3</text>
-    <text class="label" x="61" y="45">Axial coding</text>
+  <g transform="translate(826 126)">
+    <rect class="card" width="290" height="140" rx="10"/>
+    <circle class="number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">3</text>
+    <text class="label" x="61" y="41">Axial coding</text>
+    <text class="detail">
+      <tspan x="20" y="78">Group related notes and name</tspan>
+      <tspan x="20" y="100">the failure mode they share.</tspan>
+    </text>
   </g>
-  <g transform="translate(826 262)">
-    <rect class="card" width="290" height="76" rx="10"/>
-    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">4</text>
-    <text class="label" x="61" y="33">Scale review</text>
-    <text class="label" x="61" y="57">with an LLM</text>
+  <g transform="translate(826 317)">
+    <rect class="card" width="290" height="140" rx="10"/>
+    <circle class="number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">4</text>
+    <text class="label">
+      <tspan x="61" y="30">Scale review</tspan>
+      <tspan x="61" y="52">with an LLM</tspan>
+    </text>
+    <text class="detail">
+      <tspan x="20" y="78">Ask an LLM to find more cases.</tspan>
+      <tspan x="20" y="100">Have a reviewer confirm</tspan>
+      <tspan x="20" y="122">each match.</tspan>
+    </text>
   </g>
-  <g transform="translate(455 262)">
-    <rect class="card" width="290" height="76" rx="10"/>
-    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">5</text>
-    <text class="label" x="61" y="34">Develop evaluator</text>
-    <text class="detail" x="61" y="56">Code and LLM judge</text>
+  <g transform="translate(455 317)">
+    <rect class="card" width="290" height="140" rx="10"/>
+    <circle class="number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">5</text>
+    <text class="label" x="61" y="41">Develop evaluator</text>
+    <text class="detail">
+      <tspan x="20" y="78">Use code to check exact rules</tspan>
+      <tspan x="20" y="100">and an LLM judge to assess</tspan>
+      <tspan x="20" y="122">qualities such as relevance.</tspan>
+    </text>
   </g>
-  <g transform="translate(84 262)">
-    <rect class="card" width="290" height="76" rx="10"/>
-    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">6</text>
-    <text class="label" x="61" y="45">Develop rubric</text>
+  <g transform="translate(84 317)">
+    <rect class="card" width="290" height="140" rx="10"/>
+    <circle class="number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">6</text>
+    <text class="label" x="61" y="41">Develop rubric</text>
+    <text class="detail">
+      <tspan x="20" y="78">Give pass and fail examples</tspan>
+      <tspan x="20" y="100">so reviewers and the judge</tspan>
+      <tspan x="20" y="122">apply the same criteria.</tspan>
+    </text>
   </g>
-
   <g text-anchor="middle">
-    <path d="M229 382 398 462 229 542 60 462Z" fill="#e4edf1" stroke="#7795a4" stroke-width="1.5"/>
-    <circle class="number" cx="229" cy="413" r="14"/><text class="digit" x="229" y="419">7</text>
-    <text x="229" y="450" font-size="19" font-weight="600">Do regression and</text>
-    <text x="229" y="474" font-size="19" font-weight="600">capability tests</text>
-    <text x="229" y="498" font-size="19" font-weight="600">pass in CI?</text>
+    <path d="M229 498 405 610 229 722 53 610Z" fill="#e4edf1" stroke="#7795a4" stroke-width="1.5"/>
+    <circle class="number" cx="229" cy="542" r="14"/><text class="digit" x="229" y="548">7</text>
+    <text class="label" x="229" y="579">Pass CI tests?</text>
+    <text class="detail">
+      <tspan x="229" y="604">Run regression cases for past bugs</tspan>
+      <tspan x="229" y="626">and capability cases</tspan>
+      <tspan x="229" y="648">for new tasks.</tspan>
+    </text>
   </g>
-  <path class="flow" d="M398 462H450"/>
-  <text class="branch" x="425" y="448" text-anchor="middle" style="fill:#28644e">Pass</text>
-  <g transform="translate(455 424)">
-    <rect class="card release" width="290" height="76" rx="10"/>
-    <circle class="release-number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">8</text>
-    <text class="label" x="61" y="45">Deploy</text>
+  <path class="flow" d="M405 610H450"/>
+  <text class="branch" x="428" y="598" text-anchor="middle" style="fill:#28644e">Pass</text>
+  <g transform="translate(455 540)">
+    <rect class="card release" width="290" height="140" rx="10"/>
+    <circle class="release-number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">8</text>
+    <text class="label" x="61" y="41">Deploy</text>
+    <text class="detail">
+      <tspan x="20" y="78">Release the tested version</tspan>
+      <tspan x="20" y="100">to production.</tspan>
+    </text>
   </g>
-  <path class="flow" d="M745 462H821"/>
-  <g transform="translate(826 424)">
-    <rect class="card release" width="290" height="76" rx="10"/>
-    <circle class="release-number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">9</text>
-    <text class="label" x="61" y="45">Monitor production</text>
+  <path class="flow" d="M745 610H821"/>
+  <g transform="translate(826 540)">
+    <rect class="card release" width="290" height="140" rx="10"/>
+    <circle class="release-number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">9</text>
+    <text class="label" x="61" y="41">Monitor production</text>
+    <text class="detail">
+      <tspan x="20" y="78">Sample live traces and track</tspan>
+      <tspan x="20" y="100">how often each failure occurs.</tspan>
+    </text>
   </g>
 
-  <path class="retry" d="M229 542V590"/>
-  <text class="branch" x="241" y="571" style="fill:#89431b">Fail</text>
-  <rect x="84" y="595" width="290" height="59" rx="10" fill="#faecde" stroke="#c5956c" stroke-width="1.5"/>
-  <text x="229" y="631" text-anchor="middle" font-size="18" font-weight="600">Review gaps and improve</text>
-  <path class="retry" d="M84 625H29V462H55"/>
-  <text class="branch" x="41" y="567" style="fill:#89431b">Retest</text>
+  <path class="retry" d="M229 722V762"/>
+  <text class="branch" x="241" y="748" style="fill:#89431b">Fail</text>
+  <rect x="84" y="767" width="290" height="72" rx="10" fill="#faecde" stroke="#c5956c" stroke-width="1.5"/>
+  <text x="229" y="795" text-anchor="middle" font-size="18" font-weight="600">Review gaps and improve</text>
+  <text class="detail" x="229" y="820" text-anchor="middle">Find the cause and fix it.</text>
+  <path class="retry" d="M84 803H24V610H48"/>
+  <text class="branch" x="35" y="747" style="fill:#89431b">Retest</text>
 </svg>
