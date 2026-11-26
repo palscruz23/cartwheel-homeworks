@@ -76,10 +76,7 @@
   <g transform="translate(826 317)">
     <rect class="card" width="290" height="140" rx="10"/>
     <circle class="number" cx="33" cy="34" r="16"/><text class="digit" x="33" y="40">4</text>
-    <text class="label">
-      <tspan x="61" y="30">Scale review</tspan>
-      <tspan x="61" y="52">with an LLM</tspan>
-    </text>
+    <text class="label" x="61" y="41">Scale review</text>
     <text class="detail">
       <tspan x="20" y="78">Ask an LLM to find more cases.</tspan>
       <tspan x="20" y="100">Have a reviewer confirm</tspan>
