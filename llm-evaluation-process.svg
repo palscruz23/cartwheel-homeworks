@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690"
+     role="img" aria-labelledby="title description">
+  <title id="title">LLM evaluation process</title>
+  <desc id="description">Capture traces, perform open coding and axial coding, then scale review with an LLM.
+    Develop an evaluator using code and an LLM judge, then develop the rubric. Run regression and capability
+    tests in CI. If they pass, deploy and monitor production. If they fail, review gaps, improve, and rerun the tests.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#455964" stroke-width="1.7" stroke-linejoin="round"/>
+    </marker>
+    <marker id="retry-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#995023" stroke-width="1.7" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "DejaVu Sans", sans-serif; fill: #172e38; }
+      .card { fill: #fff; stroke: #b4c2c5; stroke-width: 1.5; }
+      .release { fill: #e0f0e8; stroke: #88b4a0; }
+      .number { fill: #274858; }
+      .release-number { fill: #28644e; }
+      .digit { fill: white; font-size: 16px; font-weight: 700; text-anchor: middle; }
+      .label { font-size: 19px; font-weight: 600; }
+      .detail { font-size: 16px; fill: #455964; }
+      .flow, .retry { fill: none; stroke-width: 2.5; stroke-linejoin: round; }
+      .flow { stroke: #455964; marker-end: url(#arrow); }
+      .retry { stroke: #995023; marker-end: url(#retry-arrow); }
+      .branch { font-size: 16px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect width="1200" height="690" fill="#f7f8f5"/>
+  <text x="84" y="72" font-size="44" font-weight="700">LLM evaluation process</text>
+  <path d="M84 96H1116" stroke="#cbd3d1"/>
+
+  <!-- Follow the numbered cards across the first row and back along the second. -->
+  <g>
+    <path class="flow" d="M374 171H450"/>
+    <path class="flow" d="M745 171H821"/>
+    <path class="flow" d="M971 209V257"/>
+    <path class="flow" d="M826 300H750"/>
+    <path class="flow" d="M455 300H379"/>
+    <path class="flow" d="M229 338V377"/>
+  </g>
+  <g transform="translate(84 133)">
+    <rect class="card" width="290" height="76" rx="10"/>
+    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">1</text>
+    <text class="label" x="61" y="45">Capture traces</text>
+  </g>
+  <g transform="translate(455 133)">
+    <rect class="card" width="290" height="76" rx="10"/>
+    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">2</text>
+    <text class="label" x="61" y="45">Open coding</text>
+  </g>
+  <g transform="translate(826 133)">
+    <rect class="card" width="290" height="76" rx="10"/>
+    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">3</text>
+    <text class="label" x="61" y="45">Axial coding</text>
+  </g>
+  <g transform="translate(826 262)">
+    <rect class="card" width="290" height="76" rx="10"/>
+    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">4</text>
+    <text class="label" x="61" y="33">Scale review</text>
+    <text class="label" x="61" y="57">with an LLM</text>
+  </g>
+  <g transform="translate(455 262)">
+    <rect class="card" width="290" height="76" rx="10"/>
+    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">5</text>
+    <text class="label" x="61" y="34">Develop evaluator</text>
+    <text class="detail" x="61" y="56">Code and LLM judge</text>
+  </g>
+  <g transform="translate(84 262)">
+    <rect class="card" width="290" height="76" rx="10"/>
+    <circle class="number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">6</text>
+    <text class="label" x="61" y="45">Develop rubric</text>
+  </g>
+
+  <g text-anchor="middle">
+    <path d="M229 382 398 462 229 542 60 462Z" fill="#e4edf1" stroke="#7795a4" stroke-width="1.5"/>
+    <circle class="number" cx="229" cy="413" r="14"/><text class="digit" x="229" y="419">7</text>
+    <text x="229" y="450" font-size="19" font-weight="600">Do regression and</text>
+    <text x="229" y="474" font-size="19" font-weight="600">capability tests</text>
+    <text x="229" y="498" font-size="19" font-weight="600">pass in CI?</text>
+  </g>
+  <path class="flow" d="M398 462H450"/>
+  <text class="branch" x="425" y="448" text-anchor="middle" style="fill:#28644e">Pass</text>
+  <g transform="translate(455 424)">
+    <rect class="card release" width="290" height="76" rx="10"/>
+    <circle class="release-number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">8</text>
+    <text class="label" x="61" y="45">Deploy</text>
+  </g>
+  <path class="flow" d="M745 462H821"/>
+  <g transform="translate(826 424)">
+    <rect class="card release" width="290" height="76" rx="10"/>
+    <circle class="release-number" cx="33" cy="38" r="16"/><text class="digit" x="33" y="44">9</text>
+    <text class="label" x="61" y="45">Monitor production</text>
+  </g>
+
+  <path class="retry" d="M229 542V590"/>
+  <text class="branch" x="241" y="571" style="fill:#89431b">Fail</text>
+  <rect x="84" y="595" width="290" height="59" rx="10" fill="#faecde" stroke="#c5956c" stroke-width="1.5"/>
+  <text x="229" y="631" text-anchor="middle" font-size="18" font-weight="600">Review gaps and improve</text>
+  <path class="retry" d="M84 625H29V462H55"/>
+  <text class="branch" x="41" y="567" style="fill:#89431b">Retest</text>
+</svg>
